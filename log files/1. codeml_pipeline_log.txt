@@ -1,0 +1,2188 @@
+Pipeline started at Fri Apr 25 08:09:23 UTC 2025
+--------------------------------------------------
+Starting script0.sh at Fri Apr 25 08:09:23 UTC 2025
+script0.sh completed successfully at 08:19:21. Total time: 00:09:58
+----- Output from script0.sh -----
+Running QC on Arabidopsis_halleri.txt...
+Passed QC: Arabidopsis_halleri.txt -> QCseq/Arabidopsis_halleri_QC.fasta
+QC log saved to: QCseq/Arabidopsis_halleri_QC.fasta.log.txt
+QC Passed: Arabidopsis_halleri.txt -> QCseq/Arabidopsis_halleri_QC.fasta
+Running QC on Arabidopsis_lyrata.txt...
+Passed QC: Arabidopsis_lyrata.txt -> QCseq/Arabidopsis_lyrata_QC.fasta
+QC log saved to: QCseq/Arabidopsis_lyrata_QC.fasta.log.txt
+QC Passed: Arabidopsis_lyrata.txt -> QCseq/Arabidopsis_lyrata_QC.fasta
+Running QC on Arabidopsis_thaliana.txt...
+Passed QC: Arabidopsis_thaliana.txt -> QCseq/Arabidopsis_thaliana_QC.fasta
+QC log saved to: QCseq/Arabidopsis_thaliana_QC.fasta.log.txt
+QC Passed: Arabidopsis_thaliana.txt -> QCseq/Arabidopsis_thaliana_QC.fasta
+Running QC on codeml_pipeline_log.txt...
+Failed QC: codeml_pipeline_log.txt (No sequences found or unable to parse)
+QC Passed: codeml_pipeline_log.txt -> QCseq/codeml_pipeline_log_QC.fasta
+QC Step Completed.
+Running PRANK on QCseq/Arabidopsis_halleri_QC.fasta...
+Running PRANK on QCseq/Arabidopsis_lyrata_QC.fasta...
+Running PRANK on QCseq/Arabidopsis_thaliana_QC.fasta...
+MSA Step Completed.
+Script1 completed. Run Script2 onwards to proceed with phylogenetic analysis and selection analysis.
+---------------------------------
+--------------------------------------------------
+Starting script1.sh at Fri Apr 25 08:19:22 UTC 2025
+script1.sh completed successfully at 08:29:35. Total time: 00:10:13
+----- Output from script1.sh -----
+IQ-TREE2 Step Completed.
+All tree files copied to treefiles/.
+File foregroundbranch/Arabidopsis_lyrata_QC/XP_020883914.1.treefile created successfully.
+File foregroundbranch/Arabidopsis_lyrata_QC/XP_020868537.1.treefile created successfully.
+File foregroundbranch/Arabidopsis_lyrata_QC/XP_002868216.1.treefile created successfully.
+File foregroundbranch/Arabidopsis_lyrata_QC/XP_002883322.2.treefile created successfully.
+File foregroundbranch/Arabidopsis_lyrata_QC/XP_002893503.1.treefile created successfully.
+File foregroundbranch/Arabidopsis_thaliana_QC/AT1G49130.1.treefile created successfully.
+File foregroundbranch/Arabidopsis_thaliana_QC/AT1G28050.1.treefile created successfully.
+File foregroundbranch/Arabidopsis_thaliana_QC/AT1G49130.2.treefile created successfully.
+File foregroundbranch/Arabidopsis_thaliana_QC/AT1G25440.1.treefile created successfully.
+File foregroundbranch/Arabidopsis_thaliana_QC/AT1G68520.1.treefile created successfully.
+Foreground Branch Selection Completed.
+---------------------------------
+--------------------------------------------------
+Starting script2.sh at Fri Apr 25 08:29:35 UTC 2025
+script2.sh completed successfully at 08:38:02. Total time: 00:08:27
+----- Output from script2.sh -----
+xargs: warning: options --max-args and --replace/-I/-i are mutually exclusive, ignoring previous --max-args value
+Warning: Tree directory for Arabidopsis_halleri_QC not found. Skipping...
+xargs: warning: options --max-args and --replace/-I/-i are mutually exclusive, ignoring previous --max-args value
+environment: line 3: cd: codemloutput/Arabidopsis_lyrata_QC: No such file or directory
+Processing XP_002868216.1.treefile in Arabidopsis_lyrata_QC
+CODONML in paml version 4.9j, October 2019
+2 ambiguous codons are seen in the data:
+ --- NNN
+
+       80 bytes for distance
+   537776 bytes for conP
+2462647897809373184 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, 2, (3, (4, 5)));   MP score: -1
+   806664 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    13
+Out..
+lnL  = -6331.934537
+778 lfun, 1556 eigenQcodon, 5446 P(t)
+end of tree file.
+
+Time used:  0:05
+CODONML in paml version 4.9j, October 2019
+2 ambiguous codons are seen in the data:
+ --- NNN
+
+       80 bytes for distance
+   537776 bytes for conP
+    17632 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, 2, (3, (4, 5)));   MP score: -1
+   806664 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    15
+branch=0  freq=0.749233 w0 = 0.203286
+branch=0  freq=0.250767 w1 = 1.000000
+			Qfactor for branch 0 = 0.924676
+branch=1  freq=0.600264 w0 = 0.203286
+branch=1  freq=0.200907 w1 = 1.000000
+branch=1  freq=0.198829 w2 = 2.415952
+			Qfactor for branch 1 = 0.586660
+w[0] = 0.203286
+w[1] = 1.000000
+w[2] = 2.415952
+Out..
+lnL  = -6313.780096
+1061 lfun, 5305 eigenQcodon, 29708 P(t)
+
+BEBing (dim = 4).  This may take many minutes.
+Calculating f(x_h|w) for 121 w's
+	   10 / 121 sets.  w for branches:  0.9500 0.9500 lnfX = -6651.5604	   20 / 121 sets.  w for branches:  0.0500 9.5000 lnfX = -7139.9939	   30 / 121 sets.  w for branches:  0.1500 9.5000 lnfX = -6794.8650	   40 / 121 sets.  w for branches:  0.2500 9.5000 lnfX = -6724.7502	   50 / 121 sets.  w for branches:  0.3500 9.5000 lnfX = -6727.7158	   60 / 121 sets.  w for branches:  0.4500 9.5000 lnfX = -6759.8343	   70 / 121 sets.  w for branches:  0.5500 9.5000 lnfX = -6804.2239	   80 / 121 sets.  w for branches:  0.6500 9.5000 lnfX = -6852.9232	   90 / 121 sets.  w for branches:  0.7500 9.5000 lnfX = -6901.8993	  100 / 121 sets.  w for branches:  0.8500 9.5000 lnfX = -6949.1339	  110 / 121 sets.  w for branches:  0.9500 9.5000 lnfX = -6993.7063	  120 / 121 sets.  w for branches:  1.0000 9.5000 lnfX = -7014.8790	  121 / 121 sets.  w for branches:  1.0000 10.5000 lnfX = -7028.2132
+Time:  0:31
+Calculating the marginal likelihood f(X).
+	1000 / 10000 grid points,  0:31	2000 / 10000 grid points,  0:31	3000 / 10000 grid points,  0:31	4000 / 10000 grid points,  0:31	5000 / 10000 grid points,  0:31	6000 / 10000 grid points,  0:31	7000 / 10000 grid points,  0:31	8000 / 10000 grid points,  0:31	9000 / 10000 grid points,  0:31	10000 / 10000 grid points,  0:31	log(fX) = -6323.292123  S = -5943.328638  -372.918389
+Calculating f(w_k|X), posterior for site classes for each site.  Slow!
+	did  10 / 551 site patterns   0:31	did  20 / 551 site patterns   0:31	did  30 / 551 site patterns   0:31	did  40 / 551 site patterns   0:31	did  50 / 551 site patterns   0:31	did  60 / 551 site patterns   0:31	did  70 / 551 site patterns   0:31	did  80 / 551 site patterns   0:31	did  90 / 551 site patterns   0:31	did 100 / 551 site patterns   0:31	did 110 / 551 site patterns   0:31	did 120 / 551 site patterns   0:31	did 130 / 551 site patterns   0:31	did 140 / 551 site patterns   0:31	did 150 / 551 site patterns   0:31	did 160 / 551 site patterns   0:31	did 170 / 551 site patterns   0:31	did 180 / 551 site patterns   0:31	did 190 / 551 site patterns   0:31	did 200 / 551 site patterns   0:31	did 210 / 551 site patterns   0:31	did 220 / 551 site patterns   0:31	did 230 / 551 site patterns   0:31	did 240 / 551 site patterns   0:31	did 250 / 551 site patterns   0:31	did 260 / 551 site patterns   0:31	did 270 / 551 site patterns   0:31	did 280 / 551 site patterns   0:31	did 290 / 551 site patterns   0:31	did 300 / 551 site patterns   0:31	did 310 / 551 site patterns   0:31	did 320 / 551 site patterns   0:31	did 330 / 551 site patterns   0:31	did 340 / 551 site patterns   0:31	did 350 / 551 site patterns   0:31	did 360 / 551 site patterns   0:31	did 370 / 551 site patterns   0:31	did 380 / 551 site patterns   0:31	did 390 / 551 site patterns   0:31	did 400 / 551 site patterns   0:31	did 410 / 551 site patterns   0:31	did 420 / 551 site patterns   0:31	did 430 / 551 site patterns   0:31	did 440 / 551 site patterns   0:31	did 450 / 551 site patterns   0:31	did 460 / 551 site patterns   0:31	did 470 / 551 site patterns   0:31	did 480 / 551 site patterns   0:31	did 490 / 551 site patterns   0:31	did 500 / 551 site patterns   0:31	did 510 / 551 site patterns   0:31	did 520 / 551 site patterns   0:31	did 530 / 551 site patterns   0:31	did 540 / 551 site patterns   0:31	did 550 / 551 site patterns   0:31	did 551 / 551 site patterns   0:31end of tree file.
+
+Time used:  0:31
+CODONML in paml version 4.9j, October 2019
+2 ambiguous codons are seen in the data:
+ --- NNN
+
+       80 bytes for distance
+   537776 bytes for conP
+    17632 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, 2, (3, (4, 5)));   MP score: -1
+   806664 bytes for conP, adjusted
+
+ntime & nrate & np:     7     5    14
+branch=0  freq=0.764176 w0 = 0.291903
+branch=0  freq=0.235824 w1 = 1.000000
+			Qfactor for branch 0 = 0.855658
+branch=1  freq=0.630594 w0 = 0.291903
+branch=1  freq=0.194600 w1 = 1.000000
+branch=1  freq=0.174805 w2 = 1.000000
+			Qfactor for branch 1 = 0.759828
+w[0] = 0.291903
+w[1] = 1.000000
+w[2] = 1.000000
+Out..
+lnL  = -6313.780096
+775 lfun, 3875 eigenQcodon, 21700 P(t)
+end of tree file.
+
+Time used:  0:21
+Finished XP_002868216.1.treefile in Arabidopsis_lyrata_QC
+environment: line 3: cd: codemloutput/Arabidopsis_lyrata_QC: No such file or directory
+Processing XP_002883322.2.treefile in Arabidopsis_lyrata_QC
+CODONML in paml version 4.9j, October 2019
+2 ambiguous codons are seen in the data:
+ --- NNN
+
+       80 bytes for distance
+   537776 bytes for conP
+13469596847280082944 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, 2, (3, (4, 5)));   MP score: -1
+   806664 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    13
+Out..
+lnL  = -6331.273862
+825 lfun, 1650 eigenQcodon, 5775 P(t)
+end of tree file.
+
+Time used:  0:06
+CODONML in paml version 4.9j, October 2019
+2 ambiguous codons are seen in the data:
+ --- NNN
+
+       80 bytes for distance
+   537776 bytes for conP
+    17632 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, 2, (3, (4, 5)));   MP score: -1
+   806664 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    15
+branch=0  freq=0.773334 w0 = 0.249915
+branch=0  freq=0.226666 w1 = 1.000000
+			Qfactor for branch 0 = 0.902931
+branch=1  freq=0.636417 w0 = 0.249915
+branch=1  freq=0.186536 w1 = 1.000000
+branch=1  freq=0.177047 w2 = 2.242305
+			Qfactor for branch 1 = 0.620990
+w[0] = 0.249915
+w[1] = 1.000000
+w[2] = 2.242305
+Out..
+lnL  = -6312.044816
+1687 lfun, 8435 eigenQcodon, 47236 P(t)
+
+BEBing (dim = 4).  This may take many minutes.
+Calculating f(x_h|w) for 121 w's
+	   10 / 121 sets.  w for branches:  0.9500 0.9500 lnfX = -6666.6191	   20 / 121 sets.  w for branches:  0.0500 9.5000 lnfX = -6928.2177	   30 / 121 sets.  w for branches:  0.1500 9.5000 lnfX = -6590.4673	   40 / 121 sets.  w for branches:  0.2500 9.5000 lnfX = -6531.5283	   50 / 121 sets.  w for branches:  0.3500 9.5000 lnfX = -6545.9444	   60 / 121 sets.  w for branches:  0.4500 9.5000 lnfX = -6589.0846	   70 / 121 sets.  w for branches:  0.5500 9.5000 lnfX = -6643.8545	   80 / 121 sets.  w for branches:  0.6500 9.5000 lnfX = -6702.2458	   90 / 121 sets.  w for branches:  0.7500 9.5000 lnfX = -6760.2511	  100 / 121 sets.  w for branches:  0.8500 9.5000 lnfX = -6815.9072	  110 / 121 sets.  w for branches:  0.9500 9.5000 lnfX = -6868.3540	  120 / 121 sets.  w for branches:  1.0000 9.5000 lnfX = -6893.2759	  121 / 121 sets.  w for branches:  1.0000 10.5000 lnfX = -6910.3272
+Time:  0:30
+Calculating the marginal likelihood f(X).
+	1000 / 10000 grid points,  0:30	2000 / 10000 grid points,  0:30	3000 / 10000 grid points,  0:30	4000 / 10000 grid points,  0:30	5000 / 10000 grid points,  0:30	6000 / 10000 grid points,  0:30	7000 / 10000 grid points,  0:30	8000 / 10000 grid points,  0:30	9000 / 10000 grid points,  0:30	10000 / 10000 grid points,  0:30	log(fX) = -6321.381438  S = -5949.689541  -365.989506
+Calculating f(w_k|X), posterior for site classes for each site.  Slow!
+	did  10 / 551 site patterns   0:30	did  20 / 551 site patterns   0:30	did  30 / 551 site patterns   0:30	did  40 / 551 site patterns   0:30	did  50 / 551 site patterns   0:30	did  60 / 551 site patterns   0:30	did  70 / 551 site patterns   0:30	did  80 / 551 site patterns   0:30	did  90 / 551 site patterns   0:30	did 100 / 551 site patterns   0:30	did 110 / 551 site patterns   0:30	did 120 / 551 site patterns   0:30	did 130 / 551 site patterns   0:30	did 140 / 551 site patterns   0:30	did 150 / 551 site patterns   0:30	did 160 / 551 site patterns   0:30	did 170 / 551 site patterns   0:30	did 180 / 551 site patterns   0:30	did 190 / 551 site patterns   0:30	did 200 / 551 site patterns   0:30	did 210 / 551 site patterns   0:30	did 220 / 551 site patterns   0:30	did 230 / 551 site patterns   0:30	did 240 / 551 site patterns   0:30	did 250 / 551 site patterns   0:30	did 260 / 551 site patterns   0:30	did 270 / 551 site patterns   0:30	did 280 / 551 site patterns   0:30	did 290 / 551 site patterns   0:30	did 300 / 551 site patterns   0:30	did 310 / 551 site patterns   0:30	did 320 / 551 site patterns   0:30	did 330 / 551 site patterns   0:30	did 340 / 551 site patterns   0:30	did 350 / 551 site patterns   0:30	did 360 / 551 site patterns   0:30	did 370 / 551 site patterns   0:30	did 380 / 551 site patterns   0:30	did 390 / 551 site patterns   0:30	did 400 / 551 site patterns   0:30	did 410 / 551 site patterns   0:30	did 420 / 551 site patterns   0:30	did 430 / 551 site patterns   0:30	did 440 / 551 site patterns   0:30	did 450 / 551 site patterns   0:30	did 460 / 551 site patterns   0:30	did 470 / 551 site patterns   0:30	did 480 / 551 site patterns   0:30	did 490 / 551 site patterns   0:30	did 500 / 551 site patterns   0:30	did 510 / 551 site patterns   0:30	did 520 / 551 site patterns   0:30	did 530 / 551 site patterns   0:30	did 540 / 551 site patterns   0:30	did 550 / 551 site patterns   0:30	did 551 / 551 site patterns   0:30end of tree file.
+
+Time used:  0:30
+CODONML in paml version 4.9j, October 2019
+2 ambiguous codons are seen in the data:
+ --- NNN
+
+       80 bytes for distance
+   537776 bytes for conP
+    17632 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, 2, (3, (4, 5)));   MP score: -1
+   806664 bytes for conP, adjusted
+
+ntime & nrate & np:     7     5    14
+branch=0  freq=0.754136 w0 = 0.215650
+branch=0  freq=0.245864 w1 = 1.000000
+			Qfactor for branch 0 = 0.918010
+branch=1  freq=0.616858 w0 = 0.215650
+branch=1  freq=0.201109 w1 = 1.000000
+branch=1  freq=0.182033 w2 = 1.000000
+			Qfactor for branch 1 = 0.795489
+w[0] = 0.215650
+w[1] = 1.000000
+w[2] = 1.000000
+Out..
+lnL  = -6313.941791
+1175 lfun, 5875 eigenQcodon, 32900 P(t)
+end of tree file.
+
+Time used:  0:19
+Finished XP_002883322.2.treefile in Arabidopsis_lyrata_QC
+environment: line 3: cd: codemloutput/Arabidopsis_lyrata_QC: No such file or directory
+Processing XP_002893503.1.treefile in Arabidopsis_lyrata_QC
+CODONML in paml version 4.9j, October 2019
+2 ambiguous codons are seen in the data:
+ --- NNN
+
+       80 bytes for distance
+   537776 bytes for conP
+13189273024574975744 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, 2, (3, (4, 5)));   MP score: -1
+   806664 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    13
+Out..
+lnL  = -6332.099517
+775 lfun, 1550 eigenQcodon, 5425 P(t)
+end of tree file.
+
+Time used:  0:03
+CODONML in paml version 4.9j, October 2019
+2 ambiguous codons are seen in the data:
+ --- NNN
+
+       80 bytes for distance
+   537776 bytes for conP
+    17632 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, 2, (3, (4, 5)));   MP score: -1
+   806664 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    15
+branch=0  freq=0.735317 w0 = 0.267157
+branch=0  freq=0.264683 w1 = 1.000000
+			Qfactor for branch 0 = 0.852781
+branch=1  freq=0.585985 w0 = 0.267157
+branch=1  freq=0.210930 w1 = 1.000000
+branch=1  freq=0.203086 w2 = 2.320766
+			Qfactor for branch 1 = 0.567800
+w[0] = 0.267157
+w[1] = 1.000000
+w[2] = 2.320766
+Out..
+lnL  = -6312.474443
+1930 lfun, 9650 eigenQcodon, 54040 P(t)
+
+BEBing (dim = 4).  This may take many minutes.
+Calculating f(x_h|w) for 121 w's
+	   10 / 121 sets.  w for branches:  0.9500 0.9500 lnfX = -6655.8496	   20 / 121 sets.  w for branches:  0.0500 9.5000 lnfX = -7284.2148	   30 / 121 sets.  w for branches:  0.1500 9.5000 lnfX = -6939.3556	   40 / 121 sets.  w for branches:  0.2500 9.5000 lnfX = -6866.5504	   50 / 121 sets.  w for branches:  0.3500 9.5000 lnfX = -6866.1063	   60 / 121 sets.  w for branches:  0.4500 9.5000 lnfX = -6894.6879	   70 / 121 sets.  w for branches:  0.5500 9.5000 lnfX = -6935.6476	   80 / 121 sets.  w for branches:  0.6500 9.5000 lnfX = -6981.0994	   90 / 121 sets.  w for branches:  0.7500 9.5000 lnfX = -7026.9989	  100 / 121 sets.  w for branches:  0.8500 9.5000 lnfX = -7071.2733	  110 / 121 sets.  w for branches:  0.9500 9.5000 lnfX = -7112.9376	  120 / 121 sets.  w for branches:  1.0000 9.5000 lnfX = -7132.6577	  121 / 121 sets.  w for branches:  1.0000 10.5000 lnfX = -7148.8245
+Time:  0:33
+Calculating the marginal likelihood f(X).
+	1000 / 10000 grid points,  0:33	2000 / 10000 grid points,  0:33	3000 / 10000 grid points,  0:33	4000 / 10000 grid points,  0:33	5000 / 10000 grid points,  0:33	6000 / 10000 grid points,  0:33	7000 / 10000 grid points,  0:33	8000 / 10000 grid points,  0:33	9000 / 10000 grid points,  0:33	10000 / 10000 grid points,  0:33	log(fX) = -6322.909211  S = -5946.940122  -377.046871
+Calculating f(w_k|X), posterior for site classes for each site.  Slow!
+	did  10 / 551 site patterns   0:33	did  20 / 551 site patterns   0:33	did  30 / 551 site patterns   0:33	did  40 / 551 site patterns   0:33	did  50 / 551 site patterns   0:33	did  60 / 551 site patterns   0:33	did  70 / 551 site patterns   0:33	did  80 / 551 site patterns   0:33	did  90 / 551 site patterns   0:33	did 100 / 551 site patterns   0:33	did 110 / 551 site patterns   0:33	did 120 / 551 site patterns   0:33	did 130 / 551 site patterns   0:33	did 140 / 551 site patterns   0:33	did 150 / 551 site patterns   0:33	did 160 / 551 site patterns   0:33	did 170 / 551 site patterns   0:33	did 180 / 551 site patterns   0:33	did 190 / 551 site patterns   0:33	did 200 / 551 site patterns   0:33	did 210 / 551 site patterns   0:33	did 220 / 551 site patterns   0:33	did 230 / 551 site patterns   0:33	did 240 / 551 site patterns   0:33	did 250 / 551 site patterns   0:33	did 260 / 551 site patterns   0:33	did 270 / 551 site patterns   0:33	did 280 / 551 site patterns   0:33	did 290 / 551 site patterns   0:33	did 300 / 551 site patterns   0:33	did 310 / 551 site patterns   0:33	did 320 / 551 site patterns   0:33	did 330 / 551 site patterns   0:33	did 340 / 551 site patterns   0:33	did 350 / 551 site patterns   0:33	did 360 / 551 site patterns   0:33	did 370 / 551 site patterns   0:33	did 380 / 551 site patterns   0:33	did 390 / 551 site patterns   0:33	did 400 / 551 site patterns   0:33	did 410 / 551 site patterns   0:33	did 420 / 551 site patterns   0:33	did 430 / 551 site patterns   0:33	did 440 / 551 site patterns   0:33	did 450 / 551 site patterns   0:33	did 460 / 551 site patterns   0:33	did 470 / 551 site patterns   0:33	did 480 / 551 site patterns   0:33	did 490 / 551 site patterns   0:33	did 500 / 551 site patterns   0:33	did 510 / 551 site patterns   0:33	did 520 / 551 site patterns   0:33	did 530 / 551 site patterns   0:33	did 540 / 551 site patterns   0:33	did 550 / 551 site patterns   0:33	did 551 / 551 site patterns   0:33end of tree file.
+
+Time used:  0:33
+CODONML in paml version 4.9j, October 2019
+2 ambiguous codons are seen in the data:
+ --- NNN
+
+       80 bytes for distance
+   537776 bytes for conP
+    17632 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, 2, (3, (4, 5)));   MP score: -1
+   806664 bytes for conP, adjusted
+
+ntime & nrate & np:     7     5    14
+branch=0  freq=0.762683 w0 = 0.298763
+branch=0  freq=0.237317 w1 = 1.000000
+			Qfactor for branch 0 = 0.847905
+branch=1  freq=0.619824 w0 = 0.298763
+branch=1  freq=0.192864 w1 = 1.000000
+branch=1  freq=0.187312 w2 = 1.000000
+			Qfactor for branch 1 = 0.748769
+w[0] = 0.298763
+w[1] = 1.000000
+w[2] = 1.000000
+Out..
+lnL  = -6315.722965
+743 lfun, 3715 eigenQcodon, 20804 P(t)
+end of tree file.
+
+Time used:  0:12
+Finished XP_002893503.1.treefile in Arabidopsis_lyrata_QC
+environment: line 3: cd: codemloutput/Arabidopsis_lyrata_QC: No such file or directory
+Processing XP_020868537.1.treefile in Arabidopsis_lyrata_QC
+CODONML in paml version 4.9j, October 2019
+2 ambiguous codons are seen in the data:
+ --- NNN
+
+       80 bytes for distance
+   537776 bytes for conP
+685600341990909184 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, 2, (3, (4, 5)));   MP score: -1
+   806664 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    13
+Out..
+lnL  = -6332.263327
+895 lfun, 1790 eigenQcodon, 6265 P(t)
+end of tree file.
+
+Time used:  0:04
+CODONML in paml version 4.9j, October 2019
+2 ambiguous codons are seen in the data:
+ --- NNN
+
+       80 bytes for distance
+   537776 bytes for conP
+    17632 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, 2, (3, (4, 5)));   MP score: -1
+   806664 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    15
+branch=0  freq=0.780190 w0 = 0.247945
+branch=0  freq=0.219810 w1 = 1.000000
+			Qfactor for branch 0 = 0.911729
+branch=1  freq=0.646219 w0 = 0.247945
+branch=1  freq=0.182066 w1 = 1.000000
+branch=1  freq=0.171715 w2 = 1.779740
+			Qfactor for branch 1 = 0.683763
+w[0] = 0.247945
+w[1] = 1.000000
+w[2] = 1.779740
+Out..
+lnL  = -6289.526056
+1731 lfun, 8655 eigenQcodon, 48468 P(t)
+
+BEBing (dim = 4).  This may take many minutes.
+Calculating f(x_h|w) for 121 w's
+	   10 / 121 sets.  w for branches:  0.9500 0.9500 lnfX = -6648.4626	   20 / 121 sets.  w for branches:  0.0500 9.5000 lnfX = -6791.4099	   30 / 121 sets.  w for branches:  0.1500 9.5000 lnfX = -6475.7454	   40 / 121 sets.  w for branches:  0.2500 9.5000 lnfX = -6413.5385	   50 / 121 sets.  w for branches:  0.3500 9.5000 lnfX = -6419.9042	   60 / 121 sets.  w for branches:  0.4500 9.5000 lnfX = -6454.8592	   70 / 121 sets.  w for branches:  0.5500 9.5000 lnfX = -6503.1267	   80 / 121 sets.  w for branches:  0.6500 9.5000 lnfX = -6557.4508	   90 / 121 sets.  w for branches:  0.7500 9.5000 lnfX = -6613.9998	  100 / 121 sets.  w for branches:  0.8500 9.5000 lnfX = -6670.6414	  110 / 121 sets.  w for branches:  0.9500 9.5000 lnfX = -6726.1633	  120 / 121 sets.  w for branches:  1.0000 9.5000 lnfX = -6753.2756	  121 / 121 sets.  w for branches:  1.0000 10.5000 lnfX = -6758.5772
+Time:  0:30
+Calculating the marginal likelihood f(X).
+	1000 / 10000 grid points,  0:30	2000 / 10000 grid points,  0:30	3000 / 10000 grid points,  0:30	4000 / 10000 grid points,  0:30	5000 / 10000 grid points,  0:30	6000 / 10000 grid points,  0:30	7000 / 10000 grid points,  0:30	8000 / 10000 grid points,  0:30	9000 / 10000 grid points,  0:30	10000 / 10000 grid points,  0:30	log(fX) = -6304.238998  S = -5922.756740  -377.146491
+Calculating f(w_k|X), posterior for site classes for each site.  Slow!
+	did  10 / 551 site patterns   0:30	did  20 / 551 site patterns   0:30	did  30 / 551 site patterns   0:30	did  40 / 551 site patterns   0:30	did  50 / 551 site patterns   0:30	did  60 / 551 site patterns   0:30	did  70 / 551 site patterns   0:30	did  80 / 551 site patterns   0:30	did  90 / 551 site patterns   0:30	did 100 / 551 site patterns   0:30	did 110 / 551 site patterns   0:30	did 120 / 551 site patterns   0:30	did 130 / 551 site patterns   0:30	did 140 / 551 site patterns   0:30	did 150 / 551 site patterns   0:30	did 160 / 551 site patterns   0:30	did 170 / 551 site patterns   0:30	did 180 / 551 site patterns   0:30	did 190 / 551 site patterns   0:30	did 200 / 551 site patterns   0:30	did 210 / 551 site patterns   0:30	did 220 / 551 site patterns   0:30	did 230 / 551 site patterns   0:30	did 240 / 551 site patterns   0:30	did 250 / 551 site patterns   0:30	did 260 / 551 site patterns   0:30	did 270 / 551 site patterns   0:30	did 280 / 551 site patterns   0:30	did 290 / 551 site patterns   0:30	did 300 / 551 site patterns   0:30	did 310 / 551 site patterns   0:30	did 320 / 551 site patterns   0:30	did 330 / 551 site patterns   0:30	did 340 / 551 site patterns   0:30	did 350 / 551 site patterns   0:30	did 360 / 551 site patterns   0:30	did 370 / 551 site patterns   0:30	did 380 / 551 site patterns   0:30	did 390 / 551 site patterns   0:30	did 400 / 551 site patterns   0:30	did 410 / 551 site patterns   0:30	did 420 / 551 site patterns   0:30	did 430 / 551 site patterns   0:30	did 440 / 551 site patterns   0:30	did 450 / 551 site patterns   0:30	did 460 / 551 site patterns   0:30	did 470 / 551 site patterns   0:30	did 480 / 551 site patterns   0:30	did 490 / 551 site patterns   0:30	did 500 / 551 site patterns   0:30	did 510 / 551 site patterns   0:30	did 520 / 551 site patterns   0:30	did 530 / 551 site patterns   0:30	did 540 / 551 site patterns   0:30	did 550 / 551 site patterns   0:30	did 551 / 551 site patterns   0:30end of tree file.
+
+Time used:  0:30
+CODONML in paml version 4.9j, October 2019
+2 ambiguous codons are seen in the data:
+ --- NNN
+
+       80 bytes for distance
+   537776 bytes for conP
+    17632 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, 2, (3, (4, 5)));   MP score: -1
+   806664 bytes for conP, adjusted
+
+ntime & nrate & np:     7     5    14
+branch=0  freq=0.762707 w0 = 0.256680
+branch=0  freq=0.237293 w1 = 1.000000
+			Qfactor for branch 0 = 0.885775
+branch=1  freq=0.617082 w0 = 0.256680
+branch=1  freq=0.191987 w1 = 1.000000
+branch=1  freq=0.190931 w2 = 1.000000
+			Qfactor for branch 1 = 0.770634
+w[0] = 0.256680
+w[1] = 1.000000
+w[2] = 1.000000
+Out..
+lnL  = -6306.526751
+759 lfun, 3795 eigenQcodon, 21252 P(t)
+end of tree file.
+
+Time used:  0:13
+Finished XP_020868537.1.treefile in Arabidopsis_lyrata_QC
+environment: line 3: cd: codemloutput/Arabidopsis_lyrata_QC: No such file or directory
+Processing XP_020883914.1.treefile in Arabidopsis_lyrata_QC
+CODONML in paml version 4.9j, October 2019
+2 ambiguous codons are seen in the data:
+ --- NNN
+
+       80 bytes for distance
+   537776 bytes for conP
+12824056764153048576 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, 2, (3, (4, 5)));   MP score: -1
+   806664 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    13
+Out..
+lnL  = -6331.389561
+939 lfun, 1878 eigenQcodon, 6573 P(t)
+end of tree file.
+
+Time used:  0:04
+CODONML in paml version 4.9j, October 2019
+2 ambiguous codons are seen in the data:
+ --- NNN
+
+       80 bytes for distance
+   537776 bytes for conP
+    17632 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, 2, (3, (4, 5)));   MP score: -1
+   806664 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    15
+branch=0  freq=0.805342 w0 = 0.255860
+branch=0  freq=0.194658 w1 = 1.000000
+			Qfactor for branch 0 = 0.927515
+branch=1  freq=0.675676 w0 = 0.255860
+branch=1  freq=0.163317 w1 = 1.000000
+branch=1  freq=0.161008 w2 = 1.725861
+			Qfactor for branch 1 = 0.708969
+w[0] = 0.255860
+w[1] = 1.000000
+w[2] = 1.725861
+Out..
+lnL  = -6315.047445
+1882 lfun, 9410 eigenQcodon, 52696 P(t)
+
+BEBing (dim = 4).  This may take many minutes.
+Calculating f(x_h|w) for 121 w's
+	   10 / 121 sets.  w for branches:  0.9500 0.9500 lnfX = -6649.8951	   20 / 121 sets.  w for branches:  0.0500 9.5000 lnfX = -7260.5210	   30 / 121 sets.  w for branches:  0.1500 9.5000 lnfX = -6903.7748	   40 / 121 sets.  w for branches:  0.2500 9.5000 lnfX = -6825.0541	   50 / 121 sets.  w for branches:  0.3500 9.5000 lnfX = -6820.8764	   60 / 121 sets.  w for branches:  0.4500 9.5000 lnfX = -6847.0137	   70 / 121 sets.  w for branches:  0.5500 9.5000 lnfX = -6886.4457	   80 / 121 sets.  w for branches:  0.6500 9.5000 lnfX = -6931.0758	   90 / 121 sets.  w for branches:  0.7500 9.5000 lnfX = -6976.7113	  100 / 121 sets.  w for branches:  0.8500 9.5000 lnfX = -7021.1623	  110 / 121 sets.  w for branches:  0.9500 9.5000 lnfX = -7063.3472	  120 / 121 sets.  w for branches:  1.0000 9.5000 lnfX = -7083.4311	  121 / 121 sets.  w for branches:  1.0000 10.5000 lnfX = -7103.3786
+Time:  0:32
+Calculating the marginal likelihood f(X).
+	1000 / 10000 grid points,  0:32	2000 / 10000 grid points,  0:32	3000 / 10000 grid points,  0:32	4000 / 10000 grid points,  0:32	5000 / 10000 grid points,  0:32	6000 / 10000 grid points,  0:32	7000 / 10000 grid points,  0:32	8000 / 10000 grid points,  0:32	9000 / 10000 grid points,  0:32	10000 / 10000 grid points,  0:32	log(fX) = -6324.646614  S = -5951.983014  -371.608760
+Calculating f(w_k|X), posterior for site classes for each site.  Slow!
+	did  10 / 551 site patterns   0:32	did  20 / 551 site patterns   0:32	did  30 / 551 site patterns   0:32	did  40 / 551 site patterns   0:32	did  50 / 551 site patterns   0:32	did  60 / 551 site patterns   0:32	did  70 / 551 site patterns   0:32	did  80 / 551 site patterns   0:32	did  90 / 551 site patterns   0:32	did 100 / 551 site patterns   0:32	did 110 / 551 site patterns   0:32	did 120 / 551 site patterns   0:32	did 130 / 551 site patterns   0:32	did 140 / 551 site patterns   0:32	did 150 / 551 site patterns   0:32	did 160 / 551 site patterns   0:32	did 170 / 551 site patterns   0:32	did 180 / 551 site patterns   0:32	did 190 / 551 site patterns   0:32	did 200 / 551 site patterns   0:32	did 210 / 551 site patterns   0:32	did 220 / 551 site patterns   0:32	did 230 / 551 site patterns   0:32	did 240 / 551 site patterns   0:32	did 250 / 551 site patterns   0:32	did 260 / 551 site patterns   0:32	did 270 / 551 site patterns   0:32	did 280 / 551 site patterns   0:32	did 290 / 551 site patterns   0:32	did 300 / 551 site patterns   0:32	did 310 / 551 site patterns   0:32	did 320 / 551 site patterns   0:32	did 330 / 551 site patterns   0:32	did 340 / 551 site patterns   0:32	did 350 / 551 site patterns   0:32	did 360 / 551 site patterns   0:32	did 370 / 551 site patterns   0:32	did 380 / 551 site patterns   0:32	did 390 / 551 site patterns   0:32	did 400 / 551 site patterns   0:32	did 410 / 551 site patterns   0:32	did 420 / 551 site patterns   0:32	did 430 / 551 site patterns   0:32	did 440 / 551 site patterns   0:32	did 450 / 551 site patterns   0:32	did 460 / 551 site patterns   0:32	did 470 / 551 site patterns   0:32	did 480 / 551 site patterns   0:32	did 490 / 551 site patterns   0:32	did 500 / 551 site patterns   0:32	did 510 / 551 site patterns   0:32	did 520 / 551 site patterns   0:32	did 530 / 551 site patterns   0:32	did 540 / 551 site patterns   0:32	did 550 / 551 site patterns   0:32	did 551 / 551 site patterns   0:32end of tree file.
+
+Time used:  0:32
+CODONML in paml version 4.9j, October 2019
+2 ambiguous codons are seen in the data:
+ --- NNN
+
+       80 bytes for distance
+   537776 bytes for conP
+    17632 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, 2, (3, (4, 5)));   MP score: -1
+   806664 bytes for conP, adjusted
+
+ntime & nrate & np:     7     5    14
+branch=0  freq=0.766619 w0 = 0.223551
+branch=0  freq=0.233381 w1 = 1.000000
+			Qfactor for branch 0 = 0.921848
+branch=1  freq=0.628664 w0 = 0.223551
+branch=1  freq=0.191384 w1 = 1.000000
+branch=1  freq=0.179952 w2 = 1.000000
+			Qfactor for branch 1 = 0.798927
+w[0] = 0.223551
+w[1] = 1.000000
+w[2] = 1.000000
+Out..
+lnL  = -6315.886482
+741 lfun, 3705 eigenQcodon, 20748 P(t)
+end of tree file.
+
+Time used:  0:12
+Finished XP_020883914.1.treefile in Arabidopsis_lyrata_QC
+Completed processing for Arabidopsis_lyrata_QC
+xargs: warning: options --max-args and --replace/-I/-i are mutually exclusive, ignoring previous --max-args value
+environment: line 3: cd: codemloutput/Arabidopsis_thaliana_QC: No such file or directory
+Processing AT1G25440.1.treefile in Arabidopsis_thaliana_QC
+CODONML in paml version 4.9j, October 2019
+1 ambiguous codons are seen in the data:
+ ---
+
+       80 bytes for distance
+   504592 bytes for conP
+14844308111632862208 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+   756888 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    13
+Out..
+lnL  = -5242.412628
+1042 lfun, 2084 eigenQcodon, 7294 P(t)
+end of tree file.
+
+Time used:  0:04
+CODONML in paml version 4.9j, October 2019
+1 ambiguous codons are seen in the data:
+ ---
+
+       80 bytes for distance
+   504592 bytes for conP
+    16544 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+   756888 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    15
+branch=0  freq=0.766885 w0 = 0.258919
+branch=0  freq=0.233115 w1 = 1.000000
+			Qfactor for branch 0 = 0.908424
+branch=1  freq=0.622036 w0 = 0.258919
+branch=1  freq=0.189085 w1 = 1.000000
+branch=1  freq=0.188880 w2 = 2.289790
+			Qfactor for branch 1 = 0.607547
+w[0] = 0.258919
+w[1] = 1.000000
+w[2] = 2.289790
+Out..
+lnL  = -5224.987669
+1827 lfun, 9135 eigenQcodon, 51156 P(t)
+
+BEBing (dim = 4).  This may take many minutes.
+Calculating f(x_h|w) for 121 w's
+	   10 / 121 sets.  w for branches:  0.9500 0.9500 lnfX = -5793.0968	   20 / 121 sets.  w for branches:  0.0500 9.5000 lnfX = -5879.3098	   30 / 121 sets.  w for branches:  0.1500 9.5000 lnfX = -5859.8699	   40 / 121 sets.  w for branches:  0.2500 9.5000 lnfX = -5952.6546	   50 / 121 sets.  w for branches:  0.3500 9.5000 lnfX = -6029.2732	   60 / 121 sets.  w for branches:  0.4500 9.5000 lnfX = -6082.6760	   70 / 121 sets.  w for branches:  0.5500 9.5000 lnfX = -6118.6485	   80 / 121 sets.  w for branches:  0.6500 9.5000 lnfX = -6142.8847	   90 / 121 sets.  w for branches:  0.7500 9.5000 lnfX = -6159.4092	  100 / 121 sets.  w for branches:  0.8500 9.5000 lnfX = -6170.8757	  110 / 121 sets.  w for branches:  0.9500 9.5000 lnfX = -6179.0064	  120 / 121 sets.  w for branches:  1.0000 9.5000 lnfX = -6182.1869	  121 / 121 sets.  w for branches:  1.0000 10.5000 lnfX = -6189.6019
+Time:  0:27
+Calculating the marginal likelihood f(X).
+	1000 / 10000 grid points,  0:27	2000 / 10000 grid points,  0:27	3000 / 10000 grid points,  0:27	4000 / 10000 grid points,  0:27	5000 / 10000 grid points,  0:27	6000 / 10000 grid points,  0:27	7000 / 10000 grid points,  0:27	8000 / 10000 grid points,  0:27	9000 / 10000 grid points,  0:27	10000 / 10000 grid points,  0:27	log(fX) = -5239.736754  S = -4896.615544  -341.938366
+Calculating f(w_k|X), posterior for site classes for each site.  Slow!
+	did  10 / 517 site patterns   0:27	did  20 / 517 site patterns   0:27	did  30 / 517 site patterns   0:27	did  40 / 517 site patterns   0:27	did  50 / 517 site patterns   0:27	did  60 / 517 site patterns   0:27	did  70 / 517 site patterns   0:27	did  80 / 517 site patterns   0:27	did  90 / 517 site patterns   0:27	did 100 / 517 site patterns   0:27	did 110 / 517 site patterns   0:27	did 120 / 517 site patterns   0:27	did 130 / 517 site patterns   0:27	did 140 / 517 site patterns   0:27	did 150 / 517 site patterns   0:27	did 160 / 517 site patterns   0:27	did 170 / 517 site patterns   0:27	did 180 / 517 site patterns   0:27	did 190 / 517 site patterns   0:27	did 200 / 517 site patterns   0:27	did 210 / 517 site patterns   0:27	did 220 / 517 site patterns   0:27	did 230 / 517 site patterns   0:27	did 240 / 517 site patterns   0:27	did 250 / 517 site patterns   0:27	did 260 / 517 site patterns   0:27	did 270 / 517 site patterns   0:27	did 280 / 517 site patterns   0:27	did 290 / 517 site patterns   0:27	did 300 / 517 site patterns   0:27	did 310 / 517 site patterns   0:27	did 320 / 517 site patterns   0:27	did 330 / 517 site patterns   0:27	did 340 / 517 site patterns   0:27	did 350 / 517 site patterns   0:27	did 360 / 517 site patterns   0:27	did 370 / 517 site patterns   0:27	did 380 / 517 site patterns   0:27	did 390 / 517 site patterns   0:27	did 400 / 517 site patterns   0:27	did 410 / 517 site patterns   0:27	did 420 / 517 site patterns   0:27	did 430 / 517 site patterns   0:27	did 440 / 517 site patterns   0:27	did 450 / 517 site patterns   0:27	did 460 / 517 site patterns   0:27	did 470 / 517 site patterns   0:27	did 480 / 517 site patterns   0:27	did 490 / 517 site patterns   0:27	did 500 / 517 site patterns   0:27	did 510 / 517 site patterns   0:27	did 517 / 517 site patterns   0:27end of tree file.
+
+Time used:  0:28
+CODONML in paml version 4.9j, October 2019
+1 ambiguous codons are seen in the data:
+ ---
+
+       80 bytes for distance
+   504592 bytes for conP
+    16544 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+   756888 bytes for conP, adjusted
+
+ntime & nrate & np:     7     5    14
+branch=0  freq=0.736165 w0 = 0.226928
+branch=0  freq=0.263835 w1 = 1.000000
+			Qfactor for branch 0 = 0.909880
+branch=1  freq=0.601115 w0 = 0.226928
+branch=1  freq=0.215434 w1 = 1.000000
+branch=1  freq=0.183452 w2 = 1.000000
+			Qfactor for branch 1 = 0.792929
+w[0] = 0.226928
+w[1] = 1.000000
+w[2] = 1.000000
+Out..
+lnL  = -5227.872517
+1937 lfun, 9685 eigenQcodon, 54236 P(t)
+end of tree file.
+
+Time used:  0:28
+Finished AT1G25440.1.treefile in Arabidopsis_thaliana_QC
+environment: line 3: cd: codemloutput/Arabidopsis_thaliana_QC: No such file or directory
+Processing AT1G28050.1.treefile in Arabidopsis_thaliana_QC
+CODONML in paml version 4.9j, October 2019
+1 ambiguous codons are seen in the data:
+ ---
+
+       80 bytes for distance
+   504592 bytes for conP
+2902591244132909056 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+   756888 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    13
+Out..
+lnL  = -5241.696773
+2428 lfun, 4856 eigenQcodon, 16996 P(t)
+end of tree file.
+
+Time used:  0:10
+CODONML in paml version 4.9j, October 2019
+1 ambiguous codons are seen in the data:
+ ---
+
+       80 bytes for distance
+   504592 bytes for conP
+    16544 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+   756888 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    15
+branch=0  freq=0.740929 w0 = 0.228868
+branch=0  freq=0.259071 w1 = 1.000000
+			Qfactor for branch 0 = 0.914040
+branch=1  freq=0.605882 w0 = 0.228868
+branch=1  freq=0.211851 w1 = 1.000000
+branch=1  freq=0.182266 w2 = 2.383160
+			Qfactor for branch 1 = 0.607293
+w[0] = 0.228868
+w[1] = 1.000000
+w[2] = 2.383160
+Out..
+lnL  = -5214.055103
+1617 lfun, 8085 eigenQcodon, 45276 P(t)
+
+BEBing (dim = 4).  This may take many minutes.
+Calculating f(x_h|w) for 121 w's
+	   10 / 121 sets.  w for branches:  0.9500 0.9500 lnfX = -5747.6738	   20 / 121 sets.  w for branches:  0.0500 9.5000 lnfX = -5507.3566	   30 / 121 sets.  w for branches:  0.1500 9.5000 lnfX = -5376.0709	   40 / 121 sets.  w for branches:  0.2500 9.5000 lnfX = -5398.7983	   50 / 121 sets.  w for branches:  0.3500 9.5000 lnfX = -5455.4096	   60 / 121 sets.  w for branches:  0.4500 9.5000 lnfX = -5520.6641	   70 / 121 sets.  w for branches:  0.5500 9.5000 lnfX = -5585.7078	   80 / 121 sets.  w for branches:  0.6500 9.5000 lnfX = -5647.0358	   90 / 121 sets.  w for branches:  0.7500 9.5000 lnfX = -5703.3585	  100 / 121 sets.  w for branches:  0.8500 9.5000 lnfX = -5754.3924	  110 / 121 sets.  w for branches:  0.9500 9.5000 lnfX = -5800.3152	  120 / 121 sets.  w for branches:  1.0000 9.5000 lnfX = -5821.4731	  121 / 121 sets.  w for branches:  1.0000 10.5000 lnfX = -5821.5414
+Time:  0:25
+Calculating the marginal likelihood f(X).
+	1000 / 10000 grid points,  0:25	2000 / 10000 grid points,  0:25	3000 / 10000 grid points,  0:25	4000 / 10000 grid points,  0:25	5000 / 10000 grid points,  0:25	6000 / 10000 grid points,  0:25	7000 / 10000 grid points,  0:25	8000 / 10000 grid points,  0:25	9000 / 10000 grid points,  0:25	10000 / 10000 grid points,  0:25	log(fX) = -5229.459266  S = -4849.985270  -372.861040
+Calculating f(w_k|X), posterior for site classes for each site.  Slow!
+	did  10 / 517 site patterns   0:25	did  20 / 517 site patterns   0:25	did  30 / 517 site patterns   0:25	did  40 / 517 site patterns   0:25	did  50 / 517 site patterns   0:25	did  60 / 517 site patterns   0:25	did  70 / 517 site patterns   0:25	did  80 / 517 site patterns   0:25	did  90 / 517 site patterns   0:25	did 100 / 517 site patterns   0:25	did 110 / 517 site patterns   0:25	did 120 / 517 site patterns   0:25	did 130 / 517 site patterns   0:25	did 140 / 517 site patterns   0:25	did 150 / 517 site patterns   0:25	did 160 / 517 site patterns   0:25	did 170 / 517 site patterns   0:25	did 180 / 517 site patterns   0:25	did 190 / 517 site patterns   0:25	did 200 / 517 site patterns   0:25	did 210 / 517 site patterns   0:25	did 220 / 517 site patterns   0:25	did 230 / 517 site patterns   0:25	did 240 / 517 site patterns   0:25	did 250 / 517 site patterns   0:25	did 260 / 517 site patterns   0:25	did 270 / 517 site patterns   0:25	did 280 / 517 site patterns   0:25	did 290 / 517 site patterns   0:25	did 300 / 517 site patterns   0:25	did 310 / 517 site patterns   0:25	did 320 / 517 site patterns   0:25	did 330 / 517 site patterns   0:25	did 340 / 517 site patterns   0:25	did 350 / 517 site patterns   0:25	did 360 / 517 site patterns   0:25	did 370 / 517 site patterns   0:25	did 380 / 517 site patterns   0:25	did 390 / 517 site patterns   0:25	did 400 / 517 site patterns   0:25	did 410 / 517 site patterns   0:25	did 420 / 517 site patterns   0:25	did 430 / 517 site patterns   0:25	did 440 / 517 site patterns   0:25	did 450 / 517 site patterns   0:25	did 460 / 517 site patterns   0:25	did 470 / 517 site patterns   0:25	did 480 / 517 site patterns   0:25	did 490 / 517 site patterns   0:25	did 500 / 517 site patterns   0:25	did 510 / 517 site patterns   0:25	did 517 / 517 site patterns   0:25end of tree file.
+
+Time used:  0:25
+CODONML in paml version 4.9j, October 2019
+1 ambiguous codons are seen in the data:
+ ---
+
+       80 bytes for distance
+   504592 bytes for conP
+    16544 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+   756888 bytes for conP, adjusted
+
+ntime & nrate & np:     7     5    14
+branch=0  freq=0.758785 w0 = 0.209835
+branch=0  freq=0.241215 w1 = 1.000000
+			Qfactor for branch 0 = 0.950425
+branch=1  freq=0.624854 w0 = 0.209835
+branch=1  freq=0.198639 w1 = 1.000000
+branch=1  freq=0.176507 w2 = 1.000000
+			Qfactor for branch 1 = 0.821988
+w[0] = 0.209835
+w[1] = 1.000000
+w[2] = 1.000000
+Out..
+lnL  = -5215.154655
+1031 lfun, 5155 eigenQcodon, 28868 P(t)
+end of tree file.
+
+Time used:  0:15
+Finished AT1G28050.1.treefile in Arabidopsis_thaliana_QC
+environment: line 3: cd: codemloutput/Arabidopsis_thaliana_QC: No such file or directory
+Processing AT1G49130.1.treefile in Arabidopsis_thaliana_QC
+CODONML in paml version 4.9j, October 2019
+1 ambiguous codons are seen in the data:
+ ---
+
+       80 bytes for distance
+   504592 bytes for conP
+585538356183831040 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+   756888 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    13
+Out..
+lnL  = -5243.547388
+941 lfun, 1882 eigenQcodon, 6587 P(t)
+end of tree file.
+
+Time used:  0:04
+CODONML in paml version 4.9j, October 2019
+1 ambiguous codons are seen in the data:
+ ---
+
+       80 bytes for distance
+   504592 bytes for conP
+    16544 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+   756888 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    15
+branch=0  freq=0.746406 w0 = 0.264484
+branch=0  freq=0.253594 w1 = 1.000000
+			Qfactor for branch 0 = 0.885619
+branch=1  freq=0.601391 w0 = 0.264484
+branch=1  freq=0.204325 w1 = 1.000000
+branch=1  freq=0.194284 w2 = 1.974043
+			Qfactor for branch 1 = 0.629557
+w[0] = 0.264484
+w[1] = 1.000000
+w[2] = 1.974043
+Out..
+lnL  = -5226.913262
+1381 lfun, 6905 eigenQcodon, 38668 P(t)
+
+BEBing (dim = 4).  This may take many minutes.
+Calculating f(x_h|w) for 121 w's
+	   10 / 121 sets.  w for branches:  0.9500 0.9500 lnfX = -5787.8394	   20 / 121 sets.  w for branches:  0.0500 9.5000 lnfX = -5435.2883	   30 / 121 sets.  w for branches:  0.1500 9.5000 lnfX = -5253.1362	   40 / 121 sets.  w for branches:  0.2500 9.5000 lnfX = -5305.1502	   50 / 121 sets.  w for branches:  0.3500 9.5000 lnfX = -5391.4303	   60 / 121 sets.  w for branches:  0.4500 9.5000 lnfX = -5477.6177	   70 / 121 sets.  w for branches:  0.5500 9.5000 lnfX = -5555.9149	   80 / 121 sets.  w for branches:  0.6500 9.5000 lnfX = -5625.2539	   90 / 121 sets.  w for branches:  0.7500 9.5000 lnfX = -5686.3359	  100 / 121 sets.  w for branches:  0.8500 9.5000 lnfX = -5740.2063	  110 / 121 sets.  w for branches:  0.9500 9.5000 lnfX = -5787.8581	  120 / 121 sets.  w for branches:  1.0000 9.5000 lnfX = -5809.6248	  121 / 121 sets.  w for branches:  1.0000 10.5000 lnfX = -5809.6270
+Time:  0:22
+Calculating the marginal likelihood f(X).
+	1000 / 10000 grid points,  0:22	2000 / 10000 grid points,  0:22	3000 / 10000 grid points,  0:22	4000 / 10000 grid points,  0:22	5000 / 10000 grid points,  0:22	6000 / 10000 grid points,  0:22	7000 / 10000 grid points,  0:22	8000 / 10000 grid points,  0:22	9000 / 10000 grid points,  0:22	10000 / 10000 grid points,  0:22	log(fX) = -5245.252361  S = -4955.195639  -293.737095
+Calculating f(w_k|X), posterior for site classes for each site.  Slow!
+	did  10 / 517 site patterns   0:22	did  20 / 517 site patterns   0:22	did  30 / 517 site patterns   0:22	did  40 / 517 site patterns   0:22	did  50 / 517 site patterns   0:22	did  60 / 517 site patterns   0:22	did  70 / 517 site patterns   0:22	did  80 / 517 site patterns   0:22	did  90 / 517 site patterns   0:22	did 100 / 517 site patterns   0:22	did 110 / 517 site patterns   0:22	did 120 / 517 site patterns   0:22	did 130 / 517 site patterns   0:22	did 140 / 517 site patterns   0:22	did 150 / 517 site patterns   0:22	did 160 / 517 site patterns   0:22	did 170 / 517 site patterns   0:22	did 180 / 517 site patterns   0:22	did 190 / 517 site patterns   0:22	did 200 / 517 site patterns   0:22	did 210 / 517 site patterns   0:22	did 220 / 517 site patterns   0:22	did 230 / 517 site patterns   0:22	did 240 / 517 site patterns   0:22	did 250 / 517 site patterns   0:22	did 260 / 517 site patterns   0:22	did 270 / 517 site patterns   0:22	did 280 / 517 site patterns   0:22	did 290 / 517 site patterns   0:22	did 300 / 517 site patterns   0:22	did 310 / 517 site patterns   0:22	did 320 / 517 site patterns   0:22	did 330 / 517 site patterns   0:22	did 340 / 517 site patterns   0:22	did 350 / 517 site patterns   0:22	did 360 / 517 site patterns   0:22	did 370 / 517 site patterns   0:22	did 380 / 517 site patterns   0:22	did 390 / 517 site patterns   0:22	did 400 / 517 site patterns   0:22	did 410 / 517 site patterns   0:22	did 420 / 517 site patterns   0:22	did 430 / 517 site patterns   0:22	did 440 / 517 site patterns   0:22	did 450 / 517 site patterns   0:22	did 460 / 517 site patterns   0:22	did 470 / 517 site patterns   0:22	did 480 / 517 site patterns   0:22	did 490 / 517 site patterns   0:22	did 500 / 517 site patterns   0:22	did 510 / 517 site patterns   0:22	did 517 / 517 site patterns   0:22end of tree file.
+
+Time used:  0:22
+CODONML in paml version 4.9j, October 2019
+1 ambiguous codons are seen in the data:
+ ---
+
+       80 bytes for distance
+   504592 bytes for conP
+    16544 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+   756888 bytes for conP, adjusted
+
+ntime & nrate & np:     7     5    14
+branch=0  freq=0.766318 w0 = 0.272649
+branch=0  freq=0.233682 w1 = 1.000000
+			Qfactor for branch 0 = 0.894538
+branch=1  freq=0.631700 w0 = 0.272649
+branch=1  freq=0.192631 w1 = 1.000000
+branch=1  freq=0.175669 w2 = 1.000000
+			Qfactor for branch 1 = 0.787369
+w[0] = 0.272649
+w[1] = 1.000000
+w[2] = 1.000000
+Out..
+lnL  = -5226.913262
+1047 lfun, 5235 eigenQcodon, 29316 P(t)
+end of tree file.
+
+Time used:  0:15
+Finished AT1G49130.1.treefile in Arabidopsis_thaliana_QC
+environment: line 3: cd: codemloutput/Arabidopsis_thaliana_QC: No such file or directory
+Processing AT1G49130.2.treefile in Arabidopsis_thaliana_QC
+CODONML in paml version 4.9j, October 2019
+1 ambiguous codons are seen in the data:
+ ---
+
+       80 bytes for distance
+   504592 bytes for conP
+8073392586262344704 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+   756888 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    13
+Out..
+lnL  = -5243.547329
+759 lfun, 1518 eigenQcodon, 5313 P(t)
+end of tree file.
+
+Time used:  0:03
+CODONML in paml version 4.9j, October 2019
+1 ambiguous codons are seen in the data:
+ ---
+
+       80 bytes for distance
+   504592 bytes for conP
+    16544 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+   756888 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    15
+branch=0  freq=0.703253 w0 = 0.244264
+branch=0  freq=0.296747 w1 = 1.000000
+			Qfactor for branch 0 = 0.864104
+branch=1  freq=0.563378 w0 = 0.244264
+branch=1  freq=0.237725 w1 = 1.000000
+branch=1  freq=0.198896 w2 = 2.407038
+			Qfactor for branch 1 = 0.569500
+w[0] = 0.244264
+w[1] = 1.000000
+w[2] = 2.407038
+Out..
+lnL  = -5226.913263
+1441 lfun, 7205 eigenQcodon, 40348 P(t)
+
+BEBing (dim = 4).  This may take many minutes.
+Calculating f(x_h|w) for 121 w's
+	   10 / 121 sets.  w for branches:  0.9500 0.9500 lnfX = -5787.8396	   20 / 121 sets.  w for branches:  0.0500 9.5000 lnfX = -5435.2880	   30 / 121 sets.  w for branches:  0.1500 9.5000 lnfX = -5253.1362	   40 / 121 sets.  w for branches:  0.2500 9.5000 lnfX = -5305.1504	   50 / 121 sets.  w for branches:  0.3500 9.5000 lnfX = -5391.4306	   60 / 121 sets.  w for branches:  0.4500 9.5000 lnfX = -5477.6180	   70 / 121 sets.  w for branches:  0.5500 9.5000 lnfX = -5555.9152	   80 / 121 sets.  w for branches:  0.6500 9.5000 lnfX = -5625.2542	   90 / 121 sets.  w for branches:  0.7500 9.5000 lnfX = -5686.3362	  100 / 121 sets.  w for branches:  0.8500 9.5000 lnfX = -5740.2065	  110 / 121 sets.  w for branches:  0.9500 9.5000 lnfX = -5787.8584	  120 / 121 sets.  w for branches:  1.0000 9.5000 lnfX = -5809.6250	  121 / 121 sets.  w for branches:  1.0000 10.5000 lnfX = -5809.6272
+Time:  0:22
+Calculating the marginal likelihood f(X).
+	1000 / 10000 grid points,  0:22	2000 / 10000 grid points,  0:22	3000 / 10000 grid points,  0:22	4000 / 10000 grid points,  0:22	5000 / 10000 grid points,  0:22	6000 / 10000 grid points,  0:22	7000 / 10000 grid points,  0:22	8000 / 10000 grid points,  0:22	9000 / 10000 grid points,  0:22	10000 / 10000 grid points,  0:22	log(fX) = -5245.252436  S = -4955.195653  -293.737033
+Calculating f(w_k|X), posterior for site classes for each site.  Slow!
+	did  10 / 517 site patterns   0:22	did  20 / 517 site patterns   0:22	did  30 / 517 site patterns   0:22	did  40 / 517 site patterns   0:22	did  50 / 517 site patterns   0:22	did  60 / 517 site patterns   0:22	did  70 / 517 site patterns   0:22	did  80 / 517 site patterns   0:22	did  90 / 517 site patterns   0:22	did 100 / 517 site patterns   0:22	did 110 / 517 site patterns   0:22	did 120 / 517 site patterns   0:22	did 130 / 517 site patterns   0:22	did 140 / 517 site patterns   0:22	did 150 / 517 site patterns   0:23	did 160 / 517 site patterns   0:23	did 170 / 517 site patterns   0:23	did 180 / 517 site patterns   0:23	did 190 / 517 site patterns   0:23	did 200 / 517 site patterns   0:23	did 210 / 517 site patterns   0:23	did 220 / 517 site patterns   0:23	did 230 / 517 site patterns   0:23	did 240 / 517 site patterns   0:23	did 250 / 517 site patterns   0:23	did 260 / 517 site patterns   0:23	did 270 / 517 site patterns   0:23	did 280 / 517 site patterns   0:23	did 290 / 517 site patterns   0:23	did 300 / 517 site patterns   0:23	did 310 / 517 site patterns   0:23	did 320 / 517 site patterns   0:23	did 330 / 517 site patterns   0:23	did 340 / 517 site patterns   0:23	did 350 / 517 site patterns   0:23	did 360 / 517 site patterns   0:23	did 370 / 517 site patterns   0:23	did 380 / 517 site patterns   0:23	did 390 / 517 site patterns   0:23	did 400 / 517 site patterns   0:23	did 410 / 517 site patterns   0:23	did 420 / 517 site patterns   0:23	did 430 / 517 site patterns   0:23	did 440 / 517 site patterns   0:23	did 450 / 517 site patterns   0:23	did 460 / 517 site patterns   0:23	did 470 / 517 site patterns   0:23	did 480 / 517 site patterns   0:23	did 490 / 517 site patterns   0:23	did 500 / 517 site patterns   0:23	did 510 / 517 site patterns   0:23	did 517 / 517 site patterns   0:23end of tree file.
+
+Time used:  0:23
+CODONML in paml version 4.9j, October 2019
+1 ambiguous codons are seen in the data:
+ ---
+
+       80 bytes for distance
+   504592 bytes for conP
+    16544 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+   756888 bytes for conP, adjusted
+
+ntime & nrate & np:     7     5    14
+branch=0  freq=0.737262 w0 = 0.246430
+branch=0  freq=0.262738 w1 = 1.000000
+			Qfactor for branch 0 = 0.892630
+branch=1  freq=0.601214 w0 = 0.246430
+branch=1  freq=0.214255 w1 = 1.000000
+branch=1  freq=0.184531 w2 = 1.000000
+			Qfactor for branch 1 = 0.781564
+w[0] = 0.246430
+w[1] = 1.000000
+w[2] = 1.000000
+Out..
+lnL  = -5226.913262
+1453 lfun, 7265 eigenQcodon, 40684 P(t)
+end of tree file.
+
+Time used:  0:21
+Finished AT1G49130.2.treefile in Arabidopsis_thaliana_QC
+environment: line 3: cd: codemloutput/Arabidopsis_thaliana_QC: No such file or directory
+Processing AT1G68520.1.treefile in Arabidopsis_thaliana_QC
+CODONML in paml version 4.9j, October 2019
+1 ambiguous codons are seen in the data:
+ ---
+
+       80 bytes for distance
+   504592 bytes for conP
+12263071461279023872 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+   756888 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    13
+Out..
+lnL  = -5242.761247
+1244 lfun, 2488 eigenQcodon, 8708 P(t)
+end of tree file.
+
+Time used:  0:05
+CODONML in paml version 4.9j, October 2019
+1 ambiguous codons are seen in the data:
+ ---
+
+       80 bytes for distance
+   504592 bytes for conP
+    16544 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+   756888 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    15
+branch=0  freq=0.728882 w0 = 0.272252
+branch=0  freq=0.271118 w1 = 1.000000
+			Qfactor for branch 0 = 0.862391
+branch=1  freq=0.577712 w0 = 0.272252
+branch=1  freq=0.214888 w1 = 1.000000
+branch=1  freq=0.207400 w2 = 2.477855
+			Qfactor for branch 1 = 0.553507
+w[0] = 0.272252
+w[1] = 1.000000
+w[2] = 2.477855
+Out..
+lnL  = -5226.913262
+1053 lfun, 5265 eigenQcodon, 29484 P(t)
+
+BEBing (dim = 4).  This may take many minutes.
+Calculating f(x_h|w) for 121 w's
+	   10 / 121 sets.  w for branches:  0.9500 0.9500 lnfX = -5787.8395	   20 / 121 sets.  w for branches:  0.0500 9.5000 lnfX = -5951.9634	   30 / 121 sets.  w for branches:  0.1500 9.5000 lnfX = -5850.0167	   40 / 121 sets.  w for branches:  0.2500 9.5000 lnfX = -5908.9854	   50 / 121 sets.  w for branches:  0.3500 9.5000 lnfX = -5978.2712	   60 / 121 sets.  w for branches:  0.4500 9.5000 lnfX = -6035.7417	   70 / 121 sets.  w for branches:  0.5500 9.5000 lnfX = -6079.4046	   80 / 121 sets.  w for branches:  0.6500 9.5000 lnfX = -6111.6260	   90 / 121 sets.  w for branches:  0.7500 9.5000 lnfX = -6135.2481	  100 / 121 sets.  w for branches:  0.8500 9.5000 lnfX = -6152.6321	  110 / 121 sets.  w for branches:  0.9500 9.5000 lnfX = -6165.5421	  120 / 121 sets.  w for branches:  1.0000 9.5000 lnfX = -6170.7315	  121 / 121 sets.  w for branches:  1.0000 10.5000 lnfX = -6177.5247
+Time:  0:16
+Calculating the marginal likelihood f(X).
+	1000 / 10000 grid points,  0:16	2000 / 10000 grid points,  0:16	3000 / 10000 grid points,  0:16	4000 / 10000 grid points,  0:17	5000 / 10000 grid points,  0:17	6000 / 10000 grid points,  0:17	7000 / 10000 grid points,  0:17	8000 / 10000 grid points,  0:17	9000 / 10000 grid points,  0:17	10000 / 10000 grid points,  0:17	log(fX) = -5246.217028  S = -4903.200573  -337.710248
+Calculating f(w_k|X), posterior for site classes for each site.  Slow!
+	did  10 / 517 site patterns   0:17	did  20 / 517 site patterns   0:17	did  30 / 517 site patterns   0:17	did  40 / 517 site patterns   0:17	did  50 / 517 site patterns   0:17	did  60 / 517 site patterns   0:17	did  70 / 517 site patterns   0:17	did  80 / 517 site patterns   0:17	did  90 / 517 site patterns   0:17	did 100 / 517 site patterns   0:17	did 110 / 517 site patterns   0:17	did 120 / 517 site patterns   0:17	did 130 / 517 site patterns   0:17	did 140 / 517 site patterns   0:17	did 150 / 517 site patterns   0:17	did 160 / 517 site patterns   0:17	did 170 / 517 site patterns   0:17	did 180 / 517 site patterns   0:17	did 190 / 517 site patterns   0:17	did 200 / 517 site patterns   0:17	did 210 / 517 site patterns   0:17	did 220 / 517 site patterns   0:17	did 230 / 517 site patterns   0:17	did 240 / 517 site patterns   0:17	did 250 / 517 site patterns   0:17	did 260 / 517 site patterns   0:17	did 270 / 517 site patterns   0:17	did 280 / 517 site patterns   0:17	did 290 / 517 site patterns   0:17	did 300 / 517 site patterns   0:17	did 310 / 517 site patterns   0:17	did 320 / 517 site patterns   0:17	did 330 / 517 site patterns   0:17	did 340 / 517 site patterns   0:17	did 350 / 517 site patterns   0:17	did 360 / 517 site patterns   0:17	did 370 / 517 site patterns   0:17	did 380 / 517 site patterns   0:17	did 390 / 517 site patterns   0:17	did 400 / 517 site patterns   0:17	did 410 / 517 site patterns   0:17	did 420 / 517 site patterns   0:17	did 430 / 517 site patterns   0:17	did 440 / 517 site patterns   0:17	did 450 / 517 site patterns   0:17	did 460 / 517 site patterns   0:17	did 470 / 517 site patterns   0:17	did 480 / 517 site patterns   0:17	did 490 / 517 site patterns   0:17	did 500 / 517 site patterns   0:17	did 510 / 517 site patterns   0:17	did 517 / 517 site patterns   0:17end of tree file.
+
+Time used:  0:17
+CODONML in paml version 4.9j, October 2019
+1 ambiguous codons are seen in the data:
+ ---
+
+       80 bytes for distance
+   504592 bytes for conP
+    16544 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+   756888 bytes for conP, adjusted
+
+ntime & nrate & np:     7     5    14
+branch=0  freq=0.792935 w0 = 0.287853
+branch=0  freq=0.207065 w1 = 1.000000
+			Qfactor for branch 0 = 0.904640
+branch=1  freq=0.670599 w0 = 0.287853
+branch=1  freq=0.175119 w1 = 1.000000
+branch=1  freq=0.154283 w2 = 1.000000
+			Qfactor for branch 1 = 0.806048
+w[0] = 0.287853
+w[1] = 1.000000
+w[2] = 1.000000
+Out..
+lnL  = -5226.913262
+1255 lfun, 6275 eigenQcodon, 35140 P(t)
+end of tree file.
+
+Time used:  0:19
+Finished AT1G68520.1.treefile in Arabidopsis_thaliana_QC
+Completed processing for Arabidopsis_thaliana_QC
+All species processing completed.
+---------------------------------
+--------------------------------------------------
+Starting script3.sh at Fri Apr 25 08:38:02 UTC 2025
+script3.sh completed successfully at 08:38:10. Total time: 00:00:08
+----- Output from script3.sh -----
+Warning: Tree file for Arabidopsis_halleri_QC not found. Skipping...
+Processing M0 model for Arabidopsis_lyrata_QC
+CODONML in paml version 4.9j, October 2019
+2 ambiguous codons are seen in the data:
+ --- NNN
+
+       80 bytes for distance
+   537776 bytes for conP
+12366427976456829440 bytes for fhK
+  5000000 bytes for space
+
+TREE #  1
+(1, 2, (3, (4, 5)));   MP score: -1
+   806664 bytes for conP, adjusted
+
+ntime & nrate & np:     7     5    12
+Out..
+lnL  = -6332.298519
+595 lfun, 595 eigenQcodon, 4165 P(t)
+end of tree file.
+
+Time used:  0:02
+Completed M0 model for Arabidopsis_lyrata_QC
+Processing M0 model for Arabidopsis_thaliana_QC
+CODONML in paml version 4.9j, October 2019
+1 ambiguous codons are seen in the data:
+ ---
+
+       80 bytes for distance
+   504592 bytes for conP
+7892201939355621632 bytes for fhK
+  5000000 bytes for space
+
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+   756888 bytes for conP, adjusted
+
+ntime & nrate & np:     7     5    12
+Out..
+lnL  = -5243.547350
+852 lfun, 852 eigenQcodon, 5964 P(t)
+end of tree file.
+
+Time used:  0:03
+Completed M0 model for Arabidopsis_thaliana_QC
+All M0 model processing completed.
+---------------------------------
+--------------------------------------------------
+Starting script4.sh at Fri Apr 25 08:38:10 UTC 2025
+script4.sh completed successfully at 08:41:35. Total time: 00:03:25
+----- Output from script4.sh -----
+Processing species: Arabidopsis_halleri_QC
+MSA file: msa/Arabidopsis_halleri_QC_msa.best.fas
+Expected tree file: treefiles/Arabidopsis_halleri_QC.treefile
+Warning: Tree file for Arabidopsis_halleri_QC not found. Skipping.
+Processing species: Arabidopsis_lyrata_QC
+MSA file: msa/Arabidopsis_lyrata_QC_msa.best.fas
+Expected tree file: treefiles/Arabidopsis_lyrata_QC.treefile
+Processing species: Arabidopsis_thaliana_QC
+MSA file: msa/Arabidopsis_thaliana_QC_msa.best.fas
+Expected tree file: treefiles/Arabidopsis_thaliana_QC.treefile
+Running codeml for Arabidopsis_lyrata_QC (Site Models: 0, 1, 2, 3, 7, 8)
+Running codeml for Arabidopsis_thaliana_QC (Site Models: 0, 1, 2, 3, 7, 8)
+CODONML in paml version 4.9j, October 2019
+NSsites batch run (ncatG as in YNGP2000):   0  1  2  3  7  8
+2 ambiguous codons are seen in the data:
+ --- NNN
+
+       80 bytes for distance
+   537776 bytes for conP
+    48488 bytes for fhK
+  5000000 bytes for space
+
+
+Model 0: one-ratio
+
+TREE #  1
+(1, 2, (3, (4, 5)));   MP score: -1
+   806664 bytes for conP, adjusted
+
+ntime & nrate & np:     7     5    12
+Out..
+lnL  = -6332.298519
+549 lfun, 549 eigenQcodon, 3843 P(t)
+end of tree file.
+
+Time used:  0:03
+
+
+Model 1: NearlyNeutral
+
+TREE #  1
+(1, 2, (3, (4, 5)));   MP score: -1
+ntime & nrate & np:     7     5    13
+Qfactor_NS = 0.660598
+Out..
+lnL  = -6315.886482
+744 lfun, 2232 eigenQcodon, 10416 P(t)
+end of tree file.
+
+Time used:  0:09
+
+
+Model 2: PositiveSelection
+
+TREE #  1
+(1, 2, (3, (4, 5)));   MP score: -1
+initial w for M2:NSpselection reset.
+
+ntime & nrate & np:     7     6    15
+Qfactor_NS = 0.587336
+Out..
+lnL  = -6315.886482
+834 lfun, 3336 eigenQcodon, 17514 P(t)
+
+BEBing (dim = 4).  This may take several minutes.
+Calculating f(x_h|w): 10 categories 21 w sets.
+Calculating f(X), the marginal likelihood.
+	log(fX) = -6326.890747  S = -5998.320023  -323.909566
+Calculating f(w|X), posterior probabilities of site classes.
+	did  10 / 551 patterns   0:20	did  20 / 551 patterns   0:20	did  30 / 551 patterns   0:20	did  40 / 551 patterns   0:20	did  50 / 551 patterns   0:20	did  60 / 551 patterns   0:20	did  70 / 551 patterns   0:20	did  80 / 551 patterns   0:20	did  90 / 551 patterns   0:20	did 100 / 551 patterns   0:20	did 110 / 551 patterns   0:20	did 120 / 551 patterns   0:20	did 130 / 551 patterns   0:20	did 140 / 551 patterns   0:20	did 150 / 551 patterns   0:20	did 160 / 551 patterns   0:20	did 170 / 551 patterns   0:20	did 180 / 551 patterns   0:20	did 190 / 551 patterns   0:20	did 200 / 551 patterns   0:20	did 210 / 551 patterns   0:20	did 220 / 551 patterns   0:20	did 230 / 551 patterns   0:20	did 240 / 551 patterns   0:20	did 250 / 551 patterns   0:20	did 260 / 551 patterns   0:20	did 270 / 551 patterns   0:20	did 280 / 551 patterns   0:20	did 290 / 551 patterns   0:20	did 300 / 551 patterns   0:20	did 310 / 551 patterns   0:20	did 320 / 551 patterns   0:20	did 330 / 551 patterns   0:20	did 340 / 551 patterns   0:20	did 350 / 551 patterns   0:20	did 360 / 551 patterns   0:20	did 370 / 551 patterns   0:20	did 380 / 551 patterns   0:20	did 390 / 551 patterns   0:20	did 400 / 551 patterns   0:20	did 410 / 551 patterns   0:20	did 420 / 551 patterns   0:20	did 430 / 551 patterns   0:20	did 440 / 551 patterns   0:20	did 450 / 551 patterns   0:20	did 460 / 551 patterns   0:20	did 470 / 551 patterns   0:20	did 480 / 551 patterns   0:20	did 490 / 551 patterns   0:20	did 500 / 551 patterns   0:21	did 510 / 551 patterns   0:21	did 520 / 551 patterns   0:21	did 530 / 551 patterns   0:21	did 540 / 551 patterns   0:21	did 550 / 551 patterns   0:21	did 551 / 551 patterns   0:21end of tree file.
+
+Time used:  0:21
+
+
+Model 3: discrete
+
+TREE #  1
+(1, 2, (3, (4, 5)));   MP score: -1
+ntime & nrate & np:     7     7    16
+Qfactor_NS = 0.834906
+
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 38  r = 1 fhK = -4.08992e-07 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 41  r = 1 fhK = -1.24796e-07 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 44  r = 1 fhK = -4.34472e-08 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 46  r = 1 fhK = -3.41382e-07 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 47  r = 1 fhK = -4.09043e-07 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 54  r = 1 fhK = -1.21209e-08 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 59  r = 1 fhK = -1.09295e-06 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 60  r = 1 fhK = -8.83702e-07 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 62  r = 1 fhK = -1.17347e-06 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 65  r = 1 fhK = -8.40666e-07 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 77  r = 1 fhK = -1.18098e-07 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 81  r = 1 fhK = -7.58851e-08 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 85  r = 1 fhK = -3.07953e-07 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 88  r = 1 fhK = -5.26714e-07 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 89  r = 1 fhK = -2.75098e-07 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 90  r = 1 fhK = -2.91832e-07 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 154  r = 1 fhK = -7.60254e-09 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 157  r = 1 fhK = -1.22020e-07 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 207  r = 1 fhK = -2.16214e-08 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 209  r = 1 fhK = -2.40892e-08 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 210  r = 1 fhK = -4.11260e-07 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 213  r = 1 fhK = -4.25067e-07 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 214  r = 1 fhK = -9.67394e-07 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 217  r = 1 fhK = -6.00327e-07 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 219  r = 1 fhK = -1.08913e-06 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 220  r = 1 fhK = -4.51801e-08 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 236  r = 1 fhK = -3.62011e-09 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 240  r = 1 fhK = -4.91174e-09 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 248  r = 1 fhK = -4.07873e-08 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 253  r = 1 fhK = -2.59481e-07 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 262  r = 1 fhK = -4.45061e-07 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 279  r = 1 fhK = -4.45061e-07 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 282  r = 1 fhK = -4.52000e-07 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 287  r = 1 fhK = -2.30093e-08 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 289  r = 1 fhK = -5.86561e-08 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 293  r = 1 fhK = -3.06370e-07 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 298  r = 1 fhK = -1.20523e-08 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 304  r = 1 fhK = -4.93300e-08 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 314  r = 1 fhK = -2.33323e-08 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 317  r = 1 fhK = -9.60035e-08 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 319  r = 1 fhK = -1.85646e-08 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 332  r = 1 fhK = -7.29405e-08 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 337  r = 1 fhK = -2.15619e-07 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 339  r = 1 fhK = -1.87667e-10 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 354  r = 1 fhK = -1.92068e-10 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 355  r = 1 fhK = -4.81102e-08 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 360  r = 1 fhK = -8.68952e-09 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 364  r = 1 fhK = -1.33118e-08 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 365  r = 1 fhK = -2.88984e-08 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 366  r = 1 fhK = -5.24260e-07 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 368  r = 1 fhK = -2.31002e-08 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 388  r = 1 fhK = -1.55886e-07 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 390  r = 1 fhK = -5.38097e-08 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 393  r = 1 fhK = -1.84843e-09 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 397  r = 1 fhK = -1.40370e-06 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 398  r = 1 fhK = -9.45035e-07 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 412  r = 1 fhK = -1.90641e-09 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 424  r = 1 fhK = -1.10844e-07 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 428  r = 1 fhK = -2.38546e-09 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 429  r = 1 fhK = -5.19710e-09 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 430  r = 1 fhK = -2.84218e-08 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 433  r = 1 fhK = -1.14329e-07 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 436  r = 1 fhK = -1.90810e-07 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 451  r = 1 fhK = -1.10632e-07 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 455  r = 1 fhK = -1.20134e-09 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 456  r = 1 fhK = -5.90156e-09 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 458  r = 1 fhK = -1.81939e-09 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 459  r = 1 fhK = -3.99198e-08 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 464  r = 1 fhK = -6.04915e-08 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 468  r = 1 fhK = -2.28278e-08 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 469  r = 1 fhK = -2.08131e-09 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 472  r = 1 fhK = -2.55790e-07 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 484  r = 1 fhK = -1.34780e-07 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 488  r = 1 fhK = -3.64064e-10 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 493  r = 1 fhK = -2.17222e-09 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 500  r = 1 fhK = -1.47864e-08 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 508  r = 1 fhK = -6.17502e-08 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 510  r = 1 fhK = -3.76149e-08 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 514  r = 1 fhK = -1.64014e-07 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 530  r = 1 fhK = -5.16999e-09 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 531  r = 1 fhK = -6.19386e-08 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 534  r = 1 fhK = -5.40387e-07 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 543  r = 1 fhK = -1.36687e-09 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 545  r = 1 fhK = -3.25921e-08 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 546  r = 1 fhK = -3.44208e-07 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 549  r = 1 fhK = -5.28384e-08 
+    0.377304    0.686597    1.658683    2.334513    1.354049    0.735695    0.508559    1.669015    1.062499    0.988814    1.603291    0.972250    2.660541   -0.000094    0.342287    1.808906
+
+fx_r: h = 550  r = 1 fhK = -6.97379e-08 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 38  r = 1 fhK = -3.94081e-07 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 41  r = 1 fhK = -1.19201e-07 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 44  r = 1 fhK = -4.17223e-08 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 46  r = 1 fhK = -3.28474e-07 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 47  r = 1 fhK = -4.06467e-07 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 54  r = 1 fhK = -1.10730e-08 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 59  r = 1 fhK = -1.07384e-06 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 60  r = 1 fhK = -8.76878e-07 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 62  r = 1 fhK = -1.15593e-06 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 65  r = 1 fhK = -8.26396e-07 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 77  r = 1 fhK = -1.11737e-07 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 81  r = 1 fhK = -7.22707e-08 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 85  r = 1 fhK = -3.08287e-07 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 88  r = 1 fhK = -5.23882e-07 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 89  r = 1 fhK = -2.73376e-07 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 90  r = 1 fhK = -2.88420e-07 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 154  r = 1 fhK = -7.34734e-09 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 157  r = 1 fhK = -1.10820e-07 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 207  r = 1 fhK = -1.99314e-08 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 209  r = 1 fhK = -2.37841e-08 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 210  r = 1 fhK = -4.07581e-07 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 213  r = 1 fhK = -4.18058e-07 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 214  r = 1 fhK = -9.59157e-07 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 217  r = 1 fhK = -6.03887e-07 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 219  r = 1 fhK = -1.05333e-06 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 220  r = 1 fhK = -4.61416e-08 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 236  r = 1 fhK = -3.29095e-09 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 240  r = 1 fhK = -4.78104e-09 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 248  r = 1 fhK = -3.97624e-08 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 253  r = 1 fhK = -2.54340e-07 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 262  r = 1 fhK = -4.43182e-07 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 279  r = 1 fhK = -4.43182e-07 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 282  r = 1 fhK = -4.49216e-07 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 287  r = 1 fhK = -2.28361e-08 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 289  r = 1 fhK = -5.62949e-08 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 293  r = 1 fhK = -2.97159e-07 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 298  r = 1 fhK = -1.24225e-08 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 304  r = 1 fhK = -5.21001e-08 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 314  r = 1 fhK = -2.23160e-08 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 317  r = 1 fhK = -9.17254e-08 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 319  r = 1 fhK = -1.70212e-08 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 332  r = 1 fhK = -7.28627e-08 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 337  r = 1 fhK = -2.12110e-07 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 339  r = 1 fhK = -1.74223e-10 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 354  r = 1 fhK = -1.76853e-10 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 355  r = 1 fhK = -4.65698e-08 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 360  r = 1 fhK = -8.26497e-09 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 364  r = 1 fhK = -1.24725e-08 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 365  r = 1 fhK = -2.74617e-08 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 366  r = 1 fhK = -5.17401e-07 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 368  r = 1 fhK = -2.41509e-08 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 388  r = 1 fhK = -1.53408e-07 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 390  r = 1 fhK = -5.72517e-08 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 393  r = 1 fhK = -1.67483e-09 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 397  r = 1 fhK = -1.35500e-06 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 398  r = 1 fhK = -9.14796e-07 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 412  r = 1 fhK = -2.07082e-09 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 424  r = 1 fhK = -1.07478e-07 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 428  r = 1 fhK = -2.48414e-09 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 429  r = 1 fhK = -5.20329e-09 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 430  r = 1 fhK = -2.87880e-08 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 433  r = 1 fhK = -1.12341e-07 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 436  r = 1 fhK = -1.90632e-07 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 451  r = 1 fhK = -1.14457e-07 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 455  r = 1 fhK = -1.20108e-09 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 456  r = 1 fhK = -5.58474e-09 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 458  r = 1 fhK = -1.71023e-09 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 459  r = 1 fhK = -3.93391e-08 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 464  r = 1 fhK = -5.68802e-08 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 468  r = 1 fhK = -2.18315e-08 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 469  r = 1 fhK = -1.98500e-09 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 472  r = 1 fhK = -2.57879e-07 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 484  r = 1 fhK = -1.35702e-07 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 488  r = 1 fhK = -3.50291e-10 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 493  r = 1 fhK = -2.05291e-09 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 500  r = 1 fhK = -1.42469e-08 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 508  r = 1 fhK = -5.82739e-08 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 510  r = 1 fhK = -3.71048e-08 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 514  r = 1 fhK = -1.67398e-07 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 530  r = 1 fhK = -5.44744e-09 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 531  r = 1 fhK = -6.12056e-08 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 534  r = 1 fhK = -5.37701e-07 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 543  r = 1 fhK = -1.26605e-09 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 545  r = 1 fhK = -3.35698e-08 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 546  r = 1 fhK = -3.49533e-07 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 549  r = 1 fhK = -4.99538e-08 
+    0.372585    0.648036    1.538016    2.112275    1.230765    0.676039    0.503406    1.638080    1.040602    0.940022    1.558018    1.635488    3.285458   -0.000094    0.349704    2.279327
+
+fx_r: h = 550  r = 1 fhK = -6.64778e-08 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 38  r = 1 fhK = -3.86419e-07 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 41  r = 1 fhK = -1.17621e-07 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 44  r = 1 fhK = -4.11353e-08 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 46  r = 1 fhK = -3.26239e-07 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 47  r = 1 fhK = -3.98778e-07 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 54  r = 1 fhK = -1.07793e-08 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 59  r = 1 fhK = -1.06405e-06 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 60  r = 1 fhK = -8.62017e-07 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 62  r = 1 fhK = -1.14425e-06 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 65  r = 1 fhK = -8.20689e-07 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 77  r = 1 fhK = -1.09860e-07 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 81  r = 1 fhK = -7.06275e-08 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 85  r = 1 fhK = -3.03519e-07 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 88  r = 1 fhK = -5.14670e-07 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 89  r = 1 fhK = -2.72315e-07 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 90  r = 1 fhK = -2.86452e-07 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 154  r = 1 fhK = -7.17238e-09 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 157  r = 1 fhK = -1.08741e-07 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 207  r = 1 fhK = -1.99690e-08 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 209  r = 1 fhK = -2.50883e-08 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 210  r = 1 fhK = -4.15455e-07 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 213  r = 1 fhK = -4.27987e-07 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 214  r = 1 fhK = -9.79635e-07 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 217  r = 1 fhK = -6.18022e-07 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 219  r = 1 fhK = -1.03893e-06 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 220  r = 1 fhK = -4.52991e-08 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 236  r = 1 fhK = -3.38355e-09 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 240  r = 1 fhK = -4.78982e-09 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 248  r = 1 fhK = -4.15549e-08 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 253  r = 1 fhK = -2.66390e-07 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 262  r = 1 fhK = -4.57305e-07 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 279  r = 1 fhK = -4.57305e-07 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 282  r = 1 fhK = -4.57566e-07 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 287  r = 1 fhK = -2.27432e-08 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 289  r = 1 fhK = -5.88886e-08 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 293  r = 1 fhK = -3.03168e-07 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 298  r = 1 fhK = -1.26706e-08 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 304  r = 1 fhK = -5.35039e-08 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 314  r = 1 fhK = -2.27358e-08 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 317  r = 1 fhK = -9.18172e-08 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 319  r = 1 fhK = -1.67493e-08 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 332  r = 1 fhK = -7.26932e-08 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 337  r = 1 fhK = -2.15880e-07 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 339  r = 1 fhK = -1.75694e-10 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 354  r = 1 fhK = -1.81688e-10 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 355  r = 1 fhK = -4.51629e-08 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 360  r = 1 fhK = -8.49480e-09 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 364  r = 1 fhK = -1.20861e-08 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 365  r = 1 fhK = -2.69979e-08 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 366  r = 1 fhK = -5.30953e-07 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 368  r = 1 fhK = -2.51309e-08 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 388  r = 1 fhK = -1.56663e-07 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 390  r = 1 fhK = -5.91331e-08 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 393  r = 1 fhK = -1.65129e-09 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 397  r = 1 fhK = -1.33862e-06 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 398  r = 1 fhK = -9.11506e-07 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 412  r = 1 fhK = -2.01442e-09 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 424  r = 1 fhK = -1.12141e-07 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 428  r = 1 fhK = -2.45366e-09 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 429  r = 1 fhK = -5.04698e-09 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 430  r = 1 fhK = -2.84429e-08 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 433  r = 1 fhK = -1.18690e-07 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 436  r = 1 fhK = -1.90693e-07 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 451  r = 1 fhK = -1.16512e-07 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 455  r = 1 fhK = -1.20255e-09 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 456  r = 1 fhK = -5.75189e-09 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 458  r = 1 fhK = -1.70545e-09 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 459  r = 1 fhK = -4.09778e-08 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 464  r = 1 fhK = -5.78357e-08 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 468  r = 1 fhK = -2.13203e-08 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 469  r = 1 fhK = -1.96866e-09 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 472  r = 1 fhK = -2.61693e-07 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 484  r = 1 fhK = -1.36863e-07 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 488  r = 1 fhK = -3.66186e-10 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 493  r = 1 fhK = -2.02741e-09 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 500  r = 1 fhK = -1.39746e-08 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 508  r = 1 fhK = -5.90458e-08 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 510  r = 1 fhK = -3.69607e-08 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 514  r = 1 fhK = -1.69474e-07 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 530  r = 1 fhK = -5.46386e-09 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 531  r = 1 fhK = -6.35409e-08 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 534  r = 1 fhK = -5.54837e-07 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 543  r = 1 fhK = -1.21767e-09 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 545  r = 1 fhK = -3.42410e-08 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 546  r = 1 fhK = -3.55327e-07 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 549  r = 1 fhK = -4.98432e-08 
+    0.367471    0.642090    1.488257    2.026769    1.157330    0.647335    0.475070    1.642091    1.056880    0.945895    1.598948    1.020969    2.637769   -0.000094    0.344167    1.031771
+
+fx_r: h = 550  r = 1 fhK = -6.72041e-08 Out..
+lnL  = -6299.179775
+1756 lfun, 7024 eigenQcodon, 36876 P(t)
+end of tree file.
+
+Time used:  0:43
+
+
+Model 7: beta
+
+TREE #  1
+(1, 2, (3, (4, 5)));   MP score: -1
+ntime & nrate & np:     7     4    13
+Qfactor_NS = 0.964040
+Out..
+lnL  = -6303.038299
+776 lfun, 8536 eigenQcodon, 54320 P(t)
+end of tree file.
+
+Time used:  1:16
+
+
+Model 8: beta&w>1
+
+TREE #  1
+(1, 2, (3, (4, 5)));   MP score: -1
+initial w for M8:NSbetaw>1 reset.
+
+ntime & nrate & np:     7     5    15
+Qfactor_NS = 0.707309
+Out..
+lnL  = -6303.038404
+1043 lfun, 12516 eigenQcodon, 80311 P(t)
+
+BEBing (dim = 4).  This may take several minutes.
+Calculating f(x_h|w): 10 categories 20 w sets.
+Calculating f(X), the marginal likelihood.
+	log(fX) = -6314.131716  S = -6002.926637  -346.557658
+Calculating f(w|X), posterior probabilities of site classes.
+	did  10 / 551 patterns   2:04	did  20 / 551 patterns   2:04	did  30 / 551 patterns   2:04	did  40 / 551 patterns   2:04	did  50 / 551 patterns   2:04	did  60 / 551 patterns   2:04	did  70 / 551 patterns   2:04	did  80 / 551 patterns   2:04	did  90 / 551 patterns   2:04	did 100 / 551 patterns   2:04	did 110 / 551 patterns   2:05	did 120 / 551 patterns   2:05	did 130 / 551 patterns   2:05	did 140 / 551 patterns   2:05	did 150 / 551 patterns   2:05	did 160 / 551 patterns   2:05	did 170 / 551 patterns   2:05	did 180 / 551 patterns   2:05	did 190 / 551 patterns   2:05	did 200 / 551 patterns   2:05	did 210 / 551 patterns   2:05	did 220 / 551 patterns   2:05	did 230 / 551 patterns   2:05	did 240 / 551 patterns   2:05	did 250 / 551 patterns   2:05	did 260 / 551 patterns   2:05	did 270 / 551 patterns   2:06	did 280 / 551 patterns   2:06	did 290 / 551 patterns   2:06	did 300 / 551 patterns   2:06	did 310 / 551 patterns   2:06	did 320 / 551 patterns   2:06	did 330 / 551 patterns   2:06	did 340 / 551 patterns   2:06	did 350 / 551 patterns   2:06	did 360 / 551 patterns   2:06	did 370 / 551 patterns   2:06	did 380 / 551 patterns   2:06	did 390 / 551 patterns   2:06	did 400 / 551 patterns   2:06	did 410 / 551 patterns   2:06	did 420 / 551 patterns   2:06	did 430 / 551 patterns   2:06	did 440 / 551 patterns   2:07	did 450 / 551 patterns   2:07	did 460 / 551 patterns   2:07	did 470 / 551 patterns   2:07	did 480 / 551 patterns   2:07	did 490 / 551 patterns   2:07	did 500 / 551 patterns   2:07	did 510 / 551 patterns   2:07	did 520 / 551 patterns   2:07	did 530 / 551 patterns   2:07	did 540 / 551 patterns   2:07	did 550 / 551 patterns   2:07	did 551 / 551 patterns   2:07end of tree file.
+
+Time used:  2:07
+Completed: Arabidopsis_lyrata_QC
+CODONML in paml version 4.9j, October 2019
+NSsites batch run (ncatG as in YNGP2000):   0  1  2  3  7  8
+1 ambiguous codons are seen in the data:
+ ---
+
+       80 bytes for distance
+   504592 bytes for conP
+    45496 bytes for fhK
+  5000000 bytes for space
+
+
+Model 0: one-ratio
+
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+   756888 bytes for conP, adjusted
+
+ntime & nrate & np:     7     5    12
+Out..
+lnL  = -5243.547350
+589 lfun, 589 eigenQcodon, 4123 P(t)
+end of tree file.
+
+Time used:  0:02
+
+
+Model 1: NearlyNeutral
+
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+ntime & nrate & np:     7     5    13
+Qfactor_NS = 0.772639
+Out..
+lnL  = -5226.913262
+1264 lfun, 3792 eigenQcodon, 17696 P(t)
+end of tree file.
+
+Time used:  0:11
+
+
+Model 2: PositiveSelection
+
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+initial w for M2:NSpselection reset.
+
+ntime & nrate & np:     7     6    15
+Qfactor_NS = 0.593789
+Out..
+lnL  = -5226.913262
+1131 lfun, 4524 eigenQcodon, 23751 P(t)
+
+BEBing (dim = 4).  This may take several minutes.
+Calculating f(x_h|w): 10 categories 21 w sets.
+Calculating f(X), the marginal likelihood.
+	log(fX) = -5247.532969  S = -4938.908477  -303.585201
+Calculating f(w|X), posterior probabilities of site classes.
+	did  10 / 517 patterns   0:24	did  20 / 517 patterns   0:24	did  30 / 517 patterns   0:24	did  40 / 517 patterns   0:24	did  50 / 517 patterns   0:24	did  60 / 517 patterns   0:25	did  70 / 517 patterns   0:25	did  80 / 517 patterns   0:25	did  90 / 517 patterns   0:25	did 100 / 517 patterns   0:25	did 110 / 517 patterns   0:25	did 120 / 517 patterns   0:25	did 130 / 517 patterns   0:25	did 140 / 517 patterns   0:25	did 150 / 517 patterns   0:25	did 160 / 517 patterns   0:25	did 170 / 517 patterns   0:25	did 180 / 517 patterns   0:25	did 190 / 517 patterns   0:25	did 200 / 517 patterns   0:25	did 210 / 517 patterns   0:25	did 220 / 517 patterns   0:25	did 230 / 517 patterns   0:25	did 240 / 517 patterns   0:25	did 250 / 517 patterns   0:25	did 260 / 517 patterns   0:25	did 270 / 517 patterns   0:25	did 280 / 517 patterns   0:25	did 290 / 517 patterns   0:25	did 300 / 517 patterns   0:25	did 310 / 517 patterns   0:25	did 320 / 517 patterns   0:25	did 330 / 517 patterns   0:25	did 340 / 517 patterns   0:25	did 350 / 517 patterns   0:25	did 360 / 517 patterns   0:25	did 370 / 517 patterns   0:25	did 380 / 517 patterns   0:25	did 390 / 517 patterns   0:25	did 400 / 517 patterns   0:25	did 410 / 517 patterns   0:25	did 420 / 517 patterns   0:25	did 430 / 517 patterns   0:25	did 440 / 517 patterns   0:25	did 450 / 517 patterns   0:25	did 460 / 517 patterns   0:25	did 470 / 517 patterns   0:25	did 480 / 517 patterns   0:25	did 490 / 517 patterns   0:25	did 500 / 517 patterns   0:25	did 510 / 517 patterns   0:25	did 517 / 517 patterns   0:25end of tree file.
+
+Time used:  0:25
+
+
+Model 3: discrete
+
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+ntime & nrate & np:     7     7    16
+Qfactor_NS = 1.383320
+Out..
+lnL  = -5217.155553
+3330 lfun, 13320 eigenQcodon, 69930 P(t)
+end of tree file.
+
+Time used:  1:03
+
+
+Model 7: beta
+
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+ntime & nrate & np:     7     4    13
+Qfactor_NS = 0.972767
+Out..
+lnL  = -5217.993661
+1799 lfun, 19789 eigenQcodon, 125930 P(t)
+end of tree file.
+
+Time used:  2:11
+
+
+Model 8: beta&w>1
+
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+initial w for M8:NSbetaw>1 reset.
+
+ntime & nrate & np:     7     5    15
+Qfactor_NS = 0.746821
+Out..
+lnL  = -5217.545605
+1684 lfun, 20208 eigenQcodon, 129668 P(t)
+
+BEBing (dim = 4).  This may take several minutes.
+Calculating f(x_h|w): 10 categories 20 w sets.
+Calculating f(X), the marginal likelihood.
+	log(fX) = -5227.875214  S = -4947.800704  -279.438219
+Calculating f(w|X), posterior probabilities of site classes.
+	did  10 / 517 patterns   3:21	did  20 / 517 patterns   3:21	did  30 / 517 patterns   3:21	did  40 / 517 patterns   3:21	did  50 / 517 patterns   3:21	did  60 / 517 patterns   3:21	did  70 / 517 patterns   3:21	did  80 / 517 patterns   3:21	did  90 / 517 patterns   3:21	did 100 / 517 patterns   3:21	did 110 / 517 patterns   3:21	did 120 / 517 patterns   3:21	did 130 / 517 patterns   3:21	did 140 / 517 patterns   3:22	did 150 / 517 patterns   3:22	did 160 / 517 patterns   3:22	did 170 / 517 patterns   3:22	did 180 / 517 patterns   3:22	did 190 / 517 patterns   3:22	did 200 / 517 patterns   3:22	did 210 / 517 patterns   3:22	did 220 / 517 patterns   3:22	did 230 / 517 patterns   3:22	did 240 / 517 patterns   3:22	did 250 / 517 patterns   3:22	did 260 / 517 patterns   3:22	did 270 / 517 patterns   3:22	did 280 / 517 patterns   3:22	did 290 / 517 patterns   3:22	did 300 / 517 patterns   3:23	did 310 / 517 patterns   3:23	did 320 / 517 patterns   3:23	did 330 / 517 patterns   3:23	did 340 / 517 patterns   3:23	did 350 / 517 patterns   3:23	did 360 / 517 patterns   3:23	did 370 / 517 patterns   3:23	did 380 / 517 patterns   3:23	did 390 / 517 patterns   3:23	did 400 / 517 patterns   3:23	did 410 / 517 patterns   3:23	did 420 / 517 patterns   3:23	did 430 / 517 patterns   3:23	did 440 / 517 patterns   3:23	did 450 / 517 patterns   3:23	did 460 / 517 patterns   3:23	did 470 / 517 patterns   3:24	did 480 / 517 patterns   3:24	did 490 / 517 patterns   3:24	did 500 / 517 patterns   3:24	did 510 / 517 patterns   3:24	did 517 / 517 patterns   3:24end of tree file.
+
+Time used:  3:24
+Completed: Arabidopsis_thaliana_QC
+✅ All site model analyses completed successfully!
+---------------------------------
+--------------------------------------------------
+Starting script5.sh at Fri Apr 25 08:41:35 UTC 2025
+script5.sh completed successfully at 08:41:37. Total time: 00:00:02
+----- Output from script5.sh -----
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+Extraction complete. Results saved in codemlanalysis.
+---------------------------------
+--------------------------------------------------
+Starting script6.sh at Fri Apr 25 08:41:37 UTC 2025
+script6.sh completed successfully at 08:41:39. Total time: 00:00:02
+----- Output from script6.sh -----
+Extraction complete. Results saved in sitemodelanalysis.
+---------------------------------
+--------------------------------------------------
+Starting script7.sh at Fri Apr 25 08:41:39 UTC 2025
+script7.sh completed successfully at 08:41:42. Total time: 00:00:03
+----- Output from script7.sh -----
+Processing Arabidopsis_lyrata_QC...
+Checking directory: /mnt/c/Users/krish/OneDrive/Research & Manuscript/Projects/7. BABAPPA/BABAPPA/1by5/codemlanalysis/Arabidopsis_lyrata_QC
+CSV files found: ['lnL_np_values.csv']
+
+Processing file: lnL_np_values.csv with 16 rows.
+Unique genes found: 6
+Global M0 lnL: -6332.298519
+Branchsite model results: 5 rows
+Branch model results: 5 rows
+Results saved to LRT_results_lnL_np_values.xlsx
+LRT analysis with Benjamini-Hochberg correction completed.
+Results moved to BHanalysis/Arabidopsis_lyrata_QC/
+Processing Arabidopsis_thaliana_QC...
+Checking directory: /mnt/c/Users/krish/OneDrive/Research & Manuscript/Projects/7. BABAPPA/BABAPPA/1by5/codemlanalysis/Arabidopsis_thaliana_QC
+CSV files found: ['lnL_np_values.csv']
+
+Processing file: lnL_np_values.csv with 16 rows.
+Unique genes found: 6
+Global M0 lnL: -5243.54735
+Branchsite model results: 5 rows
+Branch model results: 5 rows
+Results saved to LRT_results_lnL_np_values.xlsx
+LRT analysis with Benjamini-Hochberg correction completed.
+Results moved to BHanalysis/Arabidopsis_thaliana_QC/
+Batch processing completed.
+---------------------------------
+--------------------------------------------------
+Starting script8.sh at Fri Apr 25 08:41:42 UTC 2025
+script8.sh completed successfully at 08:41:44. Total time: 00:00:02
+----- Output from script8.sh -----
+Processing /mnt/c/Users/krish/OneDrive/Research & Manuscript/Projects/7. BABAPPA/BABAPPA/1by5/sitemodelanalysis/Arabidopsis_lyrata_QC/lnL_np_values.csv for species Arabidopsis_lyrata_QC
+Checking file: /mnt/c/Users/krish/OneDrive/Research & Manuscript/Projects/7. BABAPPA/BABAPPA/1by5/sitemodelanalysis/Arabidopsis_lyrata_QC/lnL_np_values.csv
+CSV content preview:
+      Model          lnL  np
+0  Model 0: -6332.298519  12
+1  Model 1: -6315.886482  13
+2  Model 2: -6315.886482  15
+3  Model 3: -6299.179775  16
+4  Model 7: -6303.038299  13
+CSV successfully loaded and contains required columns!
+Analysis complete. Results saved to lrt_results.csv
+  Null Model Alternative Model  ...       p-value  BH-corrected p-value
+0   Model 0:          Model 1:  ...  1.008877e-08          2.017753e-08
+1   Model 1:          Model 2:  ...  1.000000e+00          1.000000e+00
+2   Model 0:          Model 3:  ...  1.411579e-13          5.646317e-13
+3   Model 7:          Model 8:  ...  1.000000e+00          1.000000e+00
+
+[4 rows x 6 columns]
+Processing /mnt/c/Users/krish/OneDrive/Research & Manuscript/Projects/7. BABAPPA/BABAPPA/1by5/sitemodelanalysis/Arabidopsis_thaliana_QC/lnL_np_values.csv for species Arabidopsis_thaliana_QC
+Checking file: /mnt/c/Users/krish/OneDrive/Research & Manuscript/Projects/7. BABAPPA/BABAPPA/1by5/sitemodelanalysis/Arabidopsis_thaliana_QC/lnL_np_values.csv
+CSV content preview:
+      Model          lnL  np
+0  Model 0: -5243.547350  12
+1  Model 1: -5226.913262  13
+2  Model 2: -5226.913262  15
+3  Model 3: -5217.155553  16
+4  Model 7: -5217.993661  13
+CSV successfully loaded and contains required columns!
+Analysis complete. Results saved to lrt_results.csv
+  Null Model Alternative Model  ...       p-value  BH-corrected p-value
+0   Model 0:          Model 1:  ...  8.028582e-09          1.605716e-08
+1   Model 1:          Model 2:  ...  1.000000e+00          1.000000e+00
+2   Model 0:          Model 3:  ...  9.458205e-11          3.783282e-10
+3   Model 7:          Model 8:  ...  6.388689e-01          8.518252e-01
+
+[4 rows x 6 columns]
+---------------------------------
+--------------------------------------------------
+All scripts completed successfully at Fri Apr 25 08:41:44 UTC 2025.

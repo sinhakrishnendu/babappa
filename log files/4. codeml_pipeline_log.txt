@@ -1,0 +1,1684 @@
+Pipeline started at Fri Apr 25 08:08:01 UTC 2025
+--------------------------------------------------
+Starting script0.sh at Fri Apr 25 08:08:01 UTC 2025
+script0.sh completed successfully at 08:11:03. Total time: 00:03:02
+----- Output from script0.sh -----
+Running QC on codeml_pipeline_log.txt...
+Failed QC: codeml_pipeline_log.txt (No sequences found or unable to parse)
+QC Passed: codeml_pipeline_log.txt -> QCseq/codeml_pipeline_log_QC.fasta
+Running QC on Arabidopsis_thaliana.txt...
+Passed QC: Arabidopsis_thaliana.txt -> QCseq/Arabidopsis_thaliana_QC.fasta
+QC log saved to: QCseq/Arabidopsis_thaliana_QC.fasta.log.txt
+QC Passed: Arabidopsis_thaliana.txt -> QCseq/Arabidopsis_thaliana_QC.fasta
+Running QC on Arabidopsis_lyrata.txt...
+Passed QC: Arabidopsis_lyrata.txt -> QCseq/Arabidopsis_lyrata_QC.fasta
+QC log saved to: QCseq/Arabidopsis_lyrata_QC.fasta.log.txt
+QC Passed: Arabidopsis_lyrata.txt -> QCseq/Arabidopsis_lyrata_QC.fasta
+Running QC on Arabidopsis_halleri.txt...
+Passed QC: Arabidopsis_halleri.txt -> QCseq/Arabidopsis_halleri_QC.fasta
+QC log saved to: QCseq/Arabidopsis_halleri_QC.fasta.log.txt
+QC Passed: Arabidopsis_halleri.txt -> QCseq/Arabidopsis_halleri_QC.fasta
+QC Step Completed.
+Running PRANK on QCseq/Arabidopsis_thaliana_QC.fasta...
+Running PRANK on QCseq/Arabidopsis_halleri_QC.fasta...
+Running PRANK on QCseq/Arabidopsis_lyrata_QC.fasta...
+MSA Step Completed.
+Script1 completed. Run Script2 onwards to proceed with phylogenetic analysis and selection analysis.
+---------------------------------
+--------------------------------------------------
+Starting script1.sh at Fri Apr 25 08:11:03 UTC 2025
+script1.sh completed successfully at 08:15:40. Total time: 00:04:37
+----- Output from script1.sh -----
+IQ-TREE2 Step Completed.
+All tree files copied to treefiles/.
+File foregroundbranch/Arabidopsis_lyrata_QC/XP_020883914.1.treefile created successfully.
+File foregroundbranch/Arabidopsis_lyrata_QC/XP_002893503.1.treefile created successfully.
+File foregroundbranch/Arabidopsis_lyrata_QC/XP_002868216.1.treefile created successfully.
+File foregroundbranch/Arabidopsis_lyrata_QC/XP_020868537.1.treefile created successfully.
+File foregroundbranch/Arabidopsis_lyrata_QC/XP_002883322.2.treefile created successfully.
+File foregroundbranch/Arabidopsis_thaliana_QC/AT1G49130.2.treefile created successfully.
+File foregroundbranch/Arabidopsis_thaliana_QC/AT1G28050.1.treefile created successfully.
+File foregroundbranch/Arabidopsis_thaliana_QC/AT1G25440.1.treefile created successfully.
+File foregroundbranch/Arabidopsis_thaliana_QC/AT1G68520.1.treefile created successfully.
+File foregroundbranch/Arabidopsis_thaliana_QC/AT1G49130.1.treefile created successfully.
+Foreground Branch Selection Completed.
+---------------------------------
+--------------------------------------------------
+Starting script2.sh at Fri Apr 25 08:15:40 UTC 2025
+script2.sh completed successfully at 08:18:10. Total time: 00:02:30
+----- Output from script2.sh -----
+xargs: warning: options --max-args and --replace/-I/-i are mutually exclusive, ignoring previous --max-args value
+Warning: Tree directory for Arabidopsis_halleri_QC not found. Skipping...
+xargs: warning: options --max-args and --replace/-I/-i are mutually exclusive, ignoring previous --max-args value
+environment: line 3: cd: codemloutput/Arabidopsis_thaliana_QC: No such file or directory
+Processing AT1G28050.1.treefile in Arabidopsis_thaliana_QC
+environment: line 3: cd: codemloutput/Arabidopsis_thaliana_QC: No such file or directory
+Processing AT1G49130.1.treefile in Arabidopsis_thaliana_QC
+environment: line 3: cd: codemloutput/Arabidopsis_thaliana_QC: No such file or directory
+Processing AT1G25440.1.treefile in Arabidopsis_thaliana_QC
+environment: line 3: cd: codemloutput/Arabidopsis_thaliana_QC: No such file or directory
+Processing AT1G49130.2.treefile in Arabidopsis_thaliana_QC
+environment: line 3: cd: codemloutput/Arabidopsis_thaliana_QC: No such file or directory
+Processing AT1G68520.1.treefile in Arabidopsis_thaliana_QC
+xargs: warning: options --max-args and --replace/-I/-i are mutually exclusive, ignoring previous --max-args value
+environment: line 3: cd: codemloutput/Arabidopsis_lyrata_QC: No such file or directory
+Processing XP_002868216.1.treefile in Arabidopsis_lyrata_QC
+environment: line 3: cd: codemloutput/Arabidopsis_lyrata_QC: No such file or directory
+Processing XP_002883322.2.treefile in Arabidopsis_lyrata_QC
+environment: line 3: cd: codemloutput/Arabidopsis_lyrata_QC: No such file or directory
+Processing XP_002893503.1.treefile in Arabidopsis_lyrata_QC
+environment: line 3: cd: codemloutput/Arabidopsis_lyrata_QC: No such file or directory
+Processing XP_020868537.1.treefile in Arabidopsis_lyrata_QC
+environment: line 3: cd: codemloutput/Arabidopsis_lyrata_QC: No such file or directory
+Processing XP_020883914.1.treefile in Arabidopsis_lyrata_QC
+CODONML in paml version 4.9j, October 2019
+1 ambiguous codons are seen in the data:
+ ---
+
+       80 bytes for distance
+   504592 bytes for conP
+17138544806959588608 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+   756888 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    13
+Out..
+lnL  = -5243.547373
+695 lfun, 1390 eigenQcodon, 4865 P(t)
+end of tree file.
+
+Time used:  0:07
+CODONML in paml version 4.9j, October 2019
+2 ambiguous codons are seen in the data:
+ --- NNN
+
+       80 bytes for distance
+   542656 bytes for conP
+7176570114815320320 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, 2, ((3, 4), 5));   MP score: -1
+   813984 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    13
+Out..
+lnL  = -6334.346043
+661 lfun, 1322 eigenQcodon, 4627 P(t)
+end of tree file.
+
+Time used:  0:07
+CODONML in paml version 4.9j, October 2019
+2 ambiguous codons are seen in the data:
+ --- NNN
+
+       80 bytes for distance
+   542656 bytes for conP
+2839927834129720576 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, 2, ((3, 4), 5));   MP score: -1
+   813984 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    13
+Out..
+lnL  = -6334.359102
+829 lfun, 1658 eigenQcodon, 5803 P(t)
+end of tree file.
+
+Time used:  0:10
+CODONML in paml version 4.9j, October 2019
+2 ambiguous codons are seen in the data:
+ --- NNN
+
+       80 bytes for distance
+   542656 bytes for conP
+4971995768983371008 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, 2, ((3, 4), 5));   MP score: -1
+   813984 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    13
+Out..
+lnL  = -6333.355585
+803 lfun, 1606 eigenQcodon, 5621 P(t)
+end of tree file.
+
+Time used:  0:11
+CODONML in paml version 4.9j, October 2019
+2 ambiguous codons are seen in the data:
+ --- NNN
+
+       80 bytes for distance
+   542656 bytes for conP
+3193879252674811392 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, 2, ((3, 4), 5));   MP score: -1
+   813984 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    13
+Out..
+lnL  = -6334.006701
+806 lfun, 1612 eigenQcodon, 5642 P(t)
+end of tree file.
+
+Time used:  0:11
+CODONML in paml version 4.9j, October 2019
+1 ambiguous codons are seen in the data:
+ ---
+
+       80 bytes for distance
+   504592 bytes for conP
+2747268455875346944 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+   756888 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    13
+Out..
+lnL  = -5243.547384
+1251 lfun, 2502 eigenQcodon, 8757 P(t)
+end of tree file.
+
+Time used:  0:12
+CODONML in paml version 4.9j, October 2019
+2 ambiguous codons are seen in the data:
+ --- NNN
+
+       80 bytes for distance
+   542656 bytes for conP
+3106910548297828608 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, 2, ((3, 4), 5));   MP score: -1
+   813984 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    13
+Out..
+lnL  = -6333.681340
+1011 lfun, 2022 eigenQcodon, 7077 P(t)
+end of tree file.
+
+Time used:  0:14
+CODONML in paml version 4.9j, October 2019
+1 ambiguous codons are seen in the data:
+ ---
+
+       80 bytes for distance
+   504592 bytes for conP
+9748483630200296960 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+   756888 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    13
+Out..
+lnL  = -5242.412628
+1343 lfun, 2686 eigenQcodon, 9401 P(t)
+end of tree file.
+
+Time used:  0:17
+CODONML in paml version 4.9j, October 2019
+1 ambiguous codons are seen in the data:
+ ---
+
+       80 bytes for distance
+   504592 bytes for conP
+17764268214179555072 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+   756888 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    13
+Out..
+lnL  = -5242.761247
+1018 lfun, 2036 eigenQcodon, 7126 P(t)
+end of tree file.
+
+Time used:  0:18
+CODONML in paml version 4.9j, October 2019
+1 ambiguous codons are seen in the data:
+ ---
+
+       80 bytes for distance
+   504592 bytes for conP
+5903239592004159488 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+   756888 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    13
+Out..
+lnL  = -5241.696784
+2493 lfun, 4986 eigenQcodon, 17451 P(t)
+end of tree file.
+
+Time used:  0:26
+CODONML in paml version 4.9j, October 2019
+2 ambiguous codons are seen in the data:
+ --- NNN
+
+       80 bytes for distance
+   542656 bytes for conP
+    17792 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, 2, ((3, 4), 5));   MP score: -1
+   813984 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    15
+branch=0  freq=0.792494 w0 = 0.209264
+branch=0  freq=0.207506 w1 = 1.000000
+			Qfactor for branch 0 = 0.966718
+branch=1  freq=0.658150 w0 = 0.209264
+branch=1  freq=0.172329 w1 = 1.000000
+branch=1  freq=0.169521 w2 = 2.057848
+			Qfactor for branch 1 = 0.676193
+w[0] = 0.209264
+w[1] = 1.000000
+w[2] = 2.057848
+Out..
+lnL  = -6317.158269
+1106 lfun, 5530 eigenQcodon, 30968 P(t)
+
+BEBing (dim = 4).  This may take many minutes.
+Calculating f(x_h|w) for 121 w's
+	   10 / 121 sets.  w for branches:  0.9500 0.9500 lnfX = -6656.0911	   20 / 121 sets.  w for branches:  0.0500 9.5000 lnfX = -7144.4916	   30 / 121 sets.  w for branches:  0.1500 9.5000 lnfX = -6797.5795	   40 / 121 sets.  w for branches:  0.2500 9.5000 lnfX = -6727.6169	   50 / 121 sets.  w for branches:  0.3500 9.5000 lnfX = -6731.0518	   60 / 121 sets.  w for branches:  0.4500 9.5000 lnfX = -6763.6302	   70 / 121 sets.  w for branches:  0.5500 9.5000 lnfX = -6808.3722	   80 / 121 sets.  w for branches:  0.6500 9.5000 lnfX = -6857.2945	   90 / 121 sets.  w for branches:  0.7500 9.5000 lnfX = -6906.3728	  100 / 121 sets.  w for branches:  0.8500 9.5000 lnfX = -6953.6092	  110 / 121 sets.  w for branches:  0.9500 9.5000 lnfX = -6998.1062	  120 / 121 sets.  w for branches:  1.0000 9.5000 lnfX = -7019.2190	  121 / 121 sets.  w for branches:  1.0000 10.5000 lnfX = -7032.4722
+Time:  0:47
+Calculating the marginal likelihood f(X).
+	1000 / 10000 grid points,  0:47	2000 / 10000 grid points,  0:47	3000 / 10000 grid points,  0:47	4000 / 10000 grid points,  0:47	5000 / 10000 grid points,  0:47	6000 / 10000 grid points,  0:47	7000 / 10000 grid points,  0:47	8000 / 10000 grid points,  0:47	9000 / 10000 grid points,  0:47	10000 / 10000 grid points,  0:47	log(fX) = -6325.830326  S = -5941.888491  -384.394470
+Calculating f(w_k|X), posterior for site classes for each site.  Slow!
+	did  10 / 556 site patterns   0:47	did  20 / 556 site patterns   0:47	did  30 / 556 site patterns   0:47	did  40 / 556 site patterns   0:47	did  50 / 556 site patterns   0:47	did  60 / 556 site patterns   0:47	did  70 / 556 site patterns   0:47	did  80 / 556 site patterns   0:47	did  90 / 556 site patterns   0:47	did 100 / 556 site patterns   0:47	did 110 / 556 site patterns   0:47	did 120 / 556 site patterns   0:47	did 130 / 556 site patterns   0:47	did 140 / 556 site patterns   0:47	did 150 / 556 site patterns   0:47	did 160 / 556 site patterns   0:47	did 170 / 556 site patterns   0:47	did 180 / 556 site patterns   0:47	did 190 / 556 site patterns   0:47	did 200 / 556 site patterns   0:47	did 210 / 556 site patterns   0:47	did 220 / 556 site patterns   0:47	did 230 / 556 site patterns   0:47	did 240 / 556 site patterns   0:47	did 250 / 556 site patterns   0:47	did 260 / 556 site patterns   0:47	did 270 / 556 site patterns   0:47	did 280 / 556 site patterns   0:47	did 290 / 556 site patterns   0:47	did 300 / 556 site patterns   0:47	did 310 / 556 site patterns   0:47	did 320 / 556 site patterns   0:47	did 330 / 556 site patterns   0:47	did 340 / 556 site patterns   0:47	did 350 / 556 site patterns   0:47	did 360 / 556 site patterns   0:47	did 370 / 556 site patterns   0:48	did 380 / 556 site patterns   0:48	did 390 / 556 site patterns   0:48	did 400 / 556 site patterns   0:48	did 410 / 556 site patterns   0:48	did 420 / 556 site patterns   0:48	did 430 / 556 site patterns   0:48	did 440 / 556 site patterns   0:48	did 450 / 556 site patterns   0:48	did 460 / 556 site patterns   0:48	did 470 / 556 site patterns   0:48	did 480 / 556 site patterns   0:48	did 490 / 556 site patterns   0:48	did 500 / 556 site patterns   0:48	did 510 / 556 site patterns   0:48	did 520 / 556 site patterns   0:48	did 530 / 556 site patterns   0:48	did 540 / 556 site patterns   0:48	did 550 / 556 site patterns   0:48	did 556 / 556 site patterns   0:48end of tree file.
+
+Time used:  0:48
+CODONML in paml version 4.9j, October 2019
+1 ambiguous codons are seen in the data:
+ ---
+
+       80 bytes for distance
+   504592 bytes for conP
+    16544 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+   756888 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    15
+branch=0  freq=0.743476 w0 = 0.256727
+branch=0  freq=0.256524 w1 = 1.000000
+			Qfactor for branch 0 = 0.889368
+branch=1  freq=0.598582 w0 = 0.256727
+branch=1  freq=0.206530 w1 = 1.000000
+branch=1  freq=0.194888 w2 = 1.589173
+			Qfactor for branch 1 = 0.680372
+w[0] = 0.256727
+w[1] = 1.000000
+w[2] = 1.589173
+Out..
+lnL  = -5226.913262
+1362 lfun, 6810 eigenQcodon, 38136 P(t)
+
+BEBing (dim = 4).  This may take many minutes.
+Calculating f(x_h|w) for 121 w's
+	   10 / 121 sets.  w for branches:  0.9500 0.9500 lnfX = -5787.8395	   20 / 121 sets.  w for branches:  0.0500 9.5000 lnfX = -5435.2882	   30 / 121 sets.  w for branches:  0.1500 9.5000 lnfX = -5253.1362	   40 / 121 sets.  w for branches:  0.2500 9.5000 lnfX = -5305.1504	   50 / 121 sets.  w for branches:  0.3500 9.5000 lnfX = -5391.4305	   60 / 121 sets.  w for branches:  0.4500 9.5000 lnfX = -5477.6180	   70 / 121 sets.  w for branches:  0.5500 9.5000 lnfX = -5555.9151	   80 / 121 sets.  w for branches:  0.6500 9.5000 lnfX = -5625.2541	   90 / 121 sets.  w for branches:  0.7500 9.5000 lnfX = -5686.3361	  100 / 121 sets.  w for branches:  0.8500 9.5000 lnfX = -5740.2065	  110 / 121 sets.  w for branches:  0.9500 9.5000 lnfX = -5787.8583	  120 / 121 sets.  w for branches:  1.0000 9.5000 lnfX = -5809.6250	  121 / 121 sets.  w for branches:  1.0000 10.5000 lnfX = -5809.6272
+Time:  0:55
+Calculating the marginal likelihood f(X).
+	1000 / 10000 grid points,  0:55	2000 / 10000 grid points,  0:55	3000 / 10000 grid points,  0:55	4000 / 10000 grid points,  0:55	5000 / 10000 grid points,  0:55	6000 / 10000 grid points,  0:55	7000 / 10000 grid points,  0:55	8000 / 10000 grid points,  0:55	9000 / 10000 grid points,  0:55	10000 / 10000 grid points,  0:55	log(fX) = -5245.252428  S = -4955.195644  -293.737055
+Calculating f(w_k|X), posterior for site classes for each site.  Slow!
+	did  10 / 517 site patterns   0:55	did  20 / 517 site patterns   0:55	did  30 / 517 site patterns   0:55	did  40 / 517 site patterns   0:55	did  50 / 517 site patterns   0:55	did  60 / 517 site patterns   0:55	did  70 / 517 site patterns   0:55	did  80 / 517 site patterns   0:55	did  90 / 517 site patterns   0:56	did 100 / 517 site patterns   0:56	did 110 / 517 site patterns   0:56	did 120 / 517 site patterns   0:56	did 130 / 517 site patterns   0:56	did 140 / 517 site patterns   0:56	did 150 / 517 site patterns   0:56	did 160 / 517 site patterns   0:56	did 170 / 517 site patterns   0:56	did 180 / 517 site patterns   0:56	did 190 / 517 site patterns   0:56	did 200 / 517 site patterns   0:56	did 210 / 517 site patterns   0:56	did 220 / 517 site patterns   0:56	did 230 / 517 site patterns   0:56	did 240 / 517 site patterns   0:56	did 250 / 517 site patterns   0:56	did 260 / 517 site patterns   0:56	did 270 / 517 site patterns   0:56	did 280 / 517 site patterns   0:56	did 290 / 517 site patterns   0:56	did 300 / 517 site patterns   0:56	did 310 / 517 site patterns   0:56	did 320 / 517 site patterns   0:56	did 330 / 517 site patterns   0:56	did 340 / 517 site patterns   0:56	did 350 / 517 site patterns   0:56	did 360 / 517 site patterns   0:56	did 370 / 517 site patterns   0:56	did 380 / 517 site patterns   0:56	did 390 / 517 site patterns   0:56	did 400 / 517 site patterns   0:56	did 410 / 517 site patterns   0:56	did 420 / 517 site patterns   0:56	did 430 / 517 site patterns   0:56	did 440 / 517 site patterns   0:56	did 450 / 517 site patterns   0:56	did 460 / 517 site patterns   0:56	did 470 / 517 site patterns   0:56	did 480 / 517 site patterns   0:56	did 490 / 517 site patterns   0:56	did 500 / 517 site patterns   0:56	did 510 / 517 site patterns   0:56	did 517 / 517 site patterns   0:56end of tree file.
+
+Time used:  0:56
+CODONML in paml version 4.9j, October 2019
+2 ambiguous codons are seen in the data:
+ --- NNN
+
+       80 bytes for distance
+   542656 bytes for conP
+    17792 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, 2, ((3, 4), 5));   MP score: -1
+   813984 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    15
+branch=0  freq=0.735752 w0 = 0.213649
+branch=0  freq=0.264248 w1 = 1.000000
+			Qfactor for branch 0 = 0.900482
+branch=1  freq=0.593292 w0 = 0.213649
+branch=1  freq=0.213083 w1 = 1.000000
+branch=1  freq=0.193625 w2 = 1.635274
+			Qfactor for branch 1 = 0.677130
+w[0] = 0.213649
+w[1] = 1.000000
+w[2] = 1.635274
+Out..
+lnL  = -6294.094931
+1244 lfun, 6220 eigenQcodon, 34832 P(t)
+
+BEBing (dim = 4).  This may take many minutes.
+Calculating f(x_h|w) for 121 w's
+	   10 / 121 sets.  w for branches:  0.9500 0.9500 lnfX = -6653.4311	   20 / 121 sets.  w for branches:  0.0500 9.5000 lnfX = -6786.8878	   30 / 121 sets.  w for branches:  0.1500 9.5000 lnfX = -6472.4425	   40 / 121 sets.  w for branches:  0.2500 9.5000 lnfX = -6412.0950	   50 / 121 sets.  w for branches:  0.3500 9.5000 lnfX = -6420.0882	   60 / 121 sets.  w for branches:  0.4500 9.5000 lnfX = -6456.3043	   70 / 121 sets.  w for branches:  0.5500 9.5000 lnfX = -6505.4719	   80 / 121 sets.  w for branches:  0.6500 9.5000 lnfX = -6560.3868	   90 / 121 sets.  w for branches:  0.7500 9.5000 lnfX = -6617.2823	  100 / 121 sets.  w for branches:  0.8500 9.5000 lnfX = -6674.0892	  110 / 121 sets.  w for branches:  0.9500 9.5000 lnfX = -6729.6493	  120 / 121 sets.  w for branches:  1.0000 9.5000 lnfX = -6756.7466	  121 / 121 sets.  w for branches:  1.0000 10.5000 lnfX = -6762.0264
+Time:  0:53
+Calculating the marginal likelihood f(X).
+	1000 / 10000 grid points,  0:53	2000 / 10000 grid points,  0:53	3000 / 10000 grid points,  0:53	4000 / 10000 grid points,  0:53	5000 / 10000 grid points,  0:53	6000 / 10000 grid points,  0:53	7000 / 10000 grid points,  0:53	8000 / 10000 grid points,  0:53	9000 / 10000 grid points,  0:53	10000 / 10000 grid points,  0:53	log(fX) = -6308.087630  S = -5923.837646  -379.357485
+Calculating f(w_k|X), posterior for site classes for each site.  Slow!
+	did  10 / 556 site patterns   0:54	did  20 / 556 site patterns   0:54	did  30 / 556 site patterns   0:54	did  40 / 556 site patterns   0:54	did  50 / 556 site patterns   0:54	did  60 / 556 site patterns   0:54	did  70 / 556 site patterns   0:54	did  80 / 556 site patterns   0:54	did  90 / 556 site patterns   0:54	did 100 / 556 site patterns   0:54	did 110 / 556 site patterns   0:54	did 120 / 556 site patterns   0:54	did 130 / 556 site patterns   0:54	did 140 / 556 site patterns   0:54	did 150 / 556 site patterns   0:54	did 160 / 556 site patterns   0:54	did 170 / 556 site patterns   0:54	did 180 / 556 site patterns   0:54	did 190 / 556 site patterns   0:54	did 200 / 556 site patterns   0:54	did 210 / 556 site patterns   0:54	did 220 / 556 site patterns   0:54	did 230 / 556 site patterns   0:54	did 240 / 556 site patterns   0:54	did 250 / 556 site patterns   0:54	did 260 / 556 site patterns   0:54	did 270 / 556 site patterns   0:54	did 280 / 556 site patterns   0:54	did 290 / 556 site patterns   0:54	did 300 / 556 site patterns   0:54	did 310 / 556 site patterns   0:54	did 320 / 556 site patterns   0:54	did 330 / 556 site patterns   0:54	did 340 / 556 site patterns   0:54	did 350 / 556 site patterns   0:54	did 360 / 556 site patterns   0:54	did 370 / 556 site patterns   0:54	did 380 / 556 site patterns   0:54	did 390 / 556 site patterns   0:54	did 400 / 556 site patterns   0:54	did 410 / 556 site patterns   0:54	did 420 / 556 site patterns   0:54	did 430 / 556 site patterns   0:54	did 440 / 556 site patterns   0:54	did 450 / 556 site patterns   0:54	did 460 / 556 site patterns   0:54	did 470 / 556 site patterns   0:54	did 480 / 556 site patterns   0:54	did 490 / 556 site patterns   0:54	did 500 / 556 site patterns   0:54	did 510 / 556 site patterns   0:54	did 520 / 556 site patterns   0:54	did 530 / 556 site patterns   0:55	did 540 / 556 site patterns   0:55	did 550 / 556 site patterns   0:55	did 556 / 556 site patterns   0:55end of tree file.
+
+Time used:  0:55
+CODONML in paml version 4.9j, October 2019
+2 ambiguous codons are seen in the data:
+ --- NNN
+
+       80 bytes for distance
+   542656 bytes for conP
+    17792 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, 2, ((3, 4), 5));   MP score: -1
+   813984 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    15
+branch=0  freq=0.737982 w0 = 0.288321
+branch=0  freq=0.262018 w1 = 1.000000
+			Qfactor for branch 0 = 0.837459
+branch=1  freq=0.588085 w0 = 0.288321
+branch=1  freq=0.208797 w1 = 1.000000
+branch=1  freq=0.203118 w2 = 2.201311
+			Qfactor for branch 1 = 0.574491
+w[0] = 0.288321
+w[1] = 1.000000
+w[2] = 2.201311
+Out..
+lnL  = -6315.613456
+1294 lfun, 6470 eigenQcodon, 36232 P(t)
+
+BEBing (dim = 4).  This may take many minutes.
+Calculating f(x_h|w) for 121 w's
+	   10 / 121 sets.  w for branches:  0.9500 0.9500 lnfX = -6672.5001	   20 / 121 sets.  w for branches:  0.0500 9.5000 lnfX = -6944.7121	   30 / 121 sets.  w for branches:  0.1500 9.5000 lnfX = -6606.1261	   40 / 121 sets.  w for branches:  0.2500 9.5000 lnfX = -6547.8370	   50 / 121 sets.  w for branches:  0.3500 9.5000 lnfX = -6562.9624	   60 / 121 sets.  w for branches:  0.4500 9.5000 lnfX = -6606.5570	   70 / 121 sets.  w for branches:  0.5500 9.5000 lnfX = -6661.4495	   80 / 121 sets.  w for branches:  0.6500 9.5000 lnfX = -6719.6480	   90 / 121 sets.  w for branches:  0.7500 9.5000 lnfX = -6777.2019	  100 / 121 sets.  w for branches:  0.8500 9.5000 lnfX = -6832.2170	  110 / 121 sets.  w for branches:  0.9500 9.5000 lnfX = -6883.8990	  120 / 121 sets.  w for branches:  1.0000 9.5000 lnfX = -6908.4096	  121 / 121 sets.  w for branches:  1.0000 10.5000 lnfX = -6925.6292
+Time:  0:55
+Calculating the marginal likelihood f(X).
+	1000 / 10000 grid points,  0:55	2000 / 10000 grid points,  0:55	3000 / 10000 grid points,  0:55	4000 / 10000 grid points,  0:55	5000 / 10000 grid points,  0:55	6000 / 10000 grid points,  0:55	7000 / 10000 grid points,  0:55	8000 / 10000 grid points,  0:55	9000 / 10000 grid points,  0:55	10000 / 10000 grid points,  0:55	log(fX) = -6324.893187  S = -5948.319278  -370.840114
+Calculating f(w_k|X), posterior for site classes for each site.  Slow!
+	did  10 / 556 site patterns   0:55	did  20 / 556 site patterns   0:55	did  30 / 556 site patterns   0:56	did  40 / 556 site patterns   0:56	did  50 / 556 site patterns   0:56	did  60 / 556 site patterns   0:56	did  70 / 556 site patterns   0:56	did  80 / 556 site patterns   0:56	did  90 / 556 site patterns   0:56	did 100 / 556 site patterns   0:56	did 110 / 556 site patterns   0:56	did 120 / 556 site patterns   0:56	did 130 / 556 site patterns   0:56	did 140 / 556 site patterns   0:56	did 150 / 556 site patterns   0:56	did 160 / 556 site patterns   0:56	did 170 / 556 site patterns   0:56	did 180 / 556 site patterns   0:56	did 190 / 556 site patterns   0:56	did 200 / 556 site patterns   0:56	did 210 / 556 site patterns   0:56	did 220 / 556 site patterns   0:56	did 230 / 556 site patterns   0:56	did 240 / 556 site patterns   0:56	did 250 / 556 site patterns   0:56	did 260 / 556 site patterns   0:56	did 270 / 556 site patterns   0:56	did 280 / 556 site patterns   0:56	did 290 / 556 site patterns   0:56	did 300 / 556 site patterns   0:56	did 310 / 556 site patterns   0:56	did 320 / 556 site patterns   0:56	did 330 / 556 site patterns   0:56	did 340 / 556 site patterns   0:56	did 350 / 556 site patterns   0:56	did 360 / 556 site patterns   0:56	did 370 / 556 site patterns   0:56	did 380 / 556 site patterns   0:56	did 390 / 556 site patterns   0:56	did 400 / 556 site patterns   0:56	did 410 / 556 site patterns   0:56	did 420 / 556 site patterns   0:56	did 430 / 556 site patterns   0:56	did 440 / 556 site patterns   0:56	did 450 / 556 site patterns   0:56	did 460 / 556 site patterns   0:56	did 470 / 556 site patterns   0:56	did 480 / 556 site patterns   0:56	did 490 / 556 site patterns   0:56	did 500 / 556 site patterns   0:56	did 510 / 556 site patterns   0:56	did 520 / 556 site patterns   0:56	did 530 / 556 site patterns   0:56	did 540 / 556 site patterns   0:56	did 550 / 556 site patterns   0:56	did 556 / 556 site patterns   0:56end of tree file.
+
+Time used:  0:56
+CODONML in paml version 4.9j, October 2019
+1 ambiguous codons are seen in the data:
+ ---
+
+       80 bytes for distance
+   504592 bytes for conP
+    16544 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+   756888 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    15
+branch=0  freq=0.808602 w0 = 0.224911
+branch=0  freq=0.191398 w1 = 1.000000
+			Qfactor for branch 0 = 0.989757
+branch=1  freq=0.683160 w0 = 0.224911
+branch=1  freq=0.161705 w1 = 1.000000
+branch=1  freq=0.155135 w2 = 1.965339
+			Qfactor for branch 1 = 0.717232
+w[0] = 0.224911
+w[1] = 1.000000
+w[2] = 1.965339
+Out..
+lnL  = -5226.913268
+1402 lfun, 7010 eigenQcodon, 39256 P(t)
+
+BEBing (dim = 4).  This may take many minutes.
+Calculating f(x_h|w) for 121 w's
+	   10 / 121 sets.  w for branches:  0.9500 0.9500 lnfX = -5787.8394	   20 / 121 sets.  w for branches:  0.0500 9.5000 lnfX = -5435.2869	   30 / 121 sets.  w for branches:  0.1500 9.5000 lnfX = -5253.1351	   40 / 121 sets.  w for branches:  0.2500 9.5000 lnfX = -5305.1493	   50 / 121 sets.  w for branches:  0.3500 9.5000 lnfX = -5391.4295	   60 / 121 sets.  w for branches:  0.4500 9.5000 lnfX = -5477.6169	   70 / 121 sets.  w for branches:  0.5500 9.5000 lnfX = -5555.9140	   80 / 121 sets.  w for branches:  0.6500 9.5000 lnfX = -5625.2530	   90 / 121 sets.  w for branches:  0.7500 9.5000 lnfX = -5686.3350	  100 / 121 sets.  w for branches:  0.8500 9.5000 lnfX = -5740.2054	  110 / 121 sets.  w for branches:  0.9500 9.5000 lnfX = -5787.8572	  120 / 121 sets.  w for branches:  1.0000 9.5000 lnfX = -5809.6239	  121 / 121 sets.  w for branches:  1.0000 10.5000 lnfX = -5809.6259
+Time:  1:02
+Calculating the marginal likelihood f(X).
+	1000 / 10000 grid points,  1:02	2000 / 10000 grid points,  1:02	3000 / 10000 grid points,  1:02	4000 / 10000 grid points,  1:02	5000 / 10000 grid points,  1:02	6000 / 10000 grid points,  1:02	7000 / 10000 grid points,  1:02	8000 / 10000 grid points,  1:02	9000 / 10000 grid points,  1:02	10000 / 10000 grid points,  1:02	log(fX) = -5245.252139  S = -4955.195589  -293.736998
+Calculating f(w_k|X), posterior for site classes for each site.  Slow!
+	did  10 / 517 site patterns   1:02	did  20 / 517 site patterns   1:02	did  30 / 517 site patterns   1:02	did  40 / 517 site patterns   1:02	did  50 / 517 site patterns   1:02	did  60 / 517 site patterns   1:02	did  70 / 517 site patterns   1:02	did  80 / 517 site patterns   1:02	did  90 / 517 site patterns   1:02	did 100 / 517 site patterns   1:02	did 110 / 517 site patterns   1:02	did 120 / 517 site patterns   1:02	did 130 / 517 site patterns   1:02	did 140 / 517 site patterns   1:02	did 150 / 517 site patterns   1:02	did 160 / 517 site patterns   1:02	did 170 / 517 site patterns   1:02	did 180 / 517 site patterns   1:02	did 190 / 517 site patterns   1:02	did 200 / 517 site patterns   1:02	did 210 / 517 site patterns   1:02	did 220 / 517 site patterns   1:02	did 230 / 517 site patterns   1:02	did 240 / 517 site patterns   1:02	did 250 / 517 site patterns   1:02	did 260 / 517 site patterns   1:02	did 270 / 517 site patterns   1:02	did 280 / 517 site patterns   1:02	did 290 / 517 site patterns   1:02	did 300 / 517 site patterns   1:02	did 310 / 517 site patterns   1:02	did 320 / 517 site patterns   1:02	did 330 / 517 site patterns   1:02	did 340 / 517 site patterns   1:02	did 350 / 517 site patterns   1:02	did 360 / 517 site patterns   1:02	did 370 / 517 site patterns   1:02	did 380 / 517 site patterns   1:02	did 390 / 517 site patterns   1:03	did 400 / 517 site patterns   1:03	did 410 / 517 site patterns   1:03	did 420 / 517 site patterns   1:03	did 430 / 517 site patterns   1:03	did 440 / 517 site patterns   1:03	did 450 / 517 site patterns   1:03	did 460 / 517 site patterns   1:03	did 470 / 517 site patterns   1:03	did 480 / 517 site patterns   1:03	did 490 / 517 site patterns   1:03	did 500 / 517 site patterns   1:03	did 510 / 517 site patterns   1:03	did 517 / 517 site patterns   1:03end of tree file.
+
+Time used:  1:03
+CODONML in paml version 4.9j, October 2019
+2 ambiguous codons are seen in the data:
+ --- NNN
+
+       80 bytes for distance
+   542656 bytes for conP
+    17792 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, 2, ((3, 4), 5));   MP score: -1
+   813984 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    15
+branch=0  freq=0.768929 w0 = 0.212183
+branch=0  freq=0.231071 w1 = 1.000000
+			Qfactor for branch 0 = 0.936746
+branch=1  freq=0.638398 w0 = 0.212183
+branch=1  freq=0.191845 w1 = 1.000000
+branch=1  freq=0.169757 w2 = 1.520320
+			Qfactor for branch 1 = 0.732306
+w[0] = 0.212183
+w[1] = 1.000000
+w[2] = 1.520320
+Out..
+lnL  = -6319.320840
+1297 lfun, 6485 eigenQcodon, 36316 P(t)
+
+BEBing (dim = 4).  This may take many minutes.
+Calculating f(x_h|w) for 121 w's
+	   10 / 121 sets.  w for branches:  0.9500 0.9500 lnfX = -6653.7583	   20 / 121 sets.  w for branches:  0.0500 9.5000 lnfX = -7293.9139	   30 / 121 sets.  w for branches:  0.1500 9.5000 lnfX = -6935.8675	   40 / 121 sets.  w for branches:  0.2500 9.5000 lnfX = -6855.9019	   50 / 121 sets.  w for branches:  0.3500 9.5000 lnfX = -6850.5051	   60 / 121 sets.  w for branches:  0.4500 9.5000 lnfX = -6875.4468	   70 / 121 sets.  w for branches:  0.5500 9.5000 lnfX = -6913.7132	   80 / 121 sets.  w for branches:  0.6500 9.5000 lnfX = -6957.2111	   90 / 121 sets.  w for branches:  0.7500 9.5000 lnfX = -7001.7479	  100 / 121 sets.  w for branches:  0.8500 9.5000 lnfX = -7045.1317	  110 / 121 sets.  w for branches:  0.9500 9.5000 lnfX = -7086.2800	  120 / 121 sets.  w for branches:  1.0000 9.5000 lnfX = -7105.8572	  121 / 121 sets.  w for branches:  1.0000 10.5000 lnfX = -7124.2896
+Time:  1:08
+Calculating the marginal likelihood f(X).
+	1000 / 10000 grid points,  1:08	2000 / 10000 grid points,  1:08	3000 / 10000 grid points,  1:08	4000 / 10000 grid points,  1:08	5000 / 10000 grid points,  1:08	6000 / 10000 grid points,  1:08	7000 / 10000 grid points,  1:08	8000 / 10000 grid points,  1:08	9000 / 10000 grid points,  1:08	10000 / 10000 grid points,  1:08	log(fX) = -6328.643545  S = -5953.557510  -373.118387
+Calculating f(w_k|X), posterior for site classes for each site.  Slow!
+	did  10 / 556 site patterns   1:08	did  20 / 556 site patterns   1:08	did  30 / 556 site patterns   1:08	did  40 / 556 site patterns   1:08	did  50 / 556 site patterns   1:08	did  60 / 556 site patterns   1:08	did  70 / 556 site patterns   1:08	did  80 / 556 site patterns   1:08	did  90 / 556 site patterns   1:08	did 100 / 556 site patterns   1:08	did 110 / 556 site patterns   1:08	did 120 / 556 site patterns   1:08	did 130 / 556 site patterns   1:08	did 140 / 556 site patterns   1:08	did 150 / 556 site patterns   1:08	did 160 / 556 site patterns   1:08	did 170 / 556 site patterns   1:08	did 180 / 556 site patterns   1:08	did 190 / 556 site patterns   1:08	did 200 / 556 site patterns   1:08	did 210 / 556 site patterns   1:08	did 220 / 556 site patterns   1:08	did 230 / 556 site patterns   1:08	did 240 / 556 site patterns   1:08	did 250 / 556 site patterns   1:08	did 260 / 556 site patterns   1:08	did 270 / 556 site patterns   1:08	did 280 / 556 site patterns   1:08	did 290 / 556 site patterns   1:08	did 300 / 556 site patterns   1:08	did 310 / 556 site patterns   1:08	did 320 / 556 site patterns   1:08	did 330 / 556 site patterns   1:09	did 340 / 556 site patterns   1:09	did 350 / 556 site patterns   1:09	did 360 / 556 site patterns   1:09	did 370 / 556 site patterns   1:09	did 380 / 556 site patterns   1:09	did 390 / 556 site patterns   1:09	did 400 / 556 site patterns   1:09	did 410 / 556 site patterns   1:09	did 420 / 556 site patterns   1:09	did 430 / 556 site patterns   1:09	did 440 / 556 site patterns   1:09	did 450 / 556 site patterns   1:09	did 460 / 556 site patterns   1:09	did 470 / 556 site patterns   1:09	did 480 / 556 site patterns   1:09	did 490 / 556 site patterns   1:09	did 500 / 556 site patterns   1:09	did 510 / 556 site patterns   1:09	did 520 / 556 site patterns   1:09	did 530 / 556 site patterns   1:09	did 540 / 556 site patterns   1:09	did 550 / 556 site patterns   1:09	did 556 / 556 site patterns   1:09end of tree file.
+
+Time used:  1:09
+CODONML in paml version 4.9j, October 2019
+1 ambiguous codons are seen in the data:
+ ---
+
+       80 bytes for distance
+   504592 bytes for conP
+    16544 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+   756888 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    15
+branch=0  freq=0.711110 w0 = 0.211801
+branch=0  freq=0.288890 w1 = 1.000000
+			Qfactor for branch 0 = 0.899180
+branch=1  freq=0.565163 w0 = 0.211801
+branch=1  freq=0.229598 w1 = 1.000000
+branch=1  freq=0.205239 w2 = 2.297012
+			Qfactor for branch 1 = 0.586820
+w[0] = 0.211801
+w[1] = 1.000000
+w[2] = 2.297012
+Out..
+lnL  = -5226.913262
+1608 lfun, 8040 eigenQcodon, 45024 P(t)
+
+BEBing (dim = 4).  This may take many minutes.
+Calculating f(x_h|w) for 121 w's
+	   10 / 121 sets.  w for branches:  0.9500 0.9500 lnfX = -5787.8394	   20 / 121 sets.  w for branches:  0.0500 9.5000 lnfX = -5951.9634	   30 / 121 sets.  w for branches:  0.1500 9.5000 lnfX = -5850.0166	   40 / 121 sets.  w for branches:  0.2500 9.5000 lnfX = -5908.9853	   50 / 121 sets.  w for branches:  0.3500 9.5000 lnfX = -5978.2711	   60 / 121 sets.  w for branches:  0.4500 9.5000 lnfX = -6035.7416	   70 / 121 sets.  w for branches:  0.5500 9.5000 lnfX = -6079.4045	   80 / 121 sets.  w for branches:  0.6500 9.5000 lnfX = -6111.6259	   90 / 121 sets.  w for branches:  0.7500 9.5000 lnfX = -6135.2481	  100 / 121 sets.  w for branches:  0.8500 9.5000 lnfX = -6152.6320	  110 / 121 sets.  w for branches:  0.9500 9.5000 lnfX = -6165.5420	  120 / 121 sets.  w for branches:  1.0000 9.5000 lnfX = -6170.7314	  121 / 121 sets.  w for branches:  1.0000 10.5000 lnfX = -6177.5246
+Time:  1:03
+Calculating the marginal likelihood f(X).
+	1000 / 10000 grid points,  1:03	2000 / 10000 grid points,  1:03	3000 / 10000 grid points,  1:03	4000 / 10000 grid points,  1:03	5000 / 10000 grid points,  1:03	6000 / 10000 grid points,  1:03	7000 / 10000 grid points,  1:03	8000 / 10000 grid points,  1:03	9000 / 10000 grid points,  1:03	10000 / 10000 grid points,  1:03	log(fX) = -5246.217015  S = -4903.200554  -337.710249
+Calculating f(w_k|X), posterior for site classes for each site.  Slow!
+	did  10 / 517 site patterns   1:03	did  20 / 517 site patterns   1:03	did  30 / 517 site patterns   1:03	did  40 / 517 site patterns   1:03	did  50 / 517 site patterns   1:03	did  60 / 517 site patterns   1:03	did  70 / 517 site patterns   1:03	did  80 / 517 site patterns   1:03	did  90 / 517 site patterns   1:03	did 100 / 517 site patterns   1:03	did 110 / 517 site patterns   1:03	did 120 / 517 site patterns   1:03	did 130 / 517 site patterns   1:03	did 140 / 517 site patterns   1:03	did 150 / 517 site patterns   1:03	did 160 / 517 site patterns   1:03	did 170 / 517 site patterns   1:03	did 180 / 517 site patterns   1:03	did 190 / 517 site patterns   1:03	did 200 / 517 site patterns   1:03	did 210 / 517 site patterns   1:03	did 220 / 517 site patterns   1:03	did 230 / 517 site patterns   1:03	did 240 / 517 site patterns   1:03	did 250 / 517 site patterns   1:03	did 260 / 517 site patterns   1:03	did 270 / 517 site patterns   1:03	did 280 / 517 site patterns   1:03	did 290 / 517 site patterns   1:03	did 300 / 517 site patterns   1:03	did 310 / 517 site patterns   1:03	did 320 / 517 site patterns   1:03	did 330 / 517 site patterns   1:03	did 340 / 517 site patterns   1:03	did 350 / 517 site patterns   1:03	did 360 / 517 site patterns   1:03	did 370 / 517 site patterns   1:03	did 380 / 517 site patterns   1:03	did 390 / 517 site patterns   1:03	did 400 / 517 site patterns   1:03	did 410 / 517 site patterns   1:03	did 420 / 517 site patterns   1:03	did 430 / 517 site patterns   1:03	did 440 / 517 site patterns   1:03	did 450 / 517 site patterns   1:03	did 460 / 517 site patterns   1:03	did 470 / 517 site patterns   1:03	did 480 / 517 site patterns   1:03	did 490 / 517 site patterns   1:03	did 500 / 517 site patterns   1:03	did 510 / 517 site patterns   1:03	did 517 / 517 site patterns   1:03end of tree file.
+
+Time used:  1:03
+CODONML in paml version 4.9j, October 2019
+2 ambiguous codons are seen in the data:
+ --- NNN
+
+       80 bytes for distance
+   542656 bytes for conP
+    17792 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, 2, ((3, 4), 5));   MP score: -1
+   813984 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    15
+branch=0  freq=0.752656 w0 = 0.284115
+branch=0  freq=0.247344 w1 = 1.000000
+			Qfactor for branch 0 = 0.852802
+branch=1  freq=0.606135 w0 = 0.284115
+branch=1  freq=0.199193 w1 = 1.000000
+branch=1  freq=0.194672 w2 = 1.855756
+			Qfactor for branch 1 = 0.626605
+w[0] = 0.284115
+w[1] = 1.000000
+w[2] = 1.855756
+Out..
+lnL  = -6315.617961
+1740 lfun, 8700 eigenQcodon, 48720 P(t)
+
+BEBing (dim = 4).  This may take many minutes.
+Calculating f(x_h|w) for 121 w's
+	   10 / 121 sets.  w for branches:  0.9500 0.9500 lnfX = -6662.3912	   20 / 121 sets.  w for branches:  0.0500 9.5000 lnfX = -7249.6716	   30 / 121 sets.  w for branches:  0.1500 9.5000 lnfX = -6910.6251	   40 / 121 sets.  w for branches:  0.2500 9.5000 lnfX = -6842.5098	   50 / 121 sets.  w for branches:  0.3500 9.5000 lnfX = -6845.9749	   60 / 121 sets.  w for branches:  0.4500 9.5000 lnfX = -6877.7650	   70 / 121 sets.  w for branches:  0.5500 9.5000 lnfX = -6921.2997	   80 / 121 sets.  w for branches:  0.6500 9.5000 lnfX = -6968.7709	   90 / 121 sets.  w for branches:  0.7500 9.5000 lnfX = -7016.2215	  100 / 121 sets.  w for branches:  0.8500 9.5000 lnfX = -7061.6687	  110 / 121 sets.  w for branches:  0.9500 9.5000 lnfX = -7104.2113	  120 / 121 sets.  w for branches:  1.0000 9.5000 lnfX = -7124.2834	  121 / 121 sets.  w for branches:  1.0000 10.5000 lnfX = -7142.0529
+Time:  1:17
+Calculating the marginal likelihood f(X).
+	1000 / 10000 grid points,  1:17	2000 / 10000 grid points,  1:17	3000 / 10000 grid points,  1:17	4000 / 10000 grid points,  1:17	5000 / 10000 grid points,  1:17	6000 / 10000 grid points,  1:17	7000 / 10000 grid points,  1:17	8000 / 10000 grid points,  1:17	9000 / 10000 grid points,  1:17	10000 / 10000 grid points,  1:17	log(fX) = -6325.954227  S = -5948.183480  -379.269317
+Calculating f(w_k|X), posterior for site classes for each site.  Slow!
+	did  10 / 556 site patterns   1:17	did  20 / 556 site patterns   1:17	did  30 / 556 site patterns   1:17	did  40 / 556 site patterns   1:17	did  50 / 556 site patterns   1:17	did  60 / 556 site patterns   1:17	did  70 / 556 site patterns   1:18	did  80 / 556 site patterns   1:18	did  90 / 556 site patterns   1:18	did 100 / 556 site patterns   1:18	did 110 / 556 site patterns   1:18	did 120 / 556 site patterns   1:18	did 130 / 556 site patterns   1:18	did 140 / 556 site patterns   1:18	did 150 / 556 site patterns   1:18	did 160 / 556 site patterns   1:18	did 170 / 556 site patterns   1:18	did 180 / 556 site patterns   1:18	did 190 / 556 site patterns   1:18	did 200 / 556 site patterns   1:18	did 210 / 556 site patterns   1:18	did 220 / 556 site patterns   1:18	did 230 / 556 site patterns   1:18	did 240 / 556 site patterns   1:18	did 250 / 556 site patterns   1:18	did 260 / 556 site patterns   1:18	did 270 / 556 site patterns   1:18	did 280 / 556 site patterns   1:18	did 290 / 556 site patterns   1:18	did 300 / 556 site patterns   1:18	did 310 / 556 site patterns   1:18	did 320 / 556 site patterns   1:18	did 330 / 556 site patterns   1:18	did 340 / 556 site patterns   1:18	did 350 / 556 site patterns   1:18	did 360 / 556 site patterns   1:18	did 370 / 556 site patterns   1:18	did 380 / 556 site patterns   1:18	did 390 / 556 site patterns   1:18	did 400 / 556 site patterns   1:18	did 410 / 556 site patterns   1:18	did 420 / 556 site patterns   1:18	did 430 / 556 site patterns   1:18	did 440 / 556 site patterns   1:18	did 450 / 556 site patterns   1:18	did 460 / 556 site patterns   1:18	did 470 / 556 site patterns   1:18	did 480 / 556 site patterns   1:18	did 490 / 556 site patterns   1:18	did 500 / 556 site patterns   1:18	did 510 / 556 site patterns   1:18	did 520 / 556 site patterns   1:18	did 530 / 556 site patterns   1:18	did 540 / 556 site patterns   1:18	did 550 / 556 site patterns   1:18	did 556 / 556 site patterns   1:18end of tree file.
+
+Time used:  1:18
+CODONML in paml version 4.9j, October 2019
+2 ambiguous codons are seen in the data:
+ --- NNN
+
+       80 bytes for distance
+   542656 bytes for conP
+    17792 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, 2, ((3, 4), 5));   MP score: -1
+   813984 bytes for conP, adjusted
+
+ntime & nrate & np:     7     5    14
+branch=0  freq=0.789865 w0 = 0.216905
+branch=0  freq=0.210135 w1 = 1.000000
+			Qfactor for branch 0 = 0.953330
+branch=1  freq=0.657245 w0 = 0.216905
+branch=1  freq=0.174853 w1 = 1.000000
+branch=1  freq=0.167901 w2 = 1.000000
+			Qfactor for branch 1 = 0.825851
+w[0] = 0.216905
+w[1] = 1.000000
+w[2] = 1.000000
+Out..
+lnL  = -6310.441088
+974 lfun, 4870 eigenQcodon, 27272 P(t)
+end of tree file.
+
+Time used:  0:38
+Finished XP_020868537.1.treefile in Arabidopsis_lyrata_QC
+CODONML in paml version 4.9j, October 2019
+2 ambiguous codons are seen in the data:
+ --- NNN
+
+       80 bytes for distance
+   542656 bytes for conP
+    17792 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, 2, ((3, 4), 5));   MP score: -1
+   813984 bytes for conP, adjusted
+
+ntime & nrate & np:     7     5    14
+branch=0  freq=0.812786 w0 = 0.216332
+branch=0  freq=0.187214 w1 = 1.000000
+			Qfactor for branch 0 = 0.982099
+branch=1  freq=0.685626 w0 = 0.216332
+branch=1  freq=0.157925 w1 = 1.000000
+branch=1  freq=0.156449 w2 = 1.000000
+			Qfactor for branch 1 = 0.852142
+w[0] = 0.216332
+w[1] = 1.000000
+w[2] = 1.000000
+Out..
+lnL  = -6317.550942
+898 lfun, 4490 eigenQcodon, 25144 P(t)
+end of tree file.
+
+Time used:  0:36
+Finished XP_002883322.2.treefile in Arabidopsis_lyrata_QC
+CODONML in paml version 4.9j, October 2019
+2 ambiguous codons are seen in the data:
+ --- NNN
+
+       80 bytes for distance
+   542656 bytes for conP
+    17792 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, 2, ((3, 4), 5));   MP score: -1
+   813984 bytes for conP, adjusted
+
+ntime & nrate & np:     7     5    14
+branch=0  freq=0.805380 w0 = 0.299303
+branch=0  freq=0.194620 w1 = 1.000000
+			Qfactor for branch 0 = 0.883400
+branch=1  freq=0.680590 w0 = 0.299303
+branch=1  freq=0.164465 w1 = 1.000000
+branch=1  freq=0.154946 w2 = 1.000000
+			Qfactor for branch 1 = 0.788570
+w[0] = 0.299303
+w[1] = 1.000000
+w[2] = 1.000000
+Out..
+lnL  = -6316.957636
+946 lfun, 4730 eigenQcodon, 26488 P(t)
+end of tree file.
+
+Time used:  0:51
+Finished XP_002868216.1.treefile in Arabidopsis_lyrata_QC
+CODONML in paml version 4.9j, October 2019
+1 ambiguous codons are seen in the data:
+ ---
+
+       80 bytes for distance
+   504592 bytes for conP
+    16544 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+   756888 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    15
+branch=0  freq=0.722548 w0 = 0.286174
+branch=0  freq=0.277452 w1 = 1.000000
+			Qfactor for branch 0 = 0.846199
+branch=1  freq=0.584181 w0 = 0.286174
+branch=1  freq=0.224321 w1 = 1.000000
+branch=1  freq=0.191498 w2 = 1.751699
+			Qfactor for branch 1 = 0.641599
+w[0] = 0.286174
+w[1] = 1.000000
+w[2] = 1.751699
+Out..
+lnL  = -5226.351338
+2367 lfun, 11835 eigenQcodon, 66276 P(t)
+
+BEBing (dim = 4).  This may take many minutes.
+Calculating f(x_h|w) for 121 w's
+	   10 / 121 sets.  w for branches:  0.9500 0.9500 lnfX = -5778.4254	   20 / 121 sets.  w for branches:  0.0500 9.5000 lnfX = -5968.9915	   30 / 121 sets.  w for branches:  0.1500 9.5000 lnfX = -5866.8683	   40 / 121 sets.  w for branches:  0.2500 9.5000 lnfX = -5923.8829	   50 / 121 sets.  w for branches:  0.3500 9.5000 lnfX = -5991.8897	   60 / 121 sets.  w for branches:  0.4500 9.5000 lnfX = -6048.8349	   70 / 121 sets.  w for branches:  0.5500 9.5000 lnfX = -6092.4368	   80 / 121 sets.  w for branches:  0.6500 9.5000 lnfX = -6124.7911	   90 / 121 sets.  w for branches:  0.7500 9.5000 lnfX = -6148.5672	  100 / 121 sets.  w for branches:  0.8500 9.5000 lnfX = -6166.0364	  110 / 121 sets.  w for branches:  0.9500 9.5000 lnfX = -6178.9283	  120 / 121 sets.  w for branches:  1.0000 9.5000 lnfX = -6184.0681	  121 / 121 sets.  w for branches:  1.0000 10.5000 lnfX = -6188.4137
+Time:  1:33
+Calculating the marginal likelihood f(X).
+	1000 / 10000 grid points,  1:33	2000 / 10000 grid points,  1:33	3000 / 10000 grid points,  1:33	4000 / 10000 grid points,  1:33	5000 / 10000 grid points,  1:33	6000 / 10000 grid points,  1:33	7000 / 10000 grid points,  1:33	8000 / 10000 grid points,  1:33	9000 / 10000 grid points,  1:33	10000 / 10000 grid points,  1:33	log(fX) = -5247.870924  S = -4895.573566  -345.994518
+Calculating f(w_k|X), posterior for site classes for each site.  Slow!
+	did  10 / 517 site patterns   1:33	did  20 / 517 site patterns   1:33	did  30 / 517 site patterns   1:33	did  40 / 517 site patterns   1:33	did  50 / 517 site patterns   1:33	did  60 / 517 site patterns   1:33	did  70 / 517 site patterns   1:33	did  80 / 517 site patterns   1:33	did  90 / 517 site patterns   1:33	did 100 / 517 site patterns   1:33	did 110 / 517 site patterns   1:33	did 120 / 517 site patterns   1:33	did 130 / 517 site patterns   1:33	did 140 / 517 site patterns   1:33	did 150 / 517 site patterns   1:33	did 160 / 517 site patterns   1:33	did 170 / 517 site patterns   1:33	did 180 / 517 site patterns   1:33	did 190 / 517 site patterns   1:33	did 200 / 517 site patterns   1:33	did 210 / 517 site patterns   1:33	did 220 / 517 site patterns   1:33	did 230 / 517 site patterns   1:33	did 240 / 517 site patterns   1:33	did 250 / 517 site patterns   1:33	did 260 / 517 site patterns   1:33	did 270 / 517 site patterns   1:33	did 280 / 517 site patterns   1:33	did 290 / 517 site patterns   1:33	did 300 / 517 site patterns   1:33	did 310 / 517 site patterns   1:33	did 320 / 517 site patterns   1:33	did 330 / 517 site patterns   1:33	did 340 / 517 site patterns   1:33	did 350 / 517 site patterns   1:33	did 360 / 517 site patterns   1:33	did 370 / 517 site patterns   1:33	did 380 / 517 site patterns   1:33	did 390 / 517 site patterns   1:33	did 400 / 517 site patterns   1:33	did 410 / 517 site patterns   1:33	did 420 / 517 site patterns   1:33	did 430 / 517 site patterns   1:33	did 440 / 517 site patterns   1:33	did 450 / 517 site patterns   1:33	did 460 / 517 site patterns   1:33	did 470 / 517 site patterns   1:33	did 480 / 517 site patterns   1:33	did 490 / 517 site patterns   1:33	did 500 / 517 site patterns   1:33	did 510 / 517 site patterns   1:33	did 517 / 517 site patterns   1:33end of tree file.
+
+Time used:  1:33
+CODONML in paml version 4.9j, October 2019
+2 ambiguous codons are seen in the data:
+ --- NNN
+
+       80 bytes for distance
+   542656 bytes for conP
+    17792 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, 2, ((3, 4), 5));   MP score: -1
+   813984 bytes for conP, adjusted
+
+ntime & nrate & np:     7     5    14
+branch=0  freq=0.798341 w0 = 0.225994
+branch=0  freq=0.201659 w1 = 1.000000
+			Qfactor for branch 0 = 0.953128
+branch=1  freq=0.673581 w0 = 0.225994
+branch=1  freq=0.170145 w1 = 1.000000
+branch=1  freq=0.156274 w2 = 1.000000
+			Qfactor for branch 1 = 0.833545
+w[0] = 0.225994
+w[1] = 1.000000
+w[2] = 1.000000
+Out..
+lnL  = -6319.783310
+869 lfun, 4345 eigenQcodon, 24332 P(t)
+end of tree file.
+
+Time used:  0:33
+Finished XP_020883914.1.treefile in Arabidopsis_lyrata_QC
+CODONML in paml version 4.9j, October 2019
+2 ambiguous codons are seen in the data:
+ --- NNN
+
+       80 bytes for distance
+   542656 bytes for conP
+    17792 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, 2, ((3, 4), 5));   MP score: -1
+   813984 bytes for conP, adjusted
+
+ntime & nrate & np:     7     5    14
+branch=0  freq=0.756252 w0 = 0.259463
+branch=0  freq=0.243748 w1 = 1.000000
+			Qfactor for branch 0 = 0.877857
+branch=1  freq=0.613591 w0 = 0.259463
+branch=1  freq=0.197766 w1 = 1.000000
+branch=1  freq=0.188643 w2 = 1.000000
+			Qfactor for branch 1 = 0.766945
+w[0] = 0.259463
+w[1] = 1.000000
+w[2] = 1.000000
+Out..
+lnL  = -6319.522574
+840 lfun, 4200 eigenQcodon, 23520 P(t)
+end of tree file.
+
+Time used:  0:31
+Finished XP_002893503.1.treefile in Arabidopsis_lyrata_QC
+Completed processing for Arabidopsis_lyrata_QC
+CODONML in paml version 4.9j, October 2019
+1 ambiguous codons are seen in the data:
+ ---
+
+       80 bytes for distance
+   504592 bytes for conP
+    16544 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+   756888 bytes for conP, adjusted
+
+ntime & nrate & np:     7     5    14
+branch=0  freq=0.749708 w0 = 0.200744
+branch=0  freq=0.250292 w1 = 1.000000
+			Qfactor for branch 0 = 0.950911
+branch=1  freq=0.612812 w0 = 0.200744
+branch=1  freq=0.204589 w1 = 1.000000
+branch=1  freq=0.182599 w2 = 1.000000
+			Qfactor for branch 1 = 0.818639
+w[0] = 0.200744
+w[1] = 1.000000
+w[2] = 1.000000
+Out..
+lnL  = -5226.913262
+1338 lfun, 6690 eigenQcodon, 37464 P(t)
+end of tree file.
+
+Time used:  0:44
+Finished AT1G49130.1.treefile in Arabidopsis_thaliana_QC
+CODONML in paml version 4.9j, October 2019
+1 ambiguous codons are seen in the data:
+ ---
+
+       80 bytes for distance
+   504592 bytes for conP
+    16544 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+   756888 bytes for conP, adjusted
+
+ntime & nrate & np:     7     6    15
+branch=0  freq=0.774746 w0 = 0.241452
+branch=0  freq=0.225254 w1 = 1.000000
+			Qfactor for branch 0 = 0.934471
+branch=1  freq=0.633330 w0 = 0.241452
+branch=1  freq=0.184138 w1 = 1.000000
+branch=1  freq=0.182532 w2 = 2.273282
+			Qfactor for branch 1 = 0.625778
+w[0] = 0.241452
+w[1] = 1.000000
+w[2] = 2.273282
+Out..
+lnL  = -5214.055103
+2474 lfun, 12370 eigenQcodon, 69272 P(t)
+
+BEBing (dim = 4).  This may take many minutes.
+Calculating f(x_h|w) for 121 w's
+	   10 / 121 sets.  w for branches:  0.9500 0.9500 lnfX = -5747.6738	   20 / 121 sets.  w for branches:  0.0500 9.5000 lnfX = -5507.3566	   30 / 121 sets.  w for branches:  0.1500 9.5000 lnfX = -5376.0709	   40 / 121 sets.  w for branches:  0.2500 9.5000 lnfX = -5398.7983	   50 / 121 sets.  w for branches:  0.3500 9.5000 lnfX = -5455.4096	   60 / 121 sets.  w for branches:  0.4500 9.5000 lnfX = -5520.6641	   70 / 121 sets.  w for branches:  0.5500 9.5000 lnfX = -5585.7078	   80 / 121 sets.  w for branches:  0.6500 9.5000 lnfX = -5647.0358	   90 / 121 sets.  w for branches:  0.7500 9.5000 lnfX = -5703.3585	  100 / 121 sets.  w for branches:  0.8500 9.5000 lnfX = -5754.3924	  110 / 121 sets.  w for branches:  0.9500 9.5000 lnfX = -5800.3152	  120 / 121 sets.  w for branches:  1.0000 9.5000 lnfX = -5821.4731	  121 / 121 sets.  w for branches:  1.0000 10.5000 lnfX = -5821.5414
+Time:  1:33
+Calculating the marginal likelihood f(X).
+	1000 / 10000 grid points,  1:33	2000 / 10000 grid points,  1:33	3000 / 10000 grid points,  1:33	4000 / 10000 grid points,  1:33	5000 / 10000 grid points,  1:33	6000 / 10000 grid points,  1:33	7000 / 10000 grid points,  1:33	8000 / 10000 grid points,  1:33	9000 / 10000 grid points,  1:33	10000 / 10000 grid points,  1:33	log(fX) = -5229.459266  S = -4849.985270  -372.861039
+Calculating f(w_k|X), posterior for site classes for each site.  Slow!
+	did  10 / 517 site patterns   1:33	did  20 / 517 site patterns   1:33	did  30 / 517 site patterns   1:33	did  40 / 517 site patterns   1:33	did  50 / 517 site patterns   1:33	did  60 / 517 site patterns   1:33	did  70 / 517 site patterns   1:33	did  80 / 517 site patterns   1:33	did  90 / 517 site patterns   1:33	did 100 / 517 site patterns   1:33	did 110 / 517 site patterns   1:33	did 120 / 517 site patterns   1:33	did 130 / 517 site patterns   1:33	did 140 / 517 site patterns   1:33	did 150 / 517 site patterns   1:33	did 160 / 517 site patterns   1:33	did 170 / 517 site patterns   1:33	did 180 / 517 site patterns   1:33	did 190 / 517 site patterns   1:33	did 200 / 517 site patterns   1:33	did 210 / 517 site patterns   1:33	did 220 / 517 site patterns   1:33	did 230 / 517 site patterns   1:33	did 240 / 517 site patterns   1:33	did 250 / 517 site patterns   1:33	did 260 / 517 site patterns   1:33	did 270 / 517 site patterns   1:33	did 280 / 517 site patterns   1:34	did 290 / 517 site patterns   1:34	did 300 / 517 site patterns   1:34	did 310 / 517 site patterns   1:34	did 320 / 517 site patterns   1:34	did 330 / 517 site patterns   1:34	did 340 / 517 site patterns   1:34	did 350 / 517 site patterns   1:34	did 360 / 517 site patterns   1:34	did 370 / 517 site patterns   1:34	did 380 / 517 site patterns   1:34	did 390 / 517 site patterns   1:34	did 400 / 517 site patterns   1:34	did 410 / 517 site patterns   1:34	did 420 / 517 site patterns   1:34	did 430 / 517 site patterns   1:34	did 440 / 517 site patterns   1:34	did 450 / 517 site patterns   1:34	did 460 / 517 site patterns   1:34	did 470 / 517 site patterns   1:34	did 480 / 517 site patterns   1:34	did 490 / 517 site patterns   1:34	did 500 / 517 site patterns   1:34	did 510 / 517 site patterns   1:34	did 517 / 517 site patterns   1:34end of tree file.
+
+Time used:  1:34
+CODONML in paml version 4.9j, October 2019
+1 ambiguous codons are seen in the data:
+ ---
+
+       80 bytes for distance
+   504592 bytes for conP
+    16544 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+   756888 bytes for conP, adjusted
+
+ntime & nrate & np:     7     5    14
+branch=0  freq=0.784842 w0 = 0.299493
+branch=0  freq=0.215158 w1 = 1.000000
+			Qfactor for branch 0 = 0.884768
+branch=1  freq=0.666312 w0 = 0.299493
+branch=1  freq=0.182664 w1 = 1.000000
+branch=1  freq=0.151025 w2 = 1.000000
+			Qfactor for branch 1 = 0.794081
+w[0] = 0.299493
+w[1] = 1.000000
+w[2] = 1.000000
+Out..
+lnL  = -5226.913262
+1669 lfun, 8345 eigenQcodon, 46732 P(t)
+end of tree file.
+
+Time used:  1:03
+Finished AT1G49130.2.treefile in Arabidopsis_thaliana_QC
+CODONML in paml version 4.9j, October 2019
+1 ambiguous codons are seen in the data:
+ ---
+
+       80 bytes for distance
+   504592 bytes for conP
+    16544 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+   756888 bytes for conP, adjusted
+
+ntime & nrate & np:     7     5    14
+branch=0  freq=0.766641 w0 = 0.283787
+branch=0  freq=0.233359 w1 = 1.000000
+			Qfactor for branch 0 = 0.884873
+branch=1  freq=0.627381 w0 = 0.283787
+branch=1  freq=0.190969 w1 = 1.000000
+branch=1  freq=0.181650 w2 = 1.000000
+			Qfactor for branch 1 = 0.778242
+w[0] = 0.283787
+w[1] = 1.000000
+w[2] = 1.000000
+Out..
+lnL  = -5226.913262
+1039 lfun, 5195 eigenQcodon, 29092 P(t)
+end of tree file.
+
+Time used:  0:31
+Finished AT1G25440.1.treefile in Arabidopsis_thaliana_QC
+CODONML in paml version 4.9j, October 2019
+1 ambiguous codons are seen in the data:
+ ---
+
+       80 bytes for distance
+   504592 bytes for conP
+    16544 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+   756888 bytes for conP, adjusted
+
+ntime & nrate & np:     7     5    14
+branch=0  freq=0.783435 w0 = 0.264959
+branch=0  freq=0.216565 w1 = 1.000000
+			Qfactor for branch 0 = 0.918024
+branch=1  freq=0.659651 w0 = 0.264959
+branch=1  freq=0.182347 w1 = 1.000000
+branch=1  freq=0.158002 w2 = 1.000000
+			Qfactor for branch 1 = 0.812529
+w[0] = 0.264959
+w[1] = 1.000000
+w[2] = 1.000000
+Out..
+lnL  = -5224.993684
+2166 lfun, 10830 eigenQcodon, 60648 P(t)
+end of tree file.
+
+Time used:  1:03
+Finished AT1G68520.1.treefile in Arabidopsis_thaliana_QC
+CODONML in paml version 4.9j, October 2019
+1 ambiguous codons are seen in the data:
+ ---
+
+       80 bytes for distance
+   504592 bytes for conP
+    16544 bytes for fhK
+  5000000 bytes for space
+
+2 branch types are in tree. Stop if wrong.
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+   756888 bytes for conP, adjusted
+
+ntime & nrate & np:     7     5    14
+branch=0  freq=0.752472 w0 = 0.266820
+branch=0  freq=0.247528 w1 = 1.000000
+			Qfactor for branch 0 = 0.887704
+branch=1  freq=0.624369 w0 = 0.266820
+branch=1  freq=0.205388 w1 = 1.000000
+branch=1  freq=0.170243 w2 = 1.000000
+			Qfactor for branch 1 = 0.785873
+w[0] = 0.266820
+w[1] = 1.000000
+w[2] = 1.000000
+Out..
+lnL  = -5215.154655
+1057 lfun, 5285 eigenQcodon, 29596 P(t)
+end of tree file.
+
+Time used:  0:29
+Finished AT1G28050.1.treefile in Arabidopsis_thaliana_QC
+Completed processing for Arabidopsis_thaliana_QC
+All species processing completed.
+---------------------------------
+--------------------------------------------------
+Starting script3.sh at Fri Apr 25 08:18:10 UTC 2025
+script3.sh completed successfully at 08:18:16. Total time: 00:00:06
+----- Output from script3.sh -----
+Warning: Tree file for Arabidopsis_halleri_QC not found. Skipping...
+Processing M0 model for Arabidopsis_thaliana_QC
+Processing M0 model for Arabidopsis_lyrata_QC
+CODONML in paml version 4.9j, October 2019
+2 ambiguous codons are seen in the data:
+ --- NNN
+
+       80 bytes for distance
+   542656 bytes for conP
+2636992029619451136 bytes for fhK
+  5000000 bytes for space
+
+TREE #  1
+(1, 2, ((3, 4), 5));   MP score: -1
+   813984 bytes for conP, adjusted
+
+ntime & nrate & np:     7     5    12
+Out..
+lnL  = -6334.476689
+636 lfun, 636 eigenQcodon, 4452 P(t)
+end of tree file.
+
+Time used:  0:05
+Completed M0 model for Arabidopsis_lyrata_QC
+CODONML in paml version 4.9j, October 2019
+1 ambiguous codons are seen in the data:
+ ---
+
+       80 bytes for distance
+   504592 bytes for conP
+17856459744084355072 bytes for fhK
+  5000000 bytes for space
+
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+   756888 bytes for conP, adjusted
+
+ntime & nrate & np:     7     5    12
+Out..
+lnL  = -5243.547350
+864 lfun, 864 eigenQcodon, 6048 P(t)
+end of tree file.
+
+Time used:  0:05
+Completed M0 model for Arabidopsis_thaliana_QC
+All M0 model processing completed.
+---------------------------------
+--------------------------------------------------
+Starting script4.sh at Fri Apr 25 08:18:16 UTC 2025
+script4.sh completed successfully at 08:26:43. Total time: 00:08:27
+----- Output from script4.sh -----
+Processing species: Arabidopsis_halleri_QC
+MSA file: msa/Arabidopsis_halleri_QC_msa.best.fas
+Expected tree file: treefiles/Arabidopsis_halleri_QC.treefile
+Warning: Tree file for Arabidopsis_halleri_QC not found. Skipping.
+Processing species: Arabidopsis_lyrata_QC
+MSA file: msa/Arabidopsis_lyrata_QC_msa.best.fas
+Expected tree file: treefiles/Arabidopsis_lyrata_QC.treefile
+Processing species: Arabidopsis_thaliana_QC
+MSA file: msa/Arabidopsis_thaliana_QC_msa.best.fas
+Expected tree file: treefiles/Arabidopsis_thaliana_QC.treefile
+Running codeml for Arabidopsis_lyrata_QC (Site Models: 0, 1, 2, 3, 7, 8)
+Running codeml for Arabidopsis_thaliana_QC (Site Models: 0, 1, 2, 3, 7, 8)
+CODONML in paml version 4.9j, October 2019
+NSsites batch run (ncatG as in YNGP2000):   0  1  2  3  7  8
+2 ambiguous codons are seen in the data:
+ --- NNN
+
+       80 bytes for distance
+   542656 bytes for conP
+    48928 bytes for fhK
+  5000000 bytes for space
+
+
+Model 0: one-ratio
+
+TREE #  1
+(1, 2, ((3, 4), 5));   MP score: -1
+   813984 bytes for conP, adjusted
+
+ntime & nrate & np:     7     5    12
+Out..
+lnL  = -6334.476689
+669 lfun, 669 eigenQcodon, 4683 P(t)
+end of tree file.
+
+Time used:  0:04
+
+
+Model 1: NearlyNeutral
+
+TREE #  1
+(1, 2, ((3, 4), 5));   MP score: -1
+ntime & nrate & np:     7     5    13
+Qfactor_NS = 0.534642
+Out..
+lnL  = -6319.783310
+737 lfun, 2211 eigenQcodon, 10318 P(t)
+end of tree file.
+
+Time used:  0:20
+
+
+Model 2: PositiveSelection
+
+TREE #  1
+(1, 2, ((3, 4), 5));   MP score: -1
+initial w for M2:NSpselection reset.
+
+ntime & nrate & np:     7     6    15
+Qfactor_NS = 0.462924
+Out..
+lnL  = -6319.783310
+740 lfun, 2960 eigenQcodon, 15540 P(t)
+
+BEBing (dim = 4).  This may take several minutes.
+Calculating f(x_h|w): 10 categories 21 w sets.
+Calculating f(X), the marginal likelihood.
+	log(fX) = -6330.806032  S = -5998.557849  -324.526789
+Calculating f(w|X), posterior probabilities of site classes.
+	did  10 / 556 patterns   0:46	did  20 / 556 patterns   0:46	did  30 / 556 patterns   0:46	did  40 / 556 patterns   0:46	did  50 / 556 patterns   0:46	did  60 / 556 patterns   0:46	did  70 / 556 patterns   0:46	did  80 / 556 patterns   0:46	did  90 / 556 patterns   0:46	did 100 / 556 patterns   0:46	did 110 / 556 patterns   0:46	did 120 / 556 patterns   0:46	did 130 / 556 patterns   0:46	did 140 / 556 patterns   0:46	did 150 / 556 patterns   0:46	did 160 / 556 patterns   0:46	did 170 / 556 patterns   0:46	did 180 / 556 patterns   0:46	did 190 / 556 patterns   0:46	did 200 / 556 patterns   0:46	did 210 / 556 patterns   0:46	did 220 / 556 patterns   0:46	did 230 / 556 patterns   0:46	did 240 / 556 patterns   0:46	did 250 / 556 patterns   0:46	did 260 / 556 patterns   0:46	did 270 / 556 patterns   0:46	did 280 / 556 patterns   0:46	did 290 / 556 patterns   0:46	did 300 / 556 patterns   0:46	did 310 / 556 patterns   0:46	did 320 / 556 patterns   0:47	did 330 / 556 patterns   0:47	did 340 / 556 patterns   0:47	did 350 / 556 patterns   0:47	did 360 / 556 patterns   0:47	did 370 / 556 patterns   0:47	did 380 / 556 patterns   0:47	did 390 / 556 patterns   0:47	did 400 / 556 patterns   0:47	did 410 / 556 patterns   0:47	did 420 / 556 patterns   0:47	did 430 / 556 patterns   0:47	did 440 / 556 patterns   0:47	did 450 / 556 patterns   0:47	did 460 / 556 patterns   0:47	did 470 / 556 patterns   0:47	did 480 / 556 patterns   0:47	did 490 / 556 patterns   0:47	did 500 / 556 patterns   0:47	did 510 / 556 patterns   0:47	did 520 / 556 patterns   0:47	did 530 / 556 patterns   0:47	did 540 / 556 patterns   0:47	did 550 / 556 patterns   0:47	did 556 / 556 patterns   0:47end of tree file.
+
+Time used:  0:47
+
+
+Model 3: discrete
+
+TREE #  1
+(1, 2, ((3, 4), 5));   MP score: -1
+ntime & nrate & np:     7     7    16
+Qfactor_NS = 0.904354
+
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 73  r = 1 fhK = -1.08342e-06 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 75  r = 1 fhK = -1.16631e-06 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 78  r = 1 fhK = -3.30072e-07 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 83  r = 1 fhK = -1.23425e-07 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 85  r = 1 fhK = -8.06210e-09 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 88  r = 1 fhK = -4.16348e-07 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 104  r = 1 fhK = -1.15183e-07 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 105  r = 1 fhK = -7.43479e-08 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 109  r = 1 fhK = -4.45642e-08 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 111  r = 1 fhK = -4.01542e-07 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 117  r = 1 fhK = -8.98908e-07 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 127  r = 1 fhK = -8.31757e-07 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 136  r = 1 fhK = -2.78543e-07 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 138  r = 1 fhK = -1.13830e-08 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 139  r = 1 fhK = -2.58097e-10 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 150  r = 1 fhK = -2.95537e-07 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 153  r = 1 fhK = -1.11074e-07 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 154  r = 1 fhK = -3.13761e-07 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 156  r = 1 fhK = -5.36891e-07 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 206  r = 1 fhK = -1.99765e-08 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 209  r = 1 fhK = -2.38585e-08 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 210  r = 1 fhK = -4.09254e-07 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 213  r = 1 fhK = -4.38900e-07 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 214  r = 1 fhK = -9.66268e-07 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 217  r = 1 fhK = -6.17601e-07 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 219  r = 1 fhK = -1.06515e-06 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 223  r = 1 fhK = -4.86723e-08 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 236  r = 1 fhK = -3.36985e-09 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 240  r = 1 fhK = -4.89952e-09 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 248  r = 1 fhK = -4.07677e-08 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 252  r = 1 fhK = -6.35892e-08 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 253  r = 1 fhK = -2.57999e-07 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 262  r = 1 fhK = -4.53944e-07 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 279  r = 1 fhK = -4.53944e-07 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 282  r = 1 fhK = -4.51208e-07 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 283  r = 1 fhK = -2.36609e-09 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 287  r = 1 fhK = -2.25809e-08 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 289  r = 1 fhK = -5.96885e-08 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 293  r = 1 fhK = -2.98376e-07 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 298  r = 1 fhK = -1.31419e-08 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 304  r = 1 fhK = -5.43685e-08 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 317  r = 1 fhK = -9.54342e-08 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 324  r = 1 fhK = -1.72645e-08 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 333  r = 1 fhK = -7.51149e-08 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 338  r = 1 fhK = -2.21989e-07 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 340  r = 1 fhK = -1.76635e-10 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 355  r = 1 fhK = -1.80413e-10 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 356  r = 1 fhK = -4.68870e-08 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 361  r = 1 fhK = -8.19595e-09 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 365  r = 1 fhK = -1.26550e-08 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 366  r = 1 fhK = -2.77889e-08 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 367  r = 1 fhK = -5.41371e-07 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 369  r = 1 fhK = -2.53699e-08 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 389  r = 1 fhK = -1.52523e-07 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 391  r = 1 fhK = -5.99285e-08 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 394  r = 1 fhK = -1.70966e-09 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 401  r = 1 fhK = -1.37003e-06 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 402  r = 1 fhK = -9.00059e-07 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 404  r = 1 fhK = -6.81151e-08 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 414  r = 1 fhK = -1.95655e-09 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 426  r = 1 fhK = -1.09098e-07 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 430  r = 1 fhK = -2.79574e-08 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 431  r = 1 fhK = -2.55243e-09 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 432  r = 1 fhK = -5.55142e-09 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 435  r = 1 fhK = -1.15742e-07 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 437  r = 1 fhK = -1.87708e-07 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 454  r = 1 fhK = -1.17871e-07 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 458  r = 1 fhK = -1.24974e-09 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 459  r = 1 fhK = -5.57035e-09 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 461  r = 1 fhK = -1.73303e-09 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 462  r = 1 fhK = -4.11258e-08 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 465  r = 1 fhK = -5.25869e-08 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 467  r = 1 fhK = -5.64019e-08 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 471  r = 1 fhK = -1.87506e-09 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 473  r = 1 fhK = -2.18813e-08 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 475  r = 1 fhK = -2.61599e-07 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 487  r = 1 fhK = -1.35970e-07 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 491  r = 1 fhK = -3.71801e-10 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 496  r = 1 fhK = -2.18599e-09 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 503  r = 1 fhK = -1.39195e-08 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 506  r = 1 fhK = -2.85305e-07 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 510  r = 1 fhK = -5.91324e-08 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 514  r = 1 fhK = -3.58851e-08 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 517  r = 1 fhK = -1.69888e-07 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 532  r = 1 fhK = -1.97969e-07 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 533  r = 1 fhK = -5.61978e-09 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 534  r = 1 fhK = -6.27423e-08 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 537  r = 1 fhK = -5.50256e-07 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 547  r = 1 fhK = -1.29589e-09 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 549  r = 1 fhK = -3.43333e-08 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 550  r = 1 fhK = -3.55413e-07 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 554  r = 1 fhK = -6.67528e-08 
+    0.367088    0.614570    1.461226    1.174544    0.508873    0.627933    1.985934    1.602024    1.020983    0.975609    1.571665    0.119292    1.765592   -0.000094    0.402448    0.150709
+
+fx_r: h = 555  r = 1 fhK = -4.89747e-08 Out..
+lnL  = -6301.789703
+1833 lfun, 7332 eigenQcodon, 38493 P(t)
+end of tree file.
+
+Time used:  2:02
+
+
+Model 7: beta
+
+TREE #  1
+(1, 2, ((3, 4), 5));   MP score: -1
+ntime & nrate & np:     7     4    13
+Qfactor_NS = 0.976001
+Out..
+lnL  = -6305.775042
+681 lfun, 7491 eigenQcodon, 47670 P(t)
+end of tree file.
+
+Time used:  4:05
+
+
+Model 8: beta&w>1
+
+TREE #  1
+(1, 2, ((3, 4), 5));   MP score: -1
+initial w for M8:NSbetaw>1 reset.
+
+ntime & nrate & np:     7     5    15
+Qfactor_NS = 0.545719
+Out..
+lnL  = -6305.776084
+1781 lfun, 21372 eigenQcodon, 137137 P(t)
+
+BEBing (dim = 4).  This may take several minutes.
+Calculating f(x_h|w): 10 categories 20 w sets.
+Calculating f(X), the marginal likelihood.
+	log(fX) = -6317.179977  S = -6003.300492  -345.943322
+Calculating f(w|X), posterior probabilities of site classes.
+	did  10 / 556 patterns   6:39	did  20 / 556 patterns   6:39	did  30 / 556 patterns   6:39	did  40 / 556 patterns   6:39	did  50 / 556 patterns   6:39	did  60 / 556 patterns   6:39	did  70 / 556 patterns   6:39	did  80 / 556 patterns   6:39	did  90 / 556 patterns   6:40	did 100 / 556 patterns   6:40	did 110 / 556 patterns   6:40	did 120 / 556 patterns   6:40	did 130 / 556 patterns   6:40	did 140 / 556 patterns   6:40	did 150 / 556 patterns   6:40	did 160 / 556 patterns   6:40	did 170 / 556 patterns   6:40	did 180 / 556 patterns   6:40	did 190 / 556 patterns   6:40	did 200 / 556 patterns   6:40	did 210 / 556 patterns   6:41	did 220 / 556 patterns   6:41	did 230 / 556 patterns   6:41	did 240 / 556 patterns   6:41	did 250 / 556 patterns   6:41	did 260 / 556 patterns   6:41	did 270 / 556 patterns   6:41	did 280 / 556 patterns   6:41	did 290 / 556 patterns   6:41	did 300 / 556 patterns   6:42	did 310 / 556 patterns   6:42	did 320 / 556 patterns   6:42	did 330 / 556 patterns   6:42	did 340 / 556 patterns   6:42	did 350 / 556 patterns   6:42	did 360 / 556 patterns   6:42	did 370 / 556 patterns   6:42	did 380 / 556 patterns   6:42	did 390 / 556 patterns   6:43	did 400 / 556 patterns   6:43	did 410 / 556 patterns   6:43	did 420 / 556 patterns   6:43	did 430 / 556 patterns   6:43	did 440 / 556 patterns   6:43	did 450 / 556 patterns   6:43	did 460 / 556 patterns   6:43	did 470 / 556 patterns   6:43	did 480 / 556 patterns   6:44	did 490 / 556 patterns   6:44	did 500 / 556 patterns   6:44	did 510 / 556 patterns   6:44	did 520 / 556 patterns   6:44	did 530 / 556 patterns   6:44	did 540 / 556 patterns   6:44	did 550 / 556 patterns   6:44	did 556 / 556 patterns   6:44end of tree file.
+
+Time used:  6:44
+Completed: Arabidopsis_lyrata_QC
+CODONML in paml version 4.9j, October 2019
+NSsites batch run (ncatG as in YNGP2000):   0  1  2  3  7  8
+1 ambiguous codons are seen in the data:
+ ---
+
+       80 bytes for distance
+   504592 bytes for conP
+    45496 bytes for fhK
+  5000000 bytes for space
+
+
+Model 0: one-ratio
+
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+   756888 bytes for conP, adjusted
+
+ntime & nrate & np:     7     5    12
+Out..
+lnL  = -5243.547350
+804 lfun, 804 eigenQcodon, 5628 P(t)
+end of tree file.
+
+Time used:  0:05
+
+
+Model 1: NearlyNeutral
+
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+ntime & nrate & np:     7     5    13
+Qfactor_NS = 0.683456
+Out..
+lnL  = -5226.913262
+1202 lfun, 3606 eigenQcodon, 16828 P(t)
+end of tree file.
+
+Time used:  0:26
+
+
+Model 2: PositiveSelection
+
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+initial w for M2:NSpselection reset.
+
+ntime & nrate & np:     7     6    15
+Qfactor_NS = 0.623343
+Out..
+lnL  = -5226.913262
+1486 lfun, 5944 eigenQcodon, 31206 P(t)
+
+BEBing (dim = 4).  This may take several minutes.
+Calculating f(x_h|w): 10 categories 21 w sets.
+Calculating f(X), the marginal likelihood.
+	log(fX) = -5247.532971  S = -4938.908477  -303.585204
+Calculating f(w|X), posterior probabilities of site classes.
+	did  10 / 517 patterns   1:19	did  20 / 517 patterns   1:19	did  30 / 517 patterns   1:19	did  40 / 517 patterns   1:19	did  50 / 517 patterns   1:19	did  60 / 517 patterns   1:19	did  70 / 517 patterns   1:19	did  80 / 517 patterns   1:19	did  90 / 517 patterns   1:19	did 100 / 517 patterns   1:20	did 110 / 517 patterns   1:20	did 120 / 517 patterns   1:20	did 130 / 517 patterns   1:20	did 140 / 517 patterns   1:20	did 150 / 517 patterns   1:20	did 160 / 517 patterns   1:20	did 170 / 517 patterns   1:20	did 180 / 517 patterns   1:20	did 190 / 517 patterns   1:20	did 200 / 517 patterns   1:20	did 210 / 517 patterns   1:20	did 220 / 517 patterns   1:20	did 230 / 517 patterns   1:20	did 240 / 517 patterns   1:20	did 250 / 517 patterns   1:20	did 260 / 517 patterns   1:20	did 270 / 517 patterns   1:20	did 280 / 517 patterns   1:20	did 290 / 517 patterns   1:20	did 300 / 517 patterns   1:21	did 310 / 517 patterns   1:21	did 320 / 517 patterns   1:21	did 330 / 517 patterns   1:21	did 340 / 517 patterns   1:21	did 350 / 517 patterns   1:21	did 360 / 517 patterns   1:21	did 370 / 517 patterns   1:21	did 380 / 517 patterns   1:21	did 390 / 517 patterns   1:21	did 400 / 517 patterns   1:21	did 410 / 517 patterns   1:21	did 420 / 517 patterns   1:21	did 430 / 517 patterns   1:21	did 440 / 517 patterns   1:21	did 450 / 517 patterns   1:21	did 460 / 517 patterns   1:21	did 470 / 517 patterns   1:21	did 480 / 517 patterns   1:21	did 490 / 517 patterns   1:21	did 500 / 517 patterns   1:21	did 510 / 517 patterns   1:22	did 517 / 517 patterns   1:22end of tree file.
+
+Time used:  1:22
+
+
+Model 3: discrete
+
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+ntime & nrate & np:     7     7    16
+Qfactor_NS = 1.400474
+Out..
+lnL  = -5217.155553
+2554 lfun, 10216 eigenQcodon, 53634 P(t)
+end of tree file.
+
+Time used:  3:32
+
+
+Model 7: beta
+
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+ntime & nrate & np:     7     4    13
+Qfactor_NS = 0.867434
+Out..
+lnL  = -5217.993661
+1132 lfun, 12452 eigenQcodon, 79240 P(t)
+end of tree file.
+
+Time used:  5:12
+
+
+Model 8: beta&w>1
+
+TREE #  1
+(1, (2, 3), (4, 5));   MP score: -1
+initial w for M8:NSbetaw>1 reset.
+
+ntime & nrate & np:     7     5    15
+Qfactor_NS = 0.960904
+Out..
+lnL  = -5217.545605
+2576 lfun, 30912 eigenQcodon, 198352 P(t)
+
+BEBing (dim = 4).  This may take several minutes.
+Calculating f(x_h|w): 10 categories 20 w sets.
+Calculating f(X), the marginal likelihood.
+	log(fX) = -5227.875213  S = -4947.800705  -279.438218
+Calculating f(w|X), posterior probabilities of site classes.
+	did  10 / 517 patterns   8:21	did  20 / 517 patterns   8:21	did  30 / 517 patterns   8:21	did  40 / 517 patterns   8:21	did  50 / 517 patterns   8:21	did  60 / 517 patterns   8:21	did  70 / 517 patterns   8:21	did  80 / 517 patterns   8:21	did  90 / 517 patterns   8:21	did 100 / 517 patterns   8:21	did 110 / 517 patterns   8:22	did 120 / 517 patterns   8:22	did 130 / 517 patterns   8:22	did 140 / 517 patterns   8:22	did 150 / 517 patterns   8:22	did 160 / 517 patterns   8:22	did 170 / 517 patterns   8:22	did 180 / 517 patterns   8:22	did 190 / 517 patterns   8:22	did 200 / 517 patterns   8:22	did 210 / 517 patterns   8:22	did 220 / 517 patterns   8:23	did 230 / 517 patterns   8:23	did 240 / 517 patterns   8:23	did 250 / 517 patterns   8:23	did 260 / 517 patterns   8:23	did 270 / 517 patterns   8:23	did 280 / 517 patterns   8:23	did 290 / 517 patterns   8:23	did 300 / 517 patterns   8:23	did 310 / 517 patterns   8:23	did 320 / 517 patterns   8:23	did 330 / 517 patterns   8:23	did 340 / 517 patterns   8:24	did 350 / 517 patterns   8:24	did 360 / 517 patterns   8:24	did 370 / 517 patterns   8:24	did 380 / 517 patterns   8:24	did 390 / 517 patterns   8:24	did 400 / 517 patterns   8:24	did 410 / 517 patterns   8:24	did 420 / 517 patterns   8:24	did 430 / 517 patterns   8:24	did 440 / 517 patterns   8:24	did 450 / 517 patterns   8:24	did 460 / 517 patterns   8:24	did 470 / 517 patterns   8:25	did 480 / 517 patterns   8:25	did 490 / 517 patterns   8:25	did 500 / 517 patterns   8:25	did 510 / 517 patterns   8:25	did 517 / 517 patterns   8:25end of tree file.
+
+Time used:  8:25
+Completed: Arabidopsis_thaliana_QC
+✅ All site model analyses completed successfully!
+---------------------------------
+--------------------------------------------------
+Starting script5.sh at Fri Apr 25 08:26:43 UTC 2025
+script5.sh completed successfully at 08:26:49. Total time: 00:00:06
+----- Output from script5.sh -----
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+awk: warning: escape sequence `\)' treated as plain `)'
+Extraction complete. Results saved in codemlanalysis.
+---------------------------------
+--------------------------------------------------
+Starting script6.sh at Fri Apr 25 08:26:50 UTC 2025
+script6.sh completed successfully at 08:26:53. Total time: 00:00:03
+----- Output from script6.sh -----
+Extraction complete. Results saved in sitemodelanalysis.
+---------------------------------
+--------------------------------------------------
+Starting script7.sh at Fri Apr 25 08:26:53 UTC 2025
+script7.sh completed successfully at 08:26:58. Total time: 00:00:05
+----- Output from script7.sh -----
+Processing Arabidopsis_lyrata_QC...
+Checking directory: /mnt/c/Users/krish/OneDrive/Research & Manuscript/Projects/7. BABAPPA/BABAPPA/3by5/codemlanalysis/Arabidopsis_lyrata_QC
+CSV files found: ['lnL_np_values.csv']
+
+Processing file: lnL_np_values.csv with 16 rows.
+Unique genes found: 6
+Global M0 lnL: -6334.476689
+Branchsite model results: 5 rows
+Branch model results: 5 rows
+Results saved to LRT_results_lnL_np_values.xlsx
+LRT analysis with Benjamini-Hochberg correction completed.
+Results moved to BHanalysis/Arabidopsis_lyrata_QC/
+Processing Arabidopsis_thaliana_QC...
+Checking directory: /mnt/c/Users/krish/OneDrive/Research & Manuscript/Projects/7. BABAPPA/BABAPPA/3by5/codemlanalysis/Arabidopsis_thaliana_QC
+CSV files found: ['lnL_np_values.csv']
+
+Processing file: lnL_np_values.csv with 16 rows.
+Unique genes found: 6
+Global M0 lnL: -5243.54735
+Branchsite model results: 5 rows
+Branch model results: 5 rows
+Results saved to LRT_results_lnL_np_values.xlsx
+LRT analysis with Benjamini-Hochberg correction completed.
+Results moved to BHanalysis/Arabidopsis_thaliana_QC/
+Batch processing completed.
+---------------------------------
+--------------------------------------------------
+Starting script8.sh at Fri Apr 25 08:26:58 UTC 2025
+script8.sh completed successfully at 08:27:03. Total time: 00:00:05
+----- Output from script8.sh -----
+Processing /mnt/c/Users/krish/OneDrive/Research & Manuscript/Projects/7. BABAPPA/BABAPPA/3by5/sitemodelanalysis/Arabidopsis_lyrata_QC/lnL_np_values.csv for species Arabidopsis_lyrata_QC
+Checking file: /mnt/c/Users/krish/OneDrive/Research & Manuscript/Projects/7. BABAPPA/BABAPPA/3by5/sitemodelanalysis/Arabidopsis_lyrata_QC/lnL_np_values.csv
+CSV content preview:
+      Model          lnL  np
+0  Model 0: -6334.476689  12
+1  Model 1: -6319.783310  13
+2  Model 2: -6319.783310  15
+3  Model 3: -6301.789703  16
+4  Model 7: -6305.775042  13
+CSV successfully loaded and contains required columns!
+Analysis complete. Results saved to lrt_results.csv
+  Null Model Alternative Model  ...       p-value  BH-corrected p-value
+0   Model 0:          Model 1:  ...  5.928133e-08          1.185627e-07
+1   Model 1:          Model 2:  ...  1.000000e+00          1.000000e+00
+2   Model 0:          Model 3:  ...  2.146271e-13          8.585083e-13
+3   Model 7:          Model 8:  ...  1.000000e+00          1.000000e+00
+
+[4 rows x 6 columns]
+Processing /mnt/c/Users/krish/OneDrive/Research & Manuscript/Projects/7. BABAPPA/BABAPPA/3by5/sitemodelanalysis/Arabidopsis_thaliana_QC/lnL_np_values.csv for species Arabidopsis_thaliana_QC
+Checking file: /mnt/c/Users/krish/OneDrive/Research & Manuscript/Projects/7. BABAPPA/BABAPPA/3by5/sitemodelanalysis/Arabidopsis_thaliana_QC/lnL_np_values.csv
+CSV content preview:
+      Model          lnL  np
+0  Model 0: -5243.547350  12
+1  Model 1: -5226.913262  13
+2  Model 2: -5226.913262  15
+3  Model 3: -5217.155553  16
+4  Model 7: -5217.993661  13
+CSV successfully loaded and contains required columns!
+Analysis complete. Results saved to lrt_results.csv
+  Null Model Alternative Model  ...       p-value  BH-corrected p-value
+0   Model 0:          Model 1:  ...  8.028582e-09          1.605716e-08
+1   Model 1:          Model 2:  ...  1.000000e+00          1.000000e+00
+2   Model 0:          Model 3:  ...  9.458205e-11          3.783282e-10
+3   Model 7:          Model 8:  ...  6.388689e-01          8.518252e-01
+
+[4 rows x 6 columns]
+---------------------------------
+--------------------------------------------------
+All scripts completed successfully at Fri Apr 25 08:27:03 UTC 2025.
