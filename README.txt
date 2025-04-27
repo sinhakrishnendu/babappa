@@ -66,7 +66,7 @@ pip3 install biopython scipy statsmodels pandas openpyxl
 
 Inside WSL:
 
-git clone https://github.com/yourusername/BABAPPA.git
+git clone https://github.com/sinhakrishnendu/babappa.git
 cd BABAPPA
 chmod +x babappa.sh
 
