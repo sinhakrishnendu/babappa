@@ -162,7 +162,7 @@ Input FASTA must:
 
 ## ❤️ Acknowledgment
 
-The name **BABAPPA** was lovingly inspired by the author’s son, whose word for “butterfly” was “babappa.”  
+The name **BABAPPA** was lovingly inspired by the author’s son, whose word for “butterfly” is “babappa.”  
 
 ---
 
