@@ -1,24 +1,26 @@
 # BABAPPA v2.0  
-**BAsh-Based Automated Parallel Positive selection Analysis**  
+**BAsh-Based Automated Parallel Positive selection Analysis**
 
 BABAPPA is a fully automated, modular, and highly efficient pipeline for detecting episodic positive selection across gene families.  
-Version **2.0** introduces **three flavours** of BABAPPA to support advanced sequence quality control and recombination detection strategies:  
+
+Version **2.0** introduces **four flavours** of BABAPPA, each supporting different sequence quality and recombination detection strategies:
 
 - **babappa-normal** → classic BABAPPA pipeline (QC, codon-aware MSA, phylogeny, codeml models, LRT + BH correction).  
-- **babappa-clip** → integrates [ClipKit](https://github.com/JLSteenwyk/ClipKIT) to filter MSA and improve alignment quality before codeml runs.  
-- **babappa-clipgard** → combines ClipKit with [GARD](http://www.datamonkey.org/gard) recombination breakpoint detection to identify and correct for recombination blocks.  
+- **babappa-clip** → integrates ClipKit for improved alignment quality.  
+- **babappa-clipgard** → combines ClipKit with GARD recombination breakpoint detection and block correction.  
+- **babappa-gard** → implements GARD recombination block detection **without** ClipKit rectification.  
 
 📖 Citation:  
 Krishnendu Sinha et al. (2025). **BABAPPA: BAsh-Based Automated Parallel Positive selection Analysis.** *bioRxiv*. https://doi.org/10.1101/2025.04.27.650835  
 
 ---
 
-## ✨ Features  
+## ✨ Features
 
 - **End-to-end automation**: from raw FASTA → codeml-ready MSA → phylogeny → positive selection reports.  
 - **Codon-aware alignment** using PRANK.  
 - **ClipKit MSA rectification** (*clip, clipgard flavours*).  
-- **GARD-based recombination block partitioning** (*clipgard flavour*).  
+- **GARD-based recombination block partitioning** (*gard, clipgard flavours*).  
 - **Phylogenetic inference** with IQ-TREE2.  
 - **Foreground branch marking** for branch-site tests.  
 - **Parallel codeml execution** with GNU Parallel.  
@@ -28,16 +30,14 @@ Krishnendu Sinha et al. (2025). **BABAPPA: BAsh-Based Automated Parallel Positiv
 
 ---
 
-## 📂 Repository Structure  
+## 📂 Repository Structure
 
 ```
 babappa.v2.0/
 │
 ├── babappa-normal/        # Classic BABAPPA pipeline
-│   ├── babappa.sh         # Master script
-│   ├── seqQC.py           # Sequence QC
-│   ├── run_codeml.py      # Codeml automation
-│   ├── 4GroundBranchGenerator.py
+│   ├── babappa.sh
+│   ├── seqQC.py, run_codeml.py, ...
 │   ├── babappa_stopcodon_masker.py
 │   ├── lrt_bh_correction*.py
 │   ├── merge_bh_results.py
@@ -51,8 +51,13 @@ babappa.v2.0/
 │
 ├── babappa-clipgard/      # BABAPPA + ClipKit + GARD
 │   ├── babappa_clipgard.sh
-│   ├── filter_blocks.py, split_recombination_blocks.py
-│   ├── glue.sh            # Recombine split block results
+│   ├── filter_blocks.py, split_recombination_blocks.py, glue.sh
+│   ├── seqQC.py, run_codeml.py, ...
+│   └── script0.sh ... script8.sh
+│
+├── babappa-gard/          # BABAPPA + GARD (no ClipKit)
+│   ├── babappa_gard.sh
+│   ├── filter_blocks.py, split_recombination_blocks.py, glue.sh
 │   ├── seqQC.py, run_codeml.py, ...
 │   └── script0.sh ... script8.sh
 │
@@ -63,7 +68,7 @@ babappa.v2.0/
 
 ---
 
-## ⚙️ Installation  
+## ⚙️ Installation
 
 > **Linux / WSL (Windows users must install Ubuntu under WSL)**  
 
@@ -85,16 +90,17 @@ babappa.v2.0/
    chmod +x babappa-normal/babappa.sh
    chmod +x babappa-clip/babappa_clip.sh
    chmod +x babappa-clipgard/babappa_clipgard.sh
+   chmod +x babappa-gard/babappa_gard.sh
    ```
 
 ---
 
-## 🚀 Usage  
+## 🚀 Usage
 
-### 1. Prepare input  
+### 1. Prepare input
 Place your coding sequence (CDS) FASTA files into an `input/` folder.  
 
-### 2. Run pipeline  
+### 2. Run pipeline
 - **Classic run**:  
   ```bash
   ./babappa-normal/babappa.sh
@@ -110,7 +116,12 @@ Place your coding sequence (CDS) FASTA files into an `input/` folder.
   ./babappa-clipgard/babappa_clipgard.sh
   ```
 
-### 3. Outputs  
+- **With GARD recombination detection only**:  
+  ```bash
+  ./babappa-gard/babappa_gard.sh
+  ```
+
+### 3. Outputs
 Pipeline creates structured folders automatically:  
 ```
 QCseq/  
@@ -127,7 +138,7 @@ SiteModelBH/
 
 ---
 
-## 📥 Input Requirements  
+## 📥 Input Requirements
 
 Input FASTA must:  
 - Contain **coding sequences (CDS)** only.  
@@ -138,7 +149,7 @@ Input FASTA must:
 
 ---
 
-## 📊 Output Files  
+## 📊 Output Files
 
 - Codon-aware MSA (PRANK, optionally ClipKit-filtered).  
 - Maximum likelihood trees (IQ-TREE2).  
@@ -149,16 +160,16 @@ Input FASTA must:
 
 ---
 
-## ❤️ Acknowledgment  
+## ❤️ Acknowledgment
 
-The name **BABAPPA** was lovingly inspired by the author’s son, whose word for “butterfly” was “babappa.”  
+The name **BABAPPA** was lovingly inspired by the author’s son, whose word for “butterfly” is “babappa.”  
 
 ---
 
-## 📜 License  
+## 📜 License
 
 This project is licensed under the **MIT License**.  
 
 ---
 
-**Happy Positive Selection Hunting with BABAPPA v2.0!** 🦋  
+**Happy Positive Selection Hunting with BABAPPA v2.0!** 🦋
