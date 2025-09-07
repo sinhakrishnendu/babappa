@@ -1,0 +1,68 @@
+# ----------------------------
+# Web API Framework
+# ----------------------------
+fastapi
+uvicorn[standard]
+starlette
+pydantic
+python-multipart
+aiofiles
+requests
+httpx
+
+# ----------------------------
+# Scientific & Numerical Computing
+# ----------------------------
+numpy
+scipy
+pandas
+statsmodels
+sympy
+scikit-learn
+scikit-image
+biopython
+
+# ----------------------------
+# Data I/O & File Handling
+# ----------------------------
+openpyxl
+xlrd
+xlwt
+xlsxwriter
+odfpy
+python-docx
+python-pptx
+reportlab
+pypandoc
+
+# ----------------------------
+# Visualization
+# ----------------------------
+matplotlib
+seaborn
+plotly
+
+# ----------------------------
+# Utilities
+# ----------------------------
+tqdm
+joblib
+psutil
+PyQt6
+conda 
+hyphy 
+clipkit
+
+
+#----------------------------
+#for wsl/Linux
+#----------------------------
+mafft
+prank
+python3
+pyhton pip
+iqtree
+paml
+
+
+
