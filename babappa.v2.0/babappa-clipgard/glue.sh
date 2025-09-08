@@ -16,8 +16,7 @@ cp -r treefiles "$TARGET_DIR/"
 
 # 3. Copy recombination_blocks contents into a new subfolder called msa inside analysis
 mkdir -p "$TARGET_DIR/msa"
-cp recombination_blocks/Arabidopsis_halleri/*.fas "$TARGET_DIR/msa/"
-cp recombination_blocks/Arabidopsis_lyrata/*.fas "$TARGET_DIR/msa/"
+find recombination_blocks -type f -name "*.fas" -exec cp {} "$TARGET_DIR/msa/" \;
 
 # 4. Copy the listed scripts and files into analysis
 cp \

@@ -1,0 +1,27 @@
+# ----------------------------
+# Web API Framework
+# ----------------------------
+fastapi
+uvicorn[standard]
+starlette
+pydantic
+python-multipart
+aiofiles
+requests
+httpx
+
+
+# ----------------------------
+# Visualization
+# ----------------------------
+matplotlib
+seaborn
+plotly
+
+# ----------------------------
+# Utilities
+# ----------------------------
+tqdm
+joblib
+psutil
+PyQt6
