@@ -1,97 +1,95 @@
-Babappa GUI v1.0
+Babappa v2.0
+============
 
-Author: Krishnendu Sinha
-Institution: Jhargram Raj College
-Email: dr.krishnendusinha@gmail.com
+Welcome! This is the Babappa application installer. 
+Follow these instructions carefully to install and use Babappa.
 
-Version: 1.0
-Release Date: September 2025
+---------------------------------------------------------
+1. What You Need Before Installation
+---------------------------------------------------------
+- Windows 10 or 11 (64-bit).
+- Windows Subsystem for Linux (WSL) with Ubuntu 22.04 installed.
+  If WSL or Ubuntu 22.04 is missing, the installer will tell you. 
+  In that case, open PowerShell as Administrator and run:
 
-Babappa GUI is a graphical interface for the Babappa pipeline, enabling easy analysis without manually running Linux scripts. It runs on Windows 10/11 using WSL2 (Windows Subsystem for Linux v2).
+      wsl --install -d Ubuntu-22.04
 
--------------------------------------------------------------
-System Requirements
+  Then restart your computer before continuing.
 
-- Windows 10 or 11 (64-bit)
-- Minimum 8 GB RAM recommended
-- WSL2 support (Windows Subsystem for Linux v2)
-- ~4–5 GB free disk space for WSL distribution and Conda environment
+---------------------------------------------------------
+2. Installing Babappa
+---------------------------------------------------------
+1. Double-click the installer file (babappa_installer_2.0.exe).
+2. Accept the license and follow the steps.
+3. The application will be installed into:
 
--------------------------------------------------------------
-Installation
+      C:\Program Files\babappa
 
-1. Download the Installer
-   Double-click the Babappa GUI installer (BabappaInstaller.exe) included in the distribution.
+4. A shortcut named "Babappa" will appear on your Desktop and Start Menu.
 
-2. WSL2 Setup
-   - The installer checks if WSL2 is installed.
-   - If WSL2 is not found, run in PowerShell:
-     wsl --install
-   - Restart your computer if prompted.
+---------------------------------------------------------
+3. First Run
+---------------------------------------------------------
+1. Double-click the "Babappa" shortcut.
+2. The program will prepare its environment inside WSL:
+   - Installs Miniconda if not already installed.
+   - Restores the Babappa environment from babappa_env.tar.gz.
+   - Copies Babappa project files into WSL.
+   - Starts the Babappa API server in the background.
+3. Once the API is ready, the Babappa GUI window will appear.
 
-3. Import Babappa WSL Environment
-   - The installer imports a pre-packaged Ubuntu 22.04 distribution (babappa_clean.tar.xz) as 'Babappa'.
-   - This environment includes Python, Conda, and all required packages.
-   - No manual setup is required — everything is pre-configured.
+---------------------------------------------------------
+4. Using the GUI
+---------------------------------------------------------
+1. Select an input FASTA file using the "Browse" button.
+2. Select an output folder where results should be saved.
+3. Choose a model from the drop-down menu:
+   - "clip"
+   - "clipgard"
+   - "normal"
+4. Click "Run Analysis".
+5. Logs will appear in the bottom window as the analysis runs.
+6. When finished, check your chosen output folder for results.
 
-4. Creating Desktop Shortcut
-   - The installer creates a desktop shortcut and Start Menu entry for Babappa GUI.
-   - Double-click to launch the GUI.
+---------------------------------------------------------
+5. Troubleshooting
+---------------------------------------------------------
+- If the GUI shows "Internal Server Error":
+  → Check the log file inside WSL:
 
--------------------------------------------------------------
-Launching Babappa GUI
+      cat ~/babappa_uvicorn.log
 
-1. Double-click the Babappa GUI shortcut.
-2. The GUI connects automatically to the WSL environment in the background.
-3. You can now run analyses directly from the GUI.
+- If Babappa says the API did not start:
+  → Make sure WSL Ubuntu 22.04 is installed and working:
 
--------------------------------------------------------------
-File Structure (Inside Installer)
+      wsl -l -v
 
-- babappa_clean.tar.xz — Pre-packaged WSL Ubuntu distribution with Conda environment
-- babappa_env.yml — Conda environment file (backup)
-- babappa_gui.exe — Executable of Babappa GUI
-- main_api.py — Backend API for GUI
-- dist/ — PyInstaller build folder (optional)
-- winvenv/ — Optional Python virtual environment (Windows)
-- babappa_installer.iss — Inno Setup script for building installer
+- If the input or output folder cannot be selected:
+  → Ensure you have permission to read/write in that folder.
 
--------------------------------------------------------------
-Troubleshooting
+- To completely reset Babappa:
+  1. Uninstall Babappa from "Add or Remove Programs".
+  2. Delete the folders:
+        C:\Program Files\babappa
+        ~/babappa_env
+        ~/babappa_project
+        ~/babappa_uvicorn.*
 
-GUI Errors
+---------------------------------------------------------
+6. Uninstalling Babappa
+---------------------------------------------------------
+1. Open "Add or Remove Programs" in Windows.
+2. Find "Babappa" and click "Uninstall".
+3. The uninstaller will stop the API, remove the environment, and delete all Babappa files.
 
-- ModuleNotFoundError (PyQt6, requests, etc.)
-  All Python dependencies are included in the Conda environment. Ensure WSL2 and Babappa distribution are properly installed.
+---------------------------------------------------------
+7. Support
+---------------------------------------------------------
+If you encounter issues that cannot be solved with the steps above, please contact:
 
-- Backend API fails
-  Make sure Babappa WSL environment is registered and Conda is activated:
-    wsl -d Babappa
-    source ~/miniconda3/etc/profile.d/conda.sh
-    conda activate babappa
-    python3 main_api.py
+    Developer: Krishnendu Sinha
+    Email: dr.krishnendusinha@gmail.com
 
-- GUI does not launch from desktop shortcut
-  Ensure WSL2 is installed and Babappa distribution exists:
-    wsl --list --verbose
-  You should see 'Babappa' with version 2.
-
-Reinstallation
-
-- To reset the Babappa WSL environment:
-    wsl --unregister Babappa
-    wsl --import Babappa <InstallFolder> <PathToTarball> --version 2
-
--------------------------------------------------------------
-Usage Notes
-
-- This is Babappa GUI v1.0, while the pipeline is version 2.0.
-- All analyses are executed inside WSL for compatibility.
-- No Linux commands are required — everything is GUI-driven.
-
--------------------------------------------------------------
-Contact
-
-Developer: Krishnendu Sinha
-Institution: Jhargram Raj College
-Email: dr.krishnendusinha@gmail.com
+---------------------------------------------------------
+Thank you for using Babappa!
+---------------------------------------------------------
