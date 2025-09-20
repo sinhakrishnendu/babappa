@@ -3,12 +3,11 @@
 
 BABAPPA is a fully automated, modular, and highly efficient pipeline for detecting episodic positive selection across gene families.  
 
-Version **2.0** introduces **four flavours** of BABAPPA, each supporting different sequence quality and recombination detection strategies:
+It introduces **three flavours** of BABAPPA, each supporting different sequence quality and recombination detection strategies:
 
 - **babappa-normal** → classic BABAPPA pipeline (QC, codon-aware MSA, phylogeny, codeml models, LRT + BH correction).  
 - **babappa-clip** → integrates ClipKit for improved alignment quality.  
 - **babappa-clipgard** → combines ClipKit with GARD recombination breakpoint detection and block correction.  
-- **babappa-gard** → implements GARD recombination block detection **without** ClipKit rectification.  
 
 📖 Citation:  
 Krishnendu Sinha (2025). https://doi.org/10.1101/2025.04.27.650835  
