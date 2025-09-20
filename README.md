@@ -1,4 +1,4 @@
-# BABAPPA v2.0  
+# BABAPPA
 **BAsh-Based Automated Parallel Positive selection Analysis**
 
 BABAPPA is a fully automated, modular, and highly efficient pipeline for detecting episodic positive selection across gene families.  
@@ -11,7 +11,7 @@ Version **2.0** introduces **four flavours** of BABAPPA, each supporting differe
 - **babappa-gard** → implements GARD recombination block detection **without** ClipKit rectification.  
 
 📖 Citation:  
-Krishnendu Sinha et al. (2025). **BABAPPA: BAsh-Based Automated Parallel Positive selection Analysis.** *bioRxiv*. https://doi.org/10.1101/2025.04.27.650835  
+Krishnendu Sinha (2025). https://doi.org/10.1101/2025.04.27.650835  
 
 ---
 
@@ -33,7 +33,7 @@ Krishnendu Sinha et al. (2025). **BABAPPA: BAsh-Based Automated Parallel Positiv
 ## 📂 Repository Structure
 
 ```
-babappa.v2.0/
+babappa/
 │
 ├── babappa-normal/        # Classic BABAPPA pipeline
 │   ├── babappa.sh
@@ -82,7 +82,7 @@ babappa.v2.0/
 2. Clone repository:  
    ```bash
    git clone https://github.com/sinhakrishnendu/babappa.git
-   cd babappa/babappa.v2.0
+   cd babappa/babappa
    ```
 
 3. Make scripts executable:  
@@ -172,4 +172,4 @@ This project is licensed under the **MIT License**.
 
 ---
 
-**Happy Positive Selection Hunting with BABAPPA v2.0!** 🦋
+**Happy Positive Selection Hunting with BABAPPA!** 🦋
