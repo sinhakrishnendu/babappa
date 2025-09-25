@@ -1,0 +1,35 @@
+#nexus
+
+BEGIN Taxa;
+DIMENSIONS ntax=7;
+TAXLABELS
+[1] 'AT2G33500_AT2G33500.1_Athaliana_Araport11'
+[2] 'AT1G28050_AT1G28050.1_Athaliana_Araport11'
+[3] 'AT2G47890_AT2G47890.1_Athaliana_Araport11'
+[4] 'AT1G73870_AT1G73870.1_Athaliana_Araport11'
+[5] 'AT1G68520_AT1G68520.1_Athaliana_Araport11'
+[6] 'AT1G25440_AT1G25440.1_Athaliana_Araport11'
+[7] 'AT2G24790_AT2G24790.1_Athaliana_Araport11'
+;
+END; [Taxa]
+
+BEGIN Splits;
+DIMENSIONS ntax=7 nsplits=13;
+FORMAT labels=no weights=yes confidences=no intervals=no;
+MATRIX
+	100	 2,
+	100	 3,
+	100	 4,
+	100	 5,
+	100	 6,
+	100	 5 6,
+	100	 4 5 6,
+	100	 7,
+	100	 1 2 3,
+	100	 1 2,
+	100	 1,
+	0	 5 6 7,
+	0	 4 6,
+;
+END; [Splits]
+

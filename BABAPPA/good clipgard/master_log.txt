@@ -1,0 +1,202 @@
+=================== Master run started: Thu Sep 25 10:46:41 IST 2025 ===================
+--------------------------------------------------
+Running script0.sh at Thu Sep 25 10:46:41 IST 2025
+Running QC on ATCOL.fasta...
+Passed QC: ATCOL.fasta -> QCseq/ATCOL.fasta_QC.fasta
+QC log saved to: QCseq/ATCOL.fasta_QC.fasta.log.txt
+QC Passed: ATCOL.fasta -> QCseq/ATCOL.fasta_QC.fasta
+QC Step Completed.
+Running PRANK on QCseq/ATCOL.fasta_QC.fasta...
+MSA Step Completed.
+Trimming MSA with ClipKit model smart-gap (codon mode) for msa/ATCOL.fasta_QC_msa.best.fas...
+ClipKit log saved to: msa/ATCOL.fasta_QC_msa_clipkit.log
+ClipKit trimming completed. Trimmed MSAs and logs are ready in msa/
+Masking internal stop/ambiguous codons for msa/ATCOL.fasta_QC_msa.best.fas...
+
+============================================================
+DEBUG: Checking position 5653 in sequences
+============================================================
+
+AT2G33500_AT2G33500.1_Athaliana_Araport11:
+  Length: 1368
+  Position 5653 is beyond sequence length
+
+AT1G28050_AT1G28050.1_Athaliana_Araport11:
+  Length: 1368
+  Position 5653 is beyond sequence length
+
+AT2G47890_AT2G47890.1_Athaliana_Araport11:
+  Length: 1368
+  Position 5653 is beyond sequence length
+
+AT1G73870_AT1G73870.1_Athaliana_Araport11:
+  Length: 1368
+  Position 5653 is beyond sequence length
+
+AT1G68520_AT1G68520.1_Athaliana_Araport11:
+  Length: 1368
+  Position 5653 is beyond sequence length
+
+AT1G25440_AT1G25440.1_Athaliana_Araport11:
+  Length: 1368
+  Position 5653 is beyond sequence length
+
+AT2G24790_AT2G24790.1_Athaliana_Araport11:
+  Length: 1368
+  Position 5653 is beyond sequence length
+
+============================================================
+STARTING STOP CODON MASKING
+============================================================
+Processing sequences from: msa/ATCOL.fasta_QC_msa.best.fas
+------------------------------------------------------------
+  Kept: AT2G33500_AT2G33500.1_Athaliana_Araport11 (1368 bp, 0.000 masked, VALID)
+  Kept: AT1G28050_AT1G28050.1_Athaliana_Araport11 (1368 bp, 0.000 masked, VALID)
+  Kept: AT2G47890_AT2G47890.1_Athaliana_Araport11 (1368 bp, 0.000 masked, VALID)
+  Kept: AT1G73870_AT1G73870.1_Athaliana_Araport11 (1368 bp, 0.000 masked, VALID)
+  Kept: AT1G68520_AT1G68520.1_Athaliana_Araport11 (1368 bp, 0.000 masked, VALID)
+  Kept: AT1G25440_AT1G25440.1_Athaliana_Araport11 (1368 bp, 0.000 masked, VALID)
+  Kept: AT2G24790_AT2G24790.1_Athaliana_Araport11 (1368 bp, 0.000 masked, VALID)
+
+✓ Successfully wrote 7 sequences to: msa/ATCOL.fasta_QC_msa.best.fas
+
+============================================================
+PROCESSING SUMMARY:
+============================================================
+Total sequences processed: 7
+Sequences kept: 7
+Sequences discarded (mask fraction > 0.2): 0
+Validation errors: 0
+
+✅ Final validation:
+  ✅ AT2G33500_AT2G33500.1_Athaliana_Araport11 is clean
+  ✅ AT1G28050_AT1G28050.1_Athaliana_Araport11 is clean
+  ✅ AT2G47890_AT2G47890.1_Athaliana_Araport11 is clean
+  ✅ AT1G73870_AT1G73870.1_Athaliana_Araport11 is clean
+  ✅ AT1G68520_AT1G68520.1_Athaliana_Araport11 is clean
+  ✅ AT1G25440_AT1G25440.1_Athaliana_Araport11 is clean
+  ✅ AT2G24790_AT2G24790.1_Athaliana_Araport11 is clean
+
+🎉 SUCCESS: All output sequences are free of stop codons!
+   You can now run IQ-TREE with: iqtree2 -s msa/ATCOL.fasta_QC_msa.best.fas -st CODON ...
+
+✅ Ready for IQ-TREE analysis!
+   Command: iqtree2 -s msa/ATCOL.fasta_QC_msa.best.fas -st CODON -B 1000 -alrt 1000 -bnni -T AUTO -pre your_output_prefix
+Internal stop/ambiguous codon masking completed. Corrected MSAs are ready in msa/
+Script0 completed. Proceed with Script1 onwards for phylogenetic and selection analysis.
+Completed script0.sh at Thu Sep 25 10:51:50 IST 2025 (Elapsed time: 309s)
+
+--------------------------------------------------
+Running script0.5.sh at Thu Sep 25 10:51:50 IST 2025
+Detected 16 CPU cores. Using 14 for GARD.
+▶ Running GARD on msa/ATCOL.fasta_QC_msa.best.fas ...
+
+Analysis Description
+--------------------
+GARD : Genetic Algorithms for Recombination Detection. Implements a
+heuristic approach to screening alignments of sequences for
+recombination, by using the CHC genetic algorithm to search for
+phylogenetic incongruence among different partitions of the data. The
+number of partitions is determined using a step-up procedure, while the
+placement of breakpoints is searched for with the GA. The best fitting
+model (based on c-AIC) is returned; and additional post-hoc tests run to
+distinguish topological incongruence from rate-variation. v0.2 adds and
+spooling results to JSON after each breakpoint search conclusion
+
+- __Requirements__: A sequence alignment.
+
+- __Citation__: **Automated Phylogenetic Detection of Recombination Using a Genetic
+Algorithm**, _Mol Biol Evol 23(10), 1891–1901
+
+- __Written by__: Sergei L Kosakovsky Pond
+
+- __Contact Information__: spond@temple.edu
+
+- __Analysis Version__: 0.2
+
+type: codon
+code: Universal
+rv: None
+>Maximum number of breakpoints to consider (permissible range = [1,100000], default value = 10000, integer): max-breakpoints: 10000
+mode: Normal
+>Loaded a codon multiple sequence alignment with **7** sequences, **456** sites (425 of which are variable) from `/mnt/c/Users/krish/Desktop/New folder/msa/ATCOL.fasta_QC_msa.best.fas`
+>Minimum size of a partition is set to be 11 sites
+
+
+### Fitting the baseline (single-partition; no breakpoints) model
+* Log(L) = -6417.42, AIC-c = 12890.12 (26 estimated parameters)
+
+### Performing an exhaustive single breakpoint analysis
+Done with single breakpoint analysis.
+   Best single break point location: 155
+   c-AIC  = 12832.1372387983
+
+### Performing multi breakpoint analysis using a genetic algorithm
+Done with 2 breakpoint analysis.
+    Best break point locations: 59, 155
+    c-AIC = 12833.19309373964
+✔ Finished msa/ATCOL.fasta_QC_msa.best.fas → gard_output/ATCOL.fasta_QC_msa.best.gard.json
+✅ All GARD analyses completed. JSONs in gard_output/
+▶ Running Python script to split recombination blocks...
+▶ Processing msa/ATCOL.fasta_QC_msa.best.fas with gard_output/ATCOL.fasta_QC_msa.best.gard.json
+   Blocks (codon): ['1-155', '156-456']
+   Blocks (nt, scale=3): ['1-465', '466-1368']
+✔ Saved block 1: recombination_blocks/ATCOL/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155.fas
+   Trimmed 0 nt at start, 0 nt at end
+✔ Saved block 2: recombination_blocks/ATCOL/ATCOL.fasta_QC_msa.best.fas.gard_block2_156-456.fas
+   Trimmed 0 nt at start, 0 nt at end
+
+📑 Log written to: recombination_blocks/ATCOL/split_recombination_blocks.log
+▶ Filtering recombination blocks (codon checks)...
+✔ Keeping recombination_blocks/ATCOL/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155.fas (valid)
+✔ Keeping recombination_blocks/ATCOL/ATCOL.fasta_QC_msa.best.fas.gard_block2_156-456.fas (valid)
+✅ Filtering done. Valid blocks in recombination_blocks/, discarded ones in discarded_blocks/
+Completed script0.5.sh at Thu Sep 25 13:21:57 IST 2025 (Elapsed time: 9007s)
+
+--------------------------------------------------
+Running script1.sh at Thu Sep 25 13:21:57 IST 2025
+Detected 16 cores → using 16 IQ-TREE jobs and 16 foreground jobs.
+IQ-TREE2 Step Completed.
+All tree files copied to treefiles/.
+Detected leaf labels:
+   AT1G25440_AT1G25440.1_Athaliana_Araport11
+   AT1G28050_AT1G28050.1_Athaliana_Araport11
+   AT1G68520_AT1G68520.1_Athaliana_Araport11
+   AT1G73870_AT1G73870.1_Athaliana_Araport11
+   AT2G24790_AT2G24790.1_Athaliana_Araport11
+   AT2G33500_AT2G33500.1_Athaliana_Araport11
+   AT2G47890_AT2G47890.1_Athaliana_Araport11
+Foreground tree written: foregroundbranch/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155/AT1G68520_AT1G68520.1_Athaliana_Araport11.treefile
+Foreground tree written: foregroundbranch/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155/AT1G28050_AT1G28050.1_Athaliana_Araport11.treefile
+Foreground tree written: foregroundbranch/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155/AT2G47890_AT2G47890.1_Athaliana_Araport11.treefile
+Foreground tree written: foregroundbranch/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155/AT2G33500_AT2G33500.1_Athaliana_Araport11.treefile
+Foreground tree written: foregroundbranch/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155/AT1G73870_AT1G73870.1_Athaliana_Araport11.treefile
+Foreground tree written: foregroundbranch/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155/AT2G24790_AT2G24790.1_Athaliana_Araport11.treefile
+Foreground tree written: foregroundbranch/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155/AT1G25440_AT1G25440.1_Athaliana_Araport11.treefile
+Foreground Branch Selection Completed.
+Detected leaf labels:
+   AT1G25440_AT1G25440.1_Athaliana_Araport11
+   AT1G28050_AT1G28050.1_Athaliana_Araport11
+   AT1G68520_AT1G68520.1_Athaliana_Araport11
+   AT1G73870_AT1G73870.1_Athaliana_Araport11
+   AT2G24790_AT2G24790.1_Athaliana_Araport11
+   AT2G33500_AT2G33500.1_Athaliana_Araport11
+   AT2G47890_AT2G47890.1_Athaliana_Araport11
+Foreground tree written: foregroundbranch/ATCOL.fasta_QC_msa.best.fas.gard_block2_156-456/AT1G28050_AT1G28050.1_Athaliana_Araport11.treefile
+Foreground tree written: foregroundbranch/ATCOL.fasta_QC_msa.best.fas.gard_block2_156-456/AT2G47890_AT2G47890.1_Athaliana_Araport11.treefile
+Foreground tree written: foregroundbranch/ATCOL.fasta_QC_msa.best.fas.gard_block2_156-456/AT1G73870_AT1G73870.1_Athaliana_Araport11.treefile
+Foreground tree written: foregroundbranch/ATCOL.fasta_QC_msa.best.fas.gard_block2_156-456/AT1G68520_AT1G68520.1_Athaliana_Araport11.treefile
+Foreground tree written: foregroundbranch/ATCOL.fasta_QC_msa.best.fas.gard_block2_156-456/AT1G25440_AT1G25440.1_Athaliana_Araport11.treefile
+Foreground tree written: foregroundbranch/ATCOL.fasta_QC_msa.best.fas.gard_block2_156-456/AT2G33500_AT2G33500.1_Athaliana_Araport11.treefile
+Foreground tree written: foregroundbranch/ATCOL.fasta_QC_msa.best.fas.gard_block2_156-456/AT2G24790_AT2G24790.1_Athaliana_Araport11.treefile
+Foreground Branch Selection Completed.
+Foreground Branch Selection Completed.
+Completed script1.sh at Thu Sep 25 13:25:11 IST 2025 (Elapsed time: 194s)
+
+--------------------------------------------------
+Running glue.sh at Thu Sep 25 13:25:11 IST 2025
+Creating analysis directory structure...
+All files and directories copied successfully into analysis/
+Completed glue.sh at Thu Sep 25 13:25:11 IST 2025 (Elapsed time: 0s)
+
+=================== Master run completed: Thu Sep 25 13:50:57 IST 2025 ===================

@@ -1,0 +1,14 @@
+Input FASTA: msa/ATCOL.fasta_QC_msa.best.fas
+GARD JSON: gard_output/ATCOL.fasta_QC_msa.best.gard.json
+Alignment length: 1368 nt
+Scale factor: 3
+
+Blocks (codon): ['1-155', '156-456']
+Blocks (nt): ['1-465', '466-1368']
+
+✔ Saved block 1: recombination_blocks/ATCOL/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155.fas
+   Trimmed 0 nt at start, 0 nt at end
+
+✔ Saved block 2: recombination_blocks/ATCOL/ATCOL.fasta_QC_msa.best.fas.gard_block2_156-456.fas
+   Trimmed 0 nt at start, 0 nt at end
+

@@ -1,0 +1,219 @@
+IQ-TREE 2.4.0 built Feb 12 2025
+
+Input file name: recombination_blocks/ATCOL/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155.fas
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 325390
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 7 sequences with 155 codon sites
+Number of constant sites: 10 (= 6.45161% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 10 (= 6.45161% of all sites)
+Number of parsimony informative sites: 32
+Number of distinct site patterns: 153
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: MG+F1X4+I+R2
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+MG+F1X4+I+R2      -2170.348    4376.697 -  0.00223    4381.726 -    0.025    4431.478 +    0.597
+KOSI07+FU+I+R2    -2182.052    4392.105 - 1.01e-06    4395.105 - 3.11e-05    4434.713 +    0.119
+KOSI07+FU+R3      -2179.575    4389.151 - 4.41e-06    4392.604 - 0.000109    4434.802 +    0.113
+MG+F1X4+R3        -2170.343    4378.686 - 0.000826    4384.316 -  0.00685    4436.511 -   0.0482
+MGK+F1X4+I+R2     -2170.356    4378.712 - 0.000816    4384.341 -  0.00676    4436.537 -   0.0476
+KOSI07+F1X4+I+R2   -2175.451    4384.902 - 3.69e-05    4389.369 - 0.000547    4436.640 -   0.0452
+MG+F3X4+I+R2      -2159.989    4367.978 +    0.175    4377.209 +    0.239    4441.021 -  0.00506
+GY+F1X4+I+R2      -2172.599    4383.199 - 8.65e-05    4388.828 - 0.000717    4441.024 -  0.00505
+KOSI07+F1X4+I+R3   -2172.755    4383.510 -  7.4e-05    4389.140 - 0.000614    4441.335 -  0.00432
+KOSI07+F3X4+I+R3   -2157.701    4365.402 +    0.633    4375.480 +    0.568    4441.488 -  0.00401
+MG+F1X4+I+R3      -2170.347    4380.693 - 0.000303    4386.962 -  0.00182    4441.562 -  0.00386
+MGK+F1X4+R3       -2170.372    4380.744 - 0.000295    4387.013 -  0.00178    4441.613 -  0.00376
+KOSI07+F1X4+R3    -2176.258    4388.517 - 6.06e-06    4393.546 - 6.78e-05    4443.298 -  0.00162
+MG+F3X4+R3        -2159.964    4369.928 +   0.0659    4380.005 +   0.0591    4446.013 - 0.000417
+GY+F1X4+R3        -2172.575    4385.150 - 3.26e-05    4391.418 - 0.000196    4446.018 - 0.000416
+MGK+F3X4+I+R2     -2159.977    4369.953 +   0.0651    4380.031 +   0.0583    4446.039 - 0.000412
+MGK+F1X4+I+R3     -2170.349    4382.697 - 0.000111    4389.644 - 0.000477    4446.609 -  0.00031
+KOSI07+FU+I+R3    -2183.230    4398.459 -  4.2e-08    4402.401 -  8.1e-07    4447.154 - 0.000236
+GY+F1X4+I+R3      -2172.578    4387.156 -  1.2e-05    4394.103 - 5.13e-05    4451.068 - 3.33e-05
+MG+F3X4+I+R3      -2159.985    4371.970 -   0.0237    4382.938 -   0.0136    4451.099 - 3.28e-05
+MGK+F3X4+R3       -2159.990    4371.979 -   0.0236    4382.948 -   0.0136    4451.108 - 3.26e-05
+KOSI07+F3X4+I+R2   -2169.639    4385.277 - 3.06e-05    4393.705 - 6.26e-05    4455.276 - 4.06e-06
+MGK+F3X4+I+R3     -2159.988    4373.975 -  0.00871    4385.881 -  0.00313    4456.148 - 2.63e-06
+GY+F3X4+I+R2      -2166.123    4382.247 - 0.000139    4392.324 - 0.000125    4458.332 - 8.81e-07
+GY+F3X4+R3        -2167.389    4386.777 - 1.45e-05    4397.746 -  8.3e-06    4465.906 -    2e-08
+GY+F3X4+I+R3      -2165.721    4385.442 - 2.82e-05    4397.347 - 1.01e-05    4467.614 -  8.5e-09
+GY+F3X4+R4        -2165.535    4387.071 - 1.25e-05    4399.960 - 2.74e-06    4472.287 - 8.22e-10
+GY+F3X4+R2        -2178.630    4405.261 -  1.4e-09    4414.491 - 1.92e-09    4478.303 - 4.06e-11
+GY+F3X4+G4        -2182.670    4411.340 -  6.7e-11    4419.767 - 1.37e-10    4481.339 -  8.9e-12
+GY+F3X4+I+G4      -2182.671    4413.343 - 2.46e-11    4422.574 - 3.37e-11    4486.385 - 7.14e-13
+KOSI07+F3X4+R3    -2191.868    4431.736 -  2.5e-15    4440.967 - 3.42e-15    4504.778 - 7.23e-17
+SCHN05+F1X4+I+R2   -2209.698    4453.395 - 4.94e-20    4457.863 - 7.33e-19    4505.134 - 6.06e-17
+SCHN05+F3X4+I+R3   -2189.910    4429.820 - 6.51e-15    4439.897 - 5.84e-15    4505.905 - 4.12e-17
+SCHN05+F1X4+I+R3   -2207.441    4452.883 - 6.39e-20    4458.512 -  5.3e-19    4510.708 - 3.73e-18
+SCHN05+F1X4+R3    -2210.272    4456.545 - 1.02e-20    4461.574 - 1.15e-19    4511.327 - 2.74e-18
+SCHN05+F3X4+I+R2   -2200.345    4446.690 - 1.41e-18    4455.118 - 2.89e-18    4516.689 - 1.88e-19
+SCHN05+FU+R3      -2229.390    4488.781 - 1.02e-27    4492.234 - 2.52e-26    4534.432 - 2.63e-23
+SCHN05+FU+I+R2    -2235.698    4499.396 - 5.07e-30    4502.396 - 1.57e-28    4542.004 - 5.97e-25
+SCHN05+F3X4+R3    -2215.872    4479.744 - 9.39e-26    4488.975 - 1.29e-25    4552.786 - 2.72e-27
+GY+F3X4+I         -2219.408    4484.817 - 7.43e-27    4493.244 - 1.52e-26    4554.815 - 9.86e-28
+GY+F3X4           -2222.883    4489.767 - 6.25e-28    4497.433 - 1.87e-27    4556.722 -  3.8e-28
+SCHN05+FU+I+R3    -2239.769    4511.539 - 1.17e-32    4515.481 - 2.26e-31    4560.234 - 6.57e-29
+KOSI07+F+I+R2     -2117.729    4383.458 -  7.6e-05    4522.208 - 7.81e-33    4608.671 - 1.99e-39
+KOSI07+F+I+R3     -2116.149    4384.298 - 4.99e-05    4534.349 -  1.8e-35    4615.598 - 6.24e-41
+KOSI07+F+R3       -2119.134    4388.267 - 6.86e-06    4532.571 - 4.39e-35    4616.524 - 3.93e-41
+GY+F+I+R2         -2121.270    4394.540 - 2.98e-07    4544.591 - 1.08e-37    4625.840 - 3.73e-43
+GY+F+R3           -2119.681    4393.362 - 5.37e-07    4549.362 - 9.91e-39    4627.706 - 1.47e-43
+GY+F+I+R3         -2121.108    4398.217 - 4.74e-08    4560.374 - 4.03e-41    4635.604 - 2.82e-45
+SCHN05+F+I+R2     -2140.288    4428.575 - 1.21e-14    4567.325 - 1.25e-42    4653.789 - 3.18e-49
+SCHN05+F+I+R3     -2138.240    4428.480 - 1.27e-14    4578.531 - 4.59e-45    4659.780 - 1.59e-50
+SCHN05+F+R3       -2142.651    4435.302 -  4.2e-16    4579.606 - 2.68e-45    4663.559 -  2.4e-51
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: MG+F1X4+I+R2
+
+State frequencies: 
+  pi(AAA) = 0.0092  pi(AAC) = 0.0114  pi(AAG) = 0.0127  pi(AAT) = 0.0112
+  pi(ACA) = 0.0114  pi(ACC) = 0.0141  pi(ACG) = 0.0158  pi(ACT) = 0.0138
+  pi(AGA) = 0.0127  pi(AGC) = 0.0158  pi(AGG) = 0.0177  pi(AGT) = 0.0155
+  pi(ATA) = 0.0112  pi(ATC) = 0.0138  pi(ATG) = 0.0155  pi(ATT) = 0.0136
+  pi(CAA) = 0.0114  pi(CAC) = 0.0141  pi(CAG) = 0.0158  pi(CAT) = 0.0138
+  pi(CCA) = 0.0141  pi(CCC) = 0.0175  pi(CCG) = 0.0196  pi(CCT) = 0.0171
+  pi(CGA) = 0.0158  pi(CGC) = 0.0196  pi(CGG) = 0.0219  pi(CGT) = 0.0192
+  pi(CTA) = 0.0138  pi(CTC) = 0.0171  pi(CTG) = 0.0192  pi(CTT) = 0.0168
+  pi(GAA) = 0.0127  pi(GAC) = 0.0158  pi(GAG) = 0.0177  pi(GAT) = 0.0155
+  pi(GCA) = 0.0158  pi(GCC) = 0.0196  pi(GCG) = 0.0219  pi(GCT) = 0.0192
+  pi(GGA) = 0.0177  pi(GGC) = 0.0219  pi(GGG) = 0.0245  pi(GGT) = 0.0214
+  pi(GTA) = 0.0155  pi(GTC) = 0.0192  pi(GTG) = 0.0214  pi(GTT) = 0.0188
+  pi(TAC) = 0.0138  pi(TAT) = 0.0136  pi(TCA) = 0.0138  pi(TCC) = 0.0171
+  pi(TCG) = 0.0192  pi(TCT) = 0.0168  pi(TGC) = 0.0192  pi(TGG) = 0.0214
+  pi(TGT) = 0.0188  pi(TTA) = 0.0136  pi(TTC) = 0.0168  pi(TTG) = 0.0188
+  pi(TTT) = 0.0165
+Model of rate heterogeneity: Invar+FreeRate with 2 categories
+Proportion of invariable sites: 0.0002
+Site proportion and rates:  (0.4992,0.1362) (0.5006,1.8618)
+
+ Category  Relative_rate  Proportion
+  0         0              0.0002
+  1         0.1362         0.4992
+  2         1.8618         0.5006
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -2192.1826 (s.e. 77.2151)
+Unconstrained log-likelihood (without tree): -778.9583
+Number of free parameters (#branches + #model parameters): 18
+Akaike information criterion (AIC) score: 4420.3651
+Corrected Akaike information criterion (AICc) score: 4425.3946
+Bayesian information criterion (BIC) score: 4475.1468
+
+Total tree length (sum of branch lengths): 186.9432
+Sum of internal branch lengths: 50.2759 (26.8937% of tree length)
+
+WARNING: 3 too long branches (>9.8000) should be treated with caution!
+NOTE: Tree is UNROOTED although outgroup taxon 'AT2G33500_AT2G33500.1_Athaliana_Araport11' is drawn at root
+
+NOTE: Branch lengths are interpreted as number of nucleotide substitutions per codon site!
+      Rescale them by 1/3 if you want to have #nt substitutions per nt site
+Numbers in parentheses are SH-aLRT support (%) / ultrafast bootstrap support (%)
+
++--AT2G33500_AT2G33500.1_Athaliana_Araport11
+|
++--AT1G28050_AT1G28050.1_Athaliana_Araport11
+|
+|             +----------------------------------AT2G47890_AT2G47890.1_Athaliana_Araport11
++-------------| (96.1/76)
+              |        +---AT1G73870_AT1G73870.1_Athaliana_Araport11
+              |    +---| (90.9/87)
+              |    |   +-----------------------------------AT2G24790_AT2G24790.1_Athaliana_Araport11
+              +----| (99.9/99)
+                   |    +--AT1G68520_AT1G68520.1_Athaliana_Araport11
+                   +----| (93.7/67)
+                        +--AT1G25440_AT1G25440.1_Athaliana_Araport11
+
+Tree in newick format:
+
+(AT2G33500_AT2G33500.1_Athaliana_Araport11:0.3113022419,AT1G28050_AT1G28050.1_Athaliana_Araport11:3.1754259572,(AT2G47890_AT2G47890.1_Athaliana_Araport11:60.6175418747,((AT1G73870_AT1G73870.1_Athaliana_Araport11:7.4283772659,AT2G24790_AT2G24790.1_Athaliana_Araport11:61.6361514742)90.9/87:7.0963679350,(AT1G68520_AT1G68520.1_Athaliana_Araport11:0.8693789650,AT1G25440_AT1G25440.1_Athaliana_Araport11:2.6291073705)93.7/67:9.4910965120)99.9/99:9.4759942590)96.1/76:24.2124509800);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -2412.737422
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--AT2G33500_AT2G33500.1_Athaliana_Araport11
+|
++--AT1G28050_AT1G28050.1_Athaliana_Araport11
+|
+|                        +--------------------AT2G47890_AT2G47890.1_Athaliana_Araport11
++------------------------| (76)
+                         |                   +-----------AT1G73870_AT1G73870.1_Athaliana_Araport11
+                         |                +--| (87)
+                         |                |  +------------AT2G24790_AT2G24790.1_Athaliana_Araport11
+                         +----------------| (99)
+                                          |  +--AT1G68520_AT1G68520.1_Athaliana_Araport11
+                                          +--| (67)
+                                             +--AT1G25440_AT1G25440.1_Athaliana_Araport11
+
+
+Consensus tree in newick format: 
+
+(AT2G33500_AT2G33500.1_Athaliana_Araport11:0.0000026217,AT1G28050_AT1G28050.1_Athaliana_Araport11:0.4367011743,(AT2G47890_AT2G47890.1_Athaliana_Araport11:3.8872826881,((AT1G73870_AT1G73870.1_Athaliana_Araport11:2.2079288802,AT2G24790_AT2G24790.1_Athaliana_Araport11:2.3952613274)87:0.6299768213,(AT1G68520_AT1G68520.1_Athaliana_Araport11:0.0772039381,AT1G25440_AT1G25440.1_Athaliana_Araport11:0.3525182752)67:0.0000026217)99:3.0169961008)76:4.5679849020);
+
+ALISIM COMMAND
+--------------
+Currently, we only support exporting AliSim commands automatically from the analysis for common models of DNA, Protein, Binary, and Morphological data. To simulate data from other models (mixture, lie-markov, etc), please refer to the User Manual of AliSim. Thanks!
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Thu Sep 25 13:24:28 2025
+Total CPU time used: 413.258999 seconds (0h:6m:53s)
+Total wall-clock time used: 139.4780073 seconds (0h:2m:19s)
+

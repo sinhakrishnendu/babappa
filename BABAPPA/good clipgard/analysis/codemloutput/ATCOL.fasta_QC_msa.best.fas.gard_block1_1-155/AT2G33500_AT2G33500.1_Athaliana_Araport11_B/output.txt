@@ -1,0 +1,248 @@
+      7    465
+
+AT2G33500_AT2G33500.1_Athaliana_Araport11  ATG --- --- --- --- --- --- --- --- --- GGT ACT TCT ACT ACA GTG GCG TGT GAA TTT TGC GGC GAG AGA ACG GCG GTT CTG TTT TGT AGA GCC GAT ACG GCG AAG CTT TGT TTG CCT TGT GAC CAG CAC GTG CAC TCG GCG AAC CTT CTC TCG AGG AAG CAT GTT CGT TCT CAG ATC TGT GAT AAC TGT AGC AAA GAG CCG GTG TCC GTA CGT TGC TTC ACA GAT AAT CTC GTA TTG TGT CAG GAG TGT GAT TGG GAT GTT CAC GGA AGC TGT TCC TCC TCC GCG ACG CAT GAA CGC TCC GCC GTG --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- GAA GGG TTT TCA --- --- --- --- --- --- --- --- GGT TGT CCT TCG GTT TTG GAG CTT GCT GCT GTG TGG GGA ATC GAT GAA TTG ACT TTG GAT TCG TGG GGT TCT GGA 
+AT1G28050_AT1G28050.1_Athaliana_Araport11  ATG --- --- --- --- --- --- --- --- --- AGT AGT TCG GAG AGA GTA CCG TGC GAT TTC TGC GGC GAG CGT ACG GCG GTT TTG TTT TGT AGA GCC GAT ACG GCG AAG CTG TGT TTG CCT TGT GAT CAG CAA GTT CAC ACG GCG AAT CTG TTG TCG AGG AAG CAC GTG CGA TCT CAG ATC TGC GAT AAT TGC GGT AAC GAG CCA GTC TCT GTT CGG TGT TTC ACC GAT AAT CTG ATT TTG TGT CAG GAG TGT GAT TGG GAT GTT CAC GGA AGT TGT TCA GTT TCC GAT GCT CAT GTT CGA TCC GCC GTG --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- GAA GGT TTT TCC --- --- --- --- --- --- --- --- GGT TGT CCA TCG GCG TTG GAG CTT GCT GCT TTA TGG GGA CTT GAT CAA ATG ATG TTG GAT TCT TGG GTT TTG GGA 
+AT2G47890_AT2G47890.1_Athaliana_Araport11  ATG --- --- --- --- --- --- --- --- --- GGT CAT CAG CGT GAC CGC CTC TGC GAC TAT TGC GAC TCC TCC GTG GCT CTT GTC TAC TGC AAA GCT GAC TCC GCC AAG CTC TGC CTC GCC TGC GAC AAG CAA GTC CAC GTC GCC AAC CAA CTC TTC GCC AAA CAC TTC AGG TCA CTT CTC TGC GAC TCC TGC AAC GAA TCT CCC TCT TCC CTT TTC TGC GAG ACT GAA AGG TCT GTT CTT TGC CAG AAC TGC GAC TGG CAA CAC CAC ACC --- --- GCC TCT TCC TCC CTT CAT AGC CGC AGA CCC TTT --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- GAA GGA TTT ACC --- --- --- --- --- --- --- --- GGC TGT CCC TCC GTG CCT GAG TTG CTG GCC ATC GTT GGC CTC GAT GAC CTC ACT CTC GAT TCC TGG GAG TCA AGC 
+AT1G73870_AT1G73870.1_Athaliana_Araport11  ATG GTG GTC GAT GTA GCG AGC GTG ACA GGA GAG AAG ATG GCG GCG CGT GGC TGT GAT GCG TGC ATG AAG AGA CGT GCT AGT TGG TAC TGT CCA GCC GAT GAC GCT TTC CTA TGC CAA AGC TGC GAC GCC TCG ATC CAC TCG GCT AAC CAT TTA GCG AAA CGG CAC GAA CGT GTC CGG TTA --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- CAA TCA TCT TCG CCG ACG GAG ACG AAA ACG ACG TCG GTA TGG TAC GAA GGA TTC AGG AGA AAG GCG AGA ACG CCT AGG AGC --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+AT1G68520_AT1G68520.1_Athaliana_Araport11  ATG ATG AAA AGT TTG GCT AGT GCG GTT GGA GGG AAG --- ACG GCG AGG GCA TGT GAT AGC TGC GTG AAG AGG CGG GCA CGT TGG TAT TGC GCA GCT GAT GAT GCC TTT CTT TGC CAT GCT TGT GAC GGT TCG GTC CAC TCG GCA AAC CCT CTT GCT CGT AGG CAC GAG AGA GTT CGC TTG --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- AAA TCG GCT AGC GCC GGA AAG TAT CGC CAT GCC TCG ACG TGG CAT CAG GGA TTT ACA CGT AAA GCT CGG ACC CCA CGT AGC --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+AT1G25440_AT1G25440.1_Athaliana_Araport11  ATG ATG AAA AGT TTG GCG AAT GCT GTT GGA GCG AAG --- ACG GCG AGG GCT TGC GAC AGC TGC GTG AAG AGA CGT GCA CGG TGG TAC TGC GCG GCC GAC GAT GCT TTT CTT TGC CAG TCT TGC GAC AGT TTG GTC CAT TCA GCA AAC CCT CTT GCT CGC CGC CAC GAG AGA GTC CGT TTG --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- AAG ACG GCT AGC CCG GCG GTC GTA AAG CAT GCT TCT ACG TGG CAT CAC GGG TTT ACT CGT AAA GCT CGA ACG CCA CGT AAC --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+AT2G24790_AT2G24790.1_Athaliana_Araport11  ATG --- --- --- --- --- --- --- --- --- GCG TCG --- TCG TCA AGA CTT TGC GAT TCG TGC AAA TCG ACG GCA GCA ACT CTA TTC TGC CGC GCA GAC GCC GCG TTT CTC TGC GGC GAC TGC GAC GGT AAG ATC CAC ACA GCT AAC AAA CTC GCA TCA CGT CAC GAA CGA GTT TGG CTA TGT GAA GTA TGC GAA CAA GCA CCA GCA CAC GTC ACG TGC AAA GCT GAC GCC GCT GCG TTA TGC GTC ACG TGC GAC CGT GAT ATC CAC TCA GCT AAT CCA CTC TCT CGC CGC CAC GAG CGC GTA CCA ATC AAA TCC GCT TCC TCC TCC GTC AAT GTC ACT GCT TCG --- TGG AAA GAA GGA ATC GAA --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+
+
+
+Printing out site pattern counts
+
+
+         7        459  P
+
+AT2G33500_AT2G33500.1_Athaliana_Araport11   --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- AAA AAC AAC AAG AAG AAT ACA ACA ACG ACG ACG ACT ACT ACT AGA AGA AGC AGC AGG ATC ATC ATG CAC CAC CAC CAG CAG CAG CAT CAT CCG CCT CCT CGC CGT CGT CTC CTC CTG CTT CTT CTT GAA GAA GAA GAA GAC GAG GAG GAG GAG GAT GAT GAT GAT GAT GAT GCC GCC GCG GCG GCG GCG GCG GCT GCT GGA GGA GGA GGC GGG GGT GGT GGT GTA GTA GTG GTG GTG GTG GTG GTT GTT GTT GTT TCA TCC TCC TCC TCC TCC TCG TCG TCG TCG TCT TCT TCT TGC TGC TGG TGG TGG TGT TGT TGT TGT TGT TGT TGT TGT TGT TTC TTG TTG TTG TTG TTG TTT TTT TTT
+AT1G28050_AT1G28050.1_Athaliana_Araport11   --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- AAC AAT AAT AAG AAG AAT ACC AGA ACG ACG GCT AGT ATG GAG AGA CGT AGT GGT AGG ATC CTT ATG CAA CAC CAC CAG CAG CAG CAC CAT CCA CCA CCT CGA CGA CGG CTG TTG TTG CTG CTG CTT CAA GAA GAT GTT GAT GAG GAG GAG GAG GAT GAT GAT GAT GAT GAT GCC GCC CCG GAT GCG GCG GCG GCT GCT GGA GGA GGA GGC GGT AGT GGT GTT ATT GTT GTA GTC GTG GTT TTA GCG GTG GTT GTT TCC GTT TCA TCC TCC TCT ACG TCG TCG TCT TCG TCT TTG TGC TGT TGG TGG TGG TGC TGC TGC TGT TGT TGT TGT TGT TGT TTC ATG TTG TTG TTG TTG TTC TTT TTT
+AT2G47890_AT2G47890.1_Athaliana_Araport11   --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- GAA AAC TCC AAA AAG AGG ACT GAC GTG TCC CTT CAT ACT CGT AAA TCC --- AAC GCC CTC CTC ATG CAA CAC CAC AAG CAG CTT CAC CAT CCC CCC GCC CGC AGG TTC TCT CTC GTC CAA CTC TTG GAC GAA GAC AGC GAC AAC GAG TCC TCT CAA GAA GAC GAC GAC GAT CCC GCT CTC TCC GCC GCC GCT CTG GCC ACC AGC GGC GAC GGA GGT GGC GAG GTT CTT CGC TCT TTT GTC ATC GTG TTC CAC CTT ACC TCT GCC AGA TCC TCC GTC TCC TTC TCC CAG TCA TCA TGC TGC GTT TGG TGG TGC TGC TGC --- TGC TGC TGC TGC TGT GAG CTC CCT CTC CTC CTT TAT TAC TTT
+AT1G73870_AT1G73870.1_Athaliana_Araport11   AAA AAG ACA ACG ACG ACG ACG ACG AGA AGA AGC AGC AGG CAA CCG CCT GAG GAT GCG GCG GGA GTA GTA GTC GTG GTG TAC TCA TCG TCG TCT TGG --- AAC --- CGG TTC --- --- GCG CGT GAC --- AAG --- GCG CCA AGA --- --- AAA TTA --- ATG TCG --- CAC GCC --- CGG CAC --- --- --- AGC --- CGT --- --- TTA TGG CAT CTA --- --- GAA GAT --- GAC --- --- AAG --- --- --- --- --- GAT --- --- GCC GGC --- GCT GCT GCT --- --- --- --- --- ATG GGA GAG --- --- --- --- CGT --- --- ATC --- --- GAA --- AGT AGG --- --- --- --- --- TCG --- GCG --- ATG GTC --- TGC --- --- --- --- --- --- TGT --- --- TGC TGC TGT --- --- --- --- --- CAA --- GCG TAC TTC
+AT1G68520_AT1G68520.1_Athaliana_Araport11   CGC AAA GTT ACC CAT GCC GGA TAT CGG CGT AGC AGT CGT AAA GCC CCA AAG AGT GCT GCT GGA ACG TTG AAA ATG GCG CAT TCG AGC TCG GCT TGG --- AAC --- AGG TTT --- --- GCG CGG GAT --- AAG --- ACG GCA AGG --- --- CGT TTG --- ATG TCG --- CAC GGT --- CGC CAC --- --- --- GCT --- AGA --- --- CTT TGG CCT CTT --- --- CAG GAT --- GAC --- --- AAG --- --- --- --- --- GAT --- --- GCT GCA --- GCA GCC GCA --- --- --- --- --- GTG GGA GGG --- --- --- --- AGG --- --- GTC --- --- GAG --- CGT ACA --- --- --- --- --- TCG --- GCT --- --- GTT --- TGC --- --- --- --- --- --- TGT --- --- TGC TGT TGC --- --- --- --- --- CAT --- AGC TAT TTT
+AT1G25440_AT1G25440.1_Athaliana_Araport11   AAG AAA GTT ACG CAT GCT GCG GTA CGA CGT AAC AAT CGT AAG CCG CCA GTC AGT GCG GCT GGA ACG TTG AAA ATG GCT CAT ACG AGC TCT GCT TGG --- AAC --- CGC TTT --- --- GCG CGT GAT --- AAG --- ACG GCG AGA --- --- CGC TTG --- ATG TTG --- CAT AGT --- CGT CAC --- --- --- TCT --- AGA --- --- CTT TGG CCT CTT --- --- CAC GAC --- GAC --- --- AAG --- --- --- --- --- GAC --- --- GCC GCT --- GCA GCT GCA --- --- --- --- --- GTG GGG GCG --- --- --- --- AGG --- --- GTC --- --- GAG --- CGG ACT --- --- --- --- --- TCA --- GCT --- --- GTC --- TGC --- --- --- --- --- --- TGC --- --- TGC TGC TGC --- --- --- --- --- CAG --- AGC TAC TTT
+AT2G24790_AT2G24790.1_Athaliana_Araport11   GTC --- --- --- ACT GCT TCC AAT --- --- --- --- --- AAA TCC --- GTC --- --- --- --- --- --- --- --- --- AAA TCC TCC TCG GCT TGG CAA AAC GTA CGT TTT GCC GCT TCA GCA GCC CGC TCG --- TCG CGC ACG GCT GAA TCA CTA --- ATG AAG CAC CAC GGT GTC TGG CAC CAC CCA --- GAC CGC CGA ACG GCT CTC CTA AAA CTC --- --- GAA GAT GAG GAC ACG --- TCG GCA GAT GAC GAA GAC GAC --- CCA GCA CTT CGC GCT GCG GCA --- --- TCA --- --- AAA GGA GCG --- --- GCG GTC AGA GCA ATC ATC --- --- GAA ATC ACT GAA CTC CCA GTA TCT CAC ACA --- GCA --- --- GTT --- TGC TGC --- --- CGT TGC TGT TGC AAT TGC TGC TGC TGC --- AAA --- --- --- GGC TTA TCG TTC ATC
+
+
+
+    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+    1    1    1    1    1    1    1    1    1    1    1    1    1    2    1
+    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+    1    1    1    1    2    1    1    1    1    1    1    1    1    1    1
+    1    1    1
+
+CODONML (in paml version 4.10.9, 7 May 2025)  aligned.fas
+Model: several dN/dS ratios for branches, 
+Codon frequency model: FMutSel
+ns =   7  ls = 155
+
+Codon usage in sequences
+--------------------------------------------------------------------------------------------------------------------------------------
+Phe TTT   3   2   2   0   2   2 | Ser TCT   3   3   4   1   0   2 | Tyr TAT   0   0   1   0   2   0 | Cys TGT  10   8   1   2   2   0
+    TTC   1   2   3   2   0   0 |     TCC   5   3   9   0   0   0 |     TAC   0   0   1   2   0   1 |     TGC   2   4  10   3   3   5
+Leu TTA   0   1   0   2   0   0 |     TCA   1   1   2   1   0   1 | *** TAA   0   0   0   0   0   0 | *** TGA   0   0   0   0   0   0
+    TTG   5   7   1   0   2   3 |     TCG   4   3   0   4   4   0 |     TAG   0   0   0   0   0   0 | Trp TGG   3   3   2   2   2   2
+--------------------------------------------------------------------------------------------------------------------------------------
+Leu CTT   3   2   5   0   2   2 | Pro CCT   2   1   1   1   1   1 | His CAT   2   1   2   1   3   3 | Arg CGT   2   1   1   3   4   4
+    CTC   2   0   8   0   0   0 |     CCC   0   0   3   0   0   0 |     CAC   3   3   4   2   2   2 |     CGC   1   0   2   0   2   2
+    CTA   0   0   0   1   0   0 |     CCA   0   2   0   1   1   1 | Gln CAA   0   2   3   2   0   0 |     CGA   0   2   0   0   0   1
+    CTG   1   3   1   0   0   0 |     CCG   1   1   0   1   0   1 |     CAG   3   3   2   0   1   1 |     CGG   0   1   0   2   2   1
+--------------------------------------------------------------------------------------------------------------------------------------
+Ile ATT   0   1   0   0   0   0 | Thr ACT   3   0   2   0   0   1 | Asn AAT   1   3   0   0   0   1 | Ser AGT   0   3   0   1   2   2
+    ATC   2   1   1   1   0   0 |     ACC   0   1   2   0   1   0 |     AAC   2   1   3   1   1   2 |     AGC   2   0   2   3   3   2
+    ATA   0   0   0   0   0   0 |     ACA   2   0   0   1   1   0 | Lys AAA   1   0   2   2   3   2 | Arg AGA   2   2   1   3   1   2
+Met ATG   1   3   1   3   2   2 |     ACG   3   3   0   5   2   4 |     AAG   2   2   2   3   3   4 |     AGG   1   1   2   2   3   1
+--------------------------------------------------------------------------------------------------------------------------------------
+Val GTT   4   7   2   0   2   1 | Ala GCT   2   3   2   3   6   7 | Asp GAT   7  10   2   3   3   1 | Gly GGT   3   3   1   0   1   0
+    GTC   0   1   3   2   1   3 |     GCC   2   2   6   2   3   1 |     GAC   1   0   8   2   1   3 |     GGC   1   1   2   1   0   0
+    GTA   2   1   0   2   0   1 |     GCA   0   0   0   0   4   2 | Glu GAA   4   1   3   2   0   0 |     GGA   3   3   1   2   3   1
+    GTG   5   2   2   2   1   1 |     GCG   5   4   0   6   2   5 |     GAG   4   5   3   2   1   1 |     GGG   1   0   0   0   1   1
+--------------------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------
+Phe TTT   1 | Ser TCT   1 | Tyr TAT   0 | Cys TGT   1
+    TTC   1 |     TCC   4 |     TAC   0 |     TGC   9
+Leu TTA   1 |     TCA   3 | *** TAA   0 | *** TGA   0
+    TTG   0 |     TCG   5 |     TAG   0 | Trp TGG   2
+------------------------------------------------------
+Leu CTT   1 | Pro CCT   0 | His CAT   0 | Arg CGT   2
+    CTC   3 |     CCC   0 |     CAC   5 |     CGC   4
+    CTA   2 |     CCA   3 | Gln CAA   1 |     CGA   1
+    CTG   0 |     CCG   0 |     CAG   0 |     CGG   0
+------------------------------------------------------
+Ile ATT   0 | Thr ACT   2 | Asn AAT   2 | Ser AGT   0
+    ATC   4 |     ACC   0 |     AAC   1 |     AGC   0
+    ATA   0 |     ACA   1 | Lys AAA   5 | Arg AGA   1
+Met ATG   1 |     ACG   3 |     AAG   1 |     AGG   0
+------------------------------------------------------
+Val GTT   1 | Ala GCT   6 | Asp GAT   2 | Gly GGT   1
+    GTC   4 |     GCC   2 |     GAC   5 |     GGC   1
+    GTA   2 |     GCA   6 | Glu GAA   5 |     GGA   1
+    GTG   0 |     GCG   3 |     GAG   1 |     GGG   0
+------------------------------------------------------
+
+Codon position x base (3x4) table for each sequence.
+
+#1: AT2G33500_AT2G33500.1_Athaliana_Araport11
+position  1:    T:0.30081    C:0.16260    A:0.17886    G:0.35772
+position  2:    T:0.23577    C:0.26829    A:0.24390    G:0.25203
+position  3:    T:0.36585    C:0.19512    A:0.12195    G:0.31707
+Average         T:0.30081    C:0.20867    A:0.18157    G:0.30894
+
+#2: AT1G28050_AT1G28050.1_Athaliana_Araport11
+position  1:    T:0.30081    C:0.17886    A:0.17073    G:0.34959
+position  2:    T:0.26829    C:0.21951    A:0.25203    G:0.26016
+position  3:    T:0.39024    C:0.15447    A:0.12195    G:0.33333
+Average         T:0.31978    C:0.18428    A:0.18157    G:0.31436
+
+#3: AT2G47890_AT2G47890.1_Athaliana_Araport11
+position  1:    T:0.29752    C:0.26446    A:0.14876    G:0.28926
+position  2:    T:0.23967    C:0.25620    A:0.29752    G:0.20661
+position  3:    T:0.21488    C:0.55372    A:0.09917    G:0.13223
+Average         T:0.25069    C:0.35813    A:0.18182    G:0.20937
+
+#4: AT1G73870_AT1G73870.1_Athaliana_Araport11
+position  1:    T:0.21839    C:0.16092    A:0.28736    G:0.33333
+position  2:    T:0.17241    C:0.29885    A:0.25287    G:0.27586
+position  3:    T:0.17241    C:0.24138    A:0.21839    G:0.36782
+Average         T:0.18774    C:0.23372    A:0.25287    G:0.32567
+
+#5: AT1G68520_AT1G68520.1_Athaliana_Araport11
+position  1:    T:0.19767    C:0.20930    A:0.25581    G:0.33721
+position  2:    T:0.13953    C:0.29070    A:0.23256    G:0.33721
+position  3:    T:0.34884    C:0.19767    A:0.15116    G:0.30233
+Average         T:0.22868    C:0.23256    A:0.21318    G:0.32558
+
+#6: AT1G25440_AT1G25440.1_Athaliana_Araport11
+position  1:    T:0.18605    C:0.22093    A:0.26744    G:0.32558
+position  2:    T:0.17442    C:0.30233    A:0.24419    G:0.27907
+position  3:    T:0.31395    C:0.24419    A:0.12791    G:0.31395
+Average         T:0.22481    C:0.25581    A:0.21318    G:0.30620
+
+#7: AT2G24790_AT2G24790.1_Athaliana_Araport11
+position  1:    T:0.25225    C:0.19820    A:0.18919    G:0.36036
+position  2:    T:0.18919    C:0.35135    A:0.25225    G:0.20721
+position  3:    T:0.18018    C:0.38739    A:0.28829    G:0.14414
+Average         T:0.20721    C:0.31231    A:0.24324    G:0.23724
+
+Sums of codon usage counts
+------------------------------------------------------------------------------
+Phe F TTT      12 | Ser S TCT      14 | Tyr Y TAT       3 | Cys C TGT      24
+      TTC       9 |       TCC      21 |       TAC       4 |       TGC      36
+Leu L TTA       4 |       TCA       9 | *** * TAA       0 | *** * TGA       0
+      TTG      18 |       TCG      20 |       TAG       0 | Trp W TGG      16
+------------------------------------------------------------------------------
+Leu L CTT      15 | Pro P CCT       7 | His H CAT      12 | Arg R CGT      17
+      CTC      13 |       CCC       3 |       CAC      21 |       CGC      11
+      CTA       3 |       CCA       8 | Gln Q CAA       8 |       CGA       4
+      CTG       5 |       CCG       4 |       CAG      10 |       CGG       6
+------------------------------------------------------------------------------
+Ile I ATT       1 | Thr T ACT       8 | Asn N AAT       7 | Ser S AGT       8
+      ATC       9 |       ACC       4 |       AAC      11 |       AGC      12
+      ATA       0 |       ACA       5 | Lys K AAA      15 | Arg R AGA      12
+Met M ATG      13 |       ACG      20 |       AAG      17 |       AGG      10
+------------------------------------------------------------------------------
+Val V GTT      17 | Ala A GCT      29 | Asp D GAT      28 | Gly G GGT       9
+      GTC      14 |       GCC      18 |       GAC      20 |       GGC       6
+      GTA       8 |       GCA      12 | Glu E GAA      15 |       GGA      14
+      GTG      13 |       GCG      25 |       GAG      17 |       GGG       3
+------------------------------------------------------------------------------
+
+(Ambiguity data are not used in the counts.)
+
+
+Codon position x base (3x4) table, overall
+
+position  1:    T:0.25780    C:0.19946    A:0.20624    G:0.33650
+position  2:    T:0.20896    C:0.28087    A:0.25509    G:0.25509
+position  3:    T:0.28630    C:0.28765    A:0.15875    G:0.26730
+Average         T:0.25102    C:0.25599    A:0.20669    G:0.28630
+
+Codon frequencies under model, for use in evolver (TTT TTC TTA TTG ... GGG):
+  0.01628223  0.01221167  0.00542741  0.02442334
+  0.01899593  0.02849389  0.01221167  0.02713704
+  0.00407056  0.00542741  0.00000000  0.00000000
+  0.03256445  0.04884668  0.00000000  0.02170963
+  0.02035278  0.01763908  0.00407056  0.00678426
+  0.00949796  0.00407056  0.01085482  0.00542741
+  0.01628223  0.02849389  0.01085482  0.01356852
+  0.02306649  0.01492537  0.00542741  0.00814111
+  0.00135685  0.01221167  0.00000000  0.01763908
+  0.01085482  0.00542741  0.00678426  0.02713704
+  0.00949796  0.01492537  0.02035278  0.02306649
+  0.01085482  0.01628223  0.01628223  0.01356852
+  0.02306649  0.01899593  0.01085482  0.01763908
+  0.03934871  0.02442334  0.01628223  0.03392130
+  0.03799186  0.02713704  0.02035278  0.02306649
+  0.01221167  0.00814111  0.01899593  0.00407056
+
+
+
+Nei & Gojobori 1986. dN/dS (dN, dS)
+(Pairwise deletion)
+(Note: This matrix is not used in later ML. analysis.
+Use runmode = -2 for ML pairwise comparison.)
+
+AT2G33500_AT2G33500.1_Athaliana_Araport11
+AT1G28050_AT1G28050.1_Athaliana_Araport11 0.1411 (0.1125 0.7971)
+AT2G47890_AT2G47890.1_Athaliana_Araport11-1.0000 (0.5021 -1.0000)-1.0000 (0.5519 -1.0000)
+AT1G73870_AT1G73870.1_Athaliana_Araport11-1.0000 (0.6187 -1.0000)-1.0000 (0.6584 -1.0000) 0.2940 (0.8042 2.7353)
+AT1G68520_AT1G68520.1_Athaliana_Araport11 0.2928 (0.4997 1.7064) 0.1498 (0.5921 3.9522)-1.0000 (0.6054 -1.0000)-1.0000 (0.3365 -1.0000)
+AT1G25440_AT1G25440.1_Athaliana_Araport11-1.0000 (0.5452 -1.0000)-1.0000 (0.6213 -1.0000)-1.0000 (0.6652 -1.0000)-1.0000 (0.3476 -1.0000) 0.1345 (0.1075 0.7996)
+AT2G24790_AT2G24790.1_Athaliana_Araport11-1.0000 (0.6938 -1.0000)-1.0000 (0.7254 -1.0000) 0.3592 (0.6628 1.8451) 0.2622 (0.4347 1.6580) 0.2786 (0.5078 1.8227) 0.2176 (0.5242 2.4095)
+
+TREE #  1:  (1, 2, (3, ((4, 7), (5, 6))));   MP score: -1
+check convergence..
+lnL(ntime: 11  np: 17):  -2138.524814      +0.000000
+   8..1     8..2     8..9     9..3     9..10   10..11   11..4    11..7    10..12   12..5    12..6  
+ 0.035843 1.016292 2.366124 3.540001 3.264526 1.660766 1.290224 4.085063 0.362021 0.321264 0.676688 1.159434 0.984301 0.868032 2.024598 0.071240 0.031134
+
+Note: Branch length is defined as number of nucleotide substitutions per codon (not per nucleotide site).
+
+tree length = 18.618811
+
+(1: 0.035843, 2: 1.016292, (3: 3.540001, ((4: 1.290224, 7: 4.085063): 1.660766, (5: 0.321264, 6: 0.676688): 0.362021): 3.264526): 2.366124);
+
+(AT2G33500_AT2G33500.1_Athaliana_Araport11: 0.035843, AT1G28050_AT1G28050.1_Athaliana_Araport11: 1.016292, (AT2G47890_AT2G47890.1_Athaliana_Araport11: 3.540001, ((AT1G73870_AT1G73870.1_Athaliana_Araport11: 1.290224, AT2G24790_AT2G24790.1_Athaliana_Araport11: 4.085063): 1.660766, (AT1G68520_AT1G68520.1_Athaliana_Araport11: 0.321264, AT1G25440_AT1G25440.1_Athaliana_Araport11: 0.676688): 0.362021): 3.264526): 2.366124);
+
+Detailed output identifying parameters
+
+kappa (ts/tv) =  1.15943
+
+Frequency parameters:
+   0.20183 (T)   0.17799 (C)   0.41514 (A)   0.20505 (G)
+w (dN/dS) for branches:  0.07124 0.03113
+
+dN & dS for each branch
+
+ branch          t       N       S   dN/dS      dN      dS  N*dN  S*dS
+
+   8..1      0.036   350.9   114.1  0.0311  0.0014  0.0444   0.5   5.1
+   8..2      1.016   350.9   114.1  0.0712  0.0807  1.1326  28.3 129.2
+   8..9      2.366   350.9   114.1  0.0712  0.1878  2.6368  65.9 300.8
+   9..3      3.540   350.9   114.1  0.0712  0.2810  3.9450  98.6 450.1
+   9..10     3.265   350.9   114.1  0.0712  0.2592  3.6380  90.9 415.1
+  10..11     1.661   350.9   114.1  0.0712  0.1318  1.8508  46.3 211.2
+  11..4      1.290   350.9   114.1  0.0712  0.1024  1.4378  35.9 164.0
+  11..7      4.085   350.9   114.1  0.0712  0.3243  4.5524 113.8 519.4
+  10..12     0.362   350.9   114.1  0.0712  0.0287  0.4034  10.1  46.0
+  12..5      0.321   350.9   114.1  0.0712  0.0255  0.3580   9.0  40.8
+  12..6      0.677   350.9   114.1  0.0712  0.0537  0.7541  18.9  86.0
+
+tree length for dN:       1.4767
+tree length for dS:      20.7535
+
+dS tree:
+(AT2G33500_AT2G33500.1_Athaliana_Araport11: 0.044441, AT1G28050_AT1G28050.1_Athaliana_Araport11: 1.132567, (AT2G47890_AT2G47890.1_Athaliana_Araport11: 3.945016, ((AT1G73870_AT1G73870.1_Athaliana_Araport11: 1.437839, AT2G24790_AT2G24790.1_Athaliana_Araport11: 4.552439): 1.850775, (AT1G68520_AT1G68520.1_Athaliana_Araport11: 0.358020, AT1G25440_AT1G25440.1_Athaliana_Araport11: 0.754109): 0.403440): 3.638023): 2.636835);
+dN tree:
+(AT2G33500_AT2G33500.1_Athaliana_Araport11: 0.001384, AT1G28050_AT1G28050.1_Athaliana_Araport11: 0.080684, (AT2G47890_AT2G47890.1_Athaliana_Araport11: 0.281042, ((AT1G73870_AT1G73870.1_Athaliana_Araport11: 0.102431, AT2G24790_AT2G24790.1_Athaliana_Araport11: 0.324314): 0.131849, (AT1G68520_AT1G68520.1_Athaliana_Araport11: 0.025505, AT1G25440_AT1G25440.1_Athaliana_Araport11: 0.053722): 0.028741): 0.259172): 0.187847);
+
+w ratios as node labels:
+(AT2G33500_AT2G33500.1_Athaliana_Araport11 #0.0311337 , AT1G28050_AT1G28050.1_Athaliana_Araport11 #0.0712397 , (AT2G47890_AT2G47890.1_Athaliana_Araport11 #0.0712397 , ((AT1G73870_AT1G73870.1_Athaliana_Araport11 #0.0712397 , AT2G24790_AT2G24790.1_Athaliana_Araport11 #0.0712397 ) #0.0712397 , (AT1G68520_AT1G68520.1_Athaliana_Araport11 #0.0712397 , AT1G25440_AT1G25440.1_Athaliana_Araport11 #0.0712397 ) #0.0712397 ) #0.0712397 ) #0.0712397 );
+

@@ -1,0 +1,34 @@
+
+-------------
+| Arguments |
+-------------
+Input file: msa/ATCOL.fasta_QC_msa.best.fas (format: fasta)
+Output file: msa/ATCOL.fasta_QC_msa_clipkit_temp.fas (format: fasta)
+Sequence type: Nucleotides
+Gaps threshold: 0.7143
+Gap characters: ['-', '?', '*', 'X', 'x', 'N', 'n']
+Trimming mode: smart-gap
+Create complementary output: False
+Process as codons: True
+Trim ends only: False
+Create log file: False
+
+
+------------------------
+| Writing output files |
+------------------------
+Trimmed alignment: msa/ATCOL.fasta_QC_msa_clipkit_temp.fas
+Complement file: False
+Log file: False
+
+
+---------------------
+| Output Statistics |
+---------------------
+Original length: 2733
+Number of sites kept: 1368
+Number of sites trimmed: 1365
+Percentage of alignment trimmed: 49.945%
+
+Execution time: 0.019s
+

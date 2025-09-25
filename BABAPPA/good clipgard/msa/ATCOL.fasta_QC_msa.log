@@ -1,0 +1,45 @@
+
+-----------------
+ PRANK v.170427:
+-----------------
+
+Input for the analysis
+ - aligning sequences in 'QCseq/ATCOL.fasta_QC.fasta'
+ - using inferred alignment guide tree
+ - option '+F' is not used; it can be enabled with '+F'
+ - external tools available:
+    MAFFT for initial alignment
+
+Correcting (arbitrarily) for multifurcating nodes.
+Correcting (arbitrarily) for multifurcating nodes.
+
+Generating multiple alignment: iteration 1.
+
+Alignment score: 3312
+Correcting (arbitrarily) for multifurcating nodes.
+
+Generating multiple alignment: iteration 2.
+
+Alignment score: 2879
+Correcting (arbitrarily) for multifurcating nodes.
+
+Generating multiple alignment: iteration 3.
+
+Alignment score: 2890
+Correcting (arbitrarily) for multifurcating nodes.
+
+Generating multiple alignment: iteration 4.
+
+Alignment score: 2890
+Correcting (arbitrarily) for multifurcating nodes.
+
+Generating multiple alignment: iteration 5.
+
+Alignment score: 2887
+
+
+Writing
+ - alignment to 'msa/ATCOL.fasta_QC_msa.best.fas'
+
+Analysis done. Total time 308s
+

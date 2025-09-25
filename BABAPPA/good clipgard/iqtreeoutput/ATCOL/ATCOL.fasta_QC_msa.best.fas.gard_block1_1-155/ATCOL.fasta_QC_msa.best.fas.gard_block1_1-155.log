@@ -1,0 +1,238 @@
+IQ-TREE multicore version 2.4.0 for Linux x86 64-bit built Feb 12 2025
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    Rajamosai (AVX2, FMA3, 7 GB RAM)
+Command: iqtree2 -s recombination_blocks/ATCOL/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155.fas -st CODON -B 1000 -alrt 1000 -bnni -T AUTO -pre iqtreeoutput/ATCOL/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155
+Seed:    325390 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Sep 25 13:21:58 2025
+Kernel:  AVX+FMA - auto-detect threads (16 CPU cores detected)
+
+Reading alignment file recombination_blocks/ATCOL/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155.fas ... Fasta format detected
+Reading fasta file: done in 0.00065176 secs using 12.27% CPU
+Alignment most likely contains DNA/RNA sequences
+Converting to codon sequences with genetic code  ...
+Alignment has 7 sequences with 155 columns, 153 distinct patterns
+32 parsimony-informative, 113 singleton sites, 10 constant sites
+                                           Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00776297 secs using 930.3% CPU
+   1  AT2G33500_AT2G33500.1_Athaliana_Araport11   20.65%    passed     81.36%
+   2  AT1G28050_AT1G28050.1_Athaliana_Araport11   20.65%    passed     16.55%
+   3  AT2G47890_AT2G47890.1_Athaliana_Araport11   21.94%    failed      0.15%
+   4  AT1G73870_AT1G73870.1_Athaliana_Araport11   43.87%    passed     70.02%
+   5  AT1G68520_AT1G68520.1_Athaliana_Araport11   44.52%    passed     65.99%
+   6  AT1G25440_AT1G25440.1_Athaliana_Araport11   44.52%    passed     94.57%
+   7  AT2G24790_AT2G24790.1_Athaliana_Araport11   28.39%    passed      9.22%
+****  TOTAL                                       32.07%  1 sequences failed composition chi2 test (p-value<5%; df=60)
+
+Creating fast initial parsimony tree by random order stepwise addition...
+1.280 seconds, parsimony score: 352 (based on 145 sites)
+Measuring multi-threading efficiency up to 16 CPU cores
+Increase to 10 rounds for branch lengths
+163 trees examined
+Threads: 1 / Time: 16.053 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -2398
+Threads: 2 / Time: 11.340 sec / Speedup: 1.416 / Efficiency: 71% / LogL: -2398
+Threads: 3 / Time: 9.656 sec / Speedup: 1.662 / Efficiency: 55% / LogL: -2398
+Threads: 4 / Time: 17.102 sec / Speedup: 0.939 / Efficiency: 23% / LogL: -2398
+BEST NUMBER OF THREADS: 3
+
+Perform fast likelihood tree search using GY+F3X4+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -2266.221
+2. Current log-likelihood: -2260.767
+3. Current log-likelihood: -2254.740
+Optimal log-likelihood: -2254.698
+Nonsynonymous/synonymous ratio (omega): 0.217
+Transition/transversion ratio (kappa): 1.158
+Proportion of invariable sites: 0.000
+Gamma shape alpha: 1.172
+Parameters optimization took 3 rounds (0.906 sec)
+Time for fast ML tree search: 2.252 seconds
+
+NOTE: ModelFinder requires 8 MB RAM!
+ModelFinder will test up to 330 codon models (sample size: 155 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GY+F3X4       2222.883     22  4489.767     4497.433     4556.722
+  2  GY+F3X4+I     2219.408     23  4484.817     4493.244     4554.815
+  3  GY+F3X4+G4    2182.670     23  4411.340     4419.767     4481.339
+  4  GY+F3X4+I+G4  2182.671     24  4413.343     4422.574     4486.385
+  5  GY+F3X4+R2    2178.630     24  4405.261     4414.491     4478.303
+  6  GY+F3X4+R3    2167.389     26  4386.777     4397.746     4465.906
+  7  GY+F3X4+R4    2165.535     28  4387.071     4399.960     4472.287
+ 14  GY+F3X4+I+R2  2166.123     25  4382.247     4392.324     4458.332
+ 15  GY+F3X4+I+R3  2165.721     27  4385.442     4397.347     4467.614
+ 28  GY+F1X4+R3    2172.575     20  4385.150     4391.418     4446.018
+ 36  GY+F1X4+I+R2  2172.599     19  4383.199     4388.828     4441.024
+ 37  GY+F1X4+I+R3  2172.578     21  4387.156     4394.103     4451.068
+ 50  GY+F+R3       2119.681     77  4393.362     4549.362     4627.706
+ 58  GY+F+I+R2     2121.270     76  4394.540     4544.591     4625.840
+ 59  GY+F+I+R3     2121.108     78  4398.217     4560.374     4635.604
+ 72  MGK+F3X4+R3   2159.990     26  4371.979     4382.948     4451.108
+ 80  MGK+F3X4+I+R2 2159.977     25  4369.953     4380.031     4446.039
+ 81  MGK+F3X4+I+R3 2159.988     27  4373.975     4385.881     4456.148
+ 94  MGK+F1X4+R3   2170.372     20  4380.744     4387.013     4441.613
+102  MGK+F1X4+I+R2 2170.356     19  4378.712     4384.341     4436.537
+103  MGK+F1X4+I+R3 2170.349     21  4382.697     4389.644     4446.609
+116  MG+F3X4+R3    2159.964     25  4369.928     4380.005     4446.013
+124  MG+F3X4+I+R2  2159.989     24  4367.978     4377.209     4441.021
+125  MG+F3X4+I+R3  2159.985     26  4371.970     4382.938     4451.099
+138  MG+F1X4+R3    2170.343     19  4378.686     4384.316     4436.511
+146  MG+F1X4+I+R2  2170.348     18  4376.697     4381.726     4431.478
+147  MG+F1X4+I+R3  2170.347     20  4380.693     4386.962     4441.562
+160  KOSI07+F3X4+R3 2191.868     24  4431.736     4440.967     4504.778
+168  KOSI07+F3X4+I+R2 2169.639     23  4385.277     4393.705     4455.276
+169  KOSI07+F3X4+I+R3 2157.701     25  4365.402     4375.480     4441.488
+182  KOSI07+F1X4+R3 2176.258     18  4388.517     4393.546     4443.298
+190  KOSI07+F1X4+I+R2 2175.451     17  4384.902     4389.369     4436.640
+191  KOSI07+F1X4+I+R3 2172.755     19  4383.510     4389.140     4441.335
+204  KOSI07+F+R3   2119.134     75  4388.267     4532.571     4616.524
+212  KOSI07+F+I+R2 2117.729     74  4383.458     4522.208     4608.671
+213  KOSI07+F+I+R3 2116.149     76  4384.298     4534.349     4615.598
+226  KOSI07+FU+R3  2179.575     15  4389.151     4392.604     4434.802
+234  KOSI07+FU+I+R2 2182.052     14  4392.105     4395.105     4434.713
++I+R3 reinitialized from +I+R2 with factor 0.500
++I+R3 reinitialized from +I+R2 with factor 0.250
++I+R3 reinitialized from +I+R2 with factor 0.125
++I+R3 reinitialized from +I+R2 with factor 0.062
++I+R3 reinitialized from +I+R2 with factor 0.031
+WARNING: Log-likelihood -2183.23 of KOSI07+FU+I+R3 worse than KOSI07+FU+I+R2 -2182.05
+235  KOSI07+FU+I+R3 2183.230     16  4398.459     4402.401     4447.154
+248  SCHN05+F3X4+R3 2215.872     24  4479.744     4488.975     4552.786
+256  SCHN05+F3X4+I+R2 2200.345     23  4446.690     4455.118     4516.689
+257  SCHN05+F3X4+I+R3 2189.910     25  4429.820     4439.897     4505.905
+270  SCHN05+F1X4+R3 2210.272     18  4456.545     4461.574     4511.327
+278  SCHN05+F1X4+I+R2 2209.698     17  4453.395     4457.863     4505.134
+279  SCHN05+F1X4+I+R3 2207.441     19  4452.883     4458.512     4510.708
+292  SCHN05+F+R3   2142.651     75  4435.302     4579.606     4663.559
+300  SCHN05+F+I+R2 2140.288     74  4428.575     4567.325     4653.789
+301  SCHN05+F+I+R3 2138.240     76  4428.480     4578.531     4659.780
+314  SCHN05+FU+R3  2229.390     15  4488.781     4492.234     4534.432
+322  SCHN05+FU+I+R2 2235.698     14  4499.396     4502.396     4542.004
++I+R3 reinitialized from +I+R2 with factor 0.500
++I+R3 reinitialized from +I+R2 with factor 0.250
++I+R3 reinitialized from +I+R2 with factor 0.125
++I+R3 reinitialized from +I+R2 with factor 0.062
++I+R3 reinitialized from +I+R2 with factor 0.031
+WARNING: Log-likelihood -2239.77 of SCHN05+FU+I+R3 worse than SCHN05+FU+I+R2 -2235.7
+323  SCHN05+FU+I+R3 2239.769     16  4511.539     4515.481     4560.234
+Akaike Information Criterion:           KOSI07+F3X4+I+R3
+Corrected Akaike Information Criterion: KOSI07+F3X4+I+R3
+Bayesian Information Criterion:         MG+F1X4+I+R2
+Best-fit model: MG+F1X4+I+R2 chosen according to BIC
+
+All model information printed to iqtreeoutput/ATCOL/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155.model.gz
+CPU time for ModelFinder: 261.476 seconds (0h:4m:21s)
+Wall-clock time for ModelFinder: 91.226 seconds (0h:1m:31s)
+WARNING: States(s) ATA rarely appear in alignment and may cause numerical problems
+Generating 1000 samples for ultrafast bootstrap (seed: 325390)...
+
+NOTE: 2 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -2254.557
+2. Current log-likelihood: -2207.901
+3. Current log-likelihood: -2200.210
+4. Current log-likelihood: -2199.961
+Optimal log-likelihood: -2199.949
+Nonsynonymous/synonymous ratio (omega): 0.015
+Transition/transversion ratio (kappa): 1.219
+Proportion of invariable sites: 0.000
+Site proportion and rates:  (0.461,0.105) (0.539,1.765)
+Parameters optimization took 4 rounds (0.632 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.148859 secs using 291.1% CPU
+Computing ML distances took 0.152746 sec (of wall-clock time) 0.438749 sec (of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Setting up auxiliary I and S matrices: done in 0.00194258 secs
+Computing RapidNJ tree took 0.010457 sec (of wall-clock time) 0.008614 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -2311.537
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.023 second
+Computing log-likelihood of 65 initial trees ... 0.706 seconds
+Current best score: -2199.949
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -2199.949
+Iteration 10 / LogL: -2427.053 / Time: 0h:1m:33s
+Iteration 20 / LogL: -2452.240 / Time: 0h:1m:33s
+Finish initializing candidate tree set (19)
+Current best tree score: -2199.949 / CPU time: 1.854
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -2293.796 / Time: 0h:1m:35s (0h:0m:9s left)
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -2192.188
+Iteration 40 / LogL: -2319.961 / Time: 0h:1m:37s (0h:0m:9s left)
+Iteration 50 / LogL: -2197.322 / Time: 0h:1m:38s (0h:0m:7s left)
+Iteration 60 / LogL: -2205.139 / Time: 0h:1m:40s (0h:0m:6s left)
+Iteration 70 / LogL: -2194.675 / Time: 0h:1m:41s (0h:0m:4s left)
+Iteration 80 / LogL: -2196.238 / Time: 0h:1m:42s (0h:0m:3s left)
+Iteration 90 / LogL: -2194.966 / Time: 0h:1m:44s (0h:0m:1s left)
+Iteration 100 / LogL: -2201.306 / Time: 0h:1m:45s (0h:0m:0s left)
+Refining ufboot trees with NNI 1 branch...
+100 samples done
+200 samples done
+300 samples done
+400 samples done
+500 samples done
+600 samples done
+700 samples done
+800 samples done
+900 samples done
+1000 samples done
+Total 252 ufboot trees refined
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:2m:18s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -2192.188
+Optimal log-likelihood: -2192.183
+Nonsynonymous/synonymous ratio (omega): 0.012
+Transition/transversion ratio (kappa): 1.219
+Proportion of invariable sites: 0.000
+Site proportion and rates:  (0.499,0.136) (0.501,1.862)
+Parameters optimization took 1 rounds (0.126 sec)
+BEST SCORE FOUND : -2192.183
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+0.047 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file iqtreeoutput/ATCOL/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155.splits.nex
+Total tree length: 186.943
+
+Total number of iterations: 102
+CPU time used for tree search: 148.700 sec (0h:2m:28s)
+Wall-clock time used for tree search: 46.768 sec (0h:0m:46s)
+Total CPU time used: 413.259 sec (0h:6m:53s)
+Total wall-clock time used: 139.126 sec (0h:2m:19s)
+UFBoot trees printed to iqtreeoutput/ATCOL/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155.ufboot
+
+Computing bootstrap consensus tree...
+Reading input file iqtreeoutput/ATCOL/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155.splits.nex...
+7 taxa and 25 splits.
+Consensus tree written to iqtreeoutput/ATCOL/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155.contree
+Reading input trees file iqtreeoutput/ATCOL/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155.contree
+Log-likelihood of consensus tree: -2412.737
+
+Analysis results written to: 
+  IQ-TREE report:                iqtreeoutput/ATCOL/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155.iqtree
+  Maximum-likelihood tree:       iqtreeoutput/ATCOL/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155.treefile
+  Likelihood distances:          iqtreeoutput/ATCOL/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          iqtreeoutput/ATCOL/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155.splits.nex
+  Consensus tree:                iqtreeoutput/ATCOL/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155.contree
+  UFBoot trees:                  iqtreeoutput/ATCOL/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155.ufboot
+  Screen log file:               iqtreeoutput/ATCOL/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155/ATCOL.fasta_QC_msa.best.fas.gard_block1_1-155.log
+
+Date and Time: Thu Sep 25 13:24:28 2025
