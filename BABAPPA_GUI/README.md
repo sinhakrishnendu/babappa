@@ -6,7 +6,13 @@
 
 # Quick start (3 steps) 🚀✅🎯
 
-1. **Install** — run the provided Babappa installer (`babappa_installer_2.0.exe`) as Administrator and accept the defaults. The installer places files under `C:\Program Files (x86)\Babappa` (default).
+1. **Install** — run the provided Babappa installer (`BabappaInstaller.exe`) as Administrator and accept the defaults. The installer places files under `C:\Program Files (x86)\Babappa` (default).
+> **Installer hosting note:** The installer (~1.5 GB) is too large for GitHub Releases and is hosted on Zenodo. Download the official installer from:
+
+> https://zenodo.org/records/17112753
+
+> Please verify the file checksum after download before installation.
+
 2. **Launch** — double-click the **Babappa** shortcut (Start Menu or Desktop). The GUI will start and bring up a backend API inside WSL (Ubuntu-22.04).
 3. **Run analysis** — choose a FASTA input, select an output folder, pick a pipeline (`clip`, `clipgard`, or `normal`) and click **Run**.
 
