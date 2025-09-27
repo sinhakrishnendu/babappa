@@ -1,4 +1,4 @@
-# BABAPPA — README  🔧✨📘
+# BABAPPA GUI — README  🔧✨📘
 
 **Purpose:** a single, friendly, and robust README that combines installation, first-run, usage, results, troubleshooting, and developer/maintenance notes for the BABAPPA pipeline. 📝🌟🔍
 
@@ -47,7 +47,7 @@ This may take 10–20 minutes on first run depending on your machine and whether
 **Windows (user-facing results):** 📂✨🔍
 
 ```
-C:\Users\<YourWindowsUsername>\Documents\out\
+C:\Users\<YourWindowsUsername>\Documents\<UserDefinedOutputFolder,e.g., out>\
 ```
 
 Inside `out/` you will see three top-level pipeline folders: `clip/`, `clipgard/`, and `normal/`. Each run creates a unique subfolder named with a UUID. 🗂️🆔📊
@@ -57,7 +57,7 @@ Inside `out/` you will see three top-level pipeline folders: `clip/`, `clipgard/
 ```
 ~/babappa_project/              # copied project in WSL home
 ~/babappa_uvicorn.log           # API startup/runtime log
-~/miniconda3/envs/babappa       # conda env (if created normally)
+~/miniconda3/envs/babappa_env   # conda env (if created normally)
 ```
 
 You can also view WSL files from Windows Explorer via the `\\wsl$\Ubuntu-22.04\home\<username>` path. 🪟🔗📁
@@ -254,9 +254,7 @@ babappa_build/
 When you change `babappa_gui.py`, rebuild with:
 
 ```bash
-pyinstaller --noconfirm --onefile --windowed \
-  --icon=butterfly_icon.ico \
-  --name=babappa_gui babappa_gui.py
+pyinstaller --noconfirm --onefile --windowed --icon=butterfly_icon.ico --name=babappa_gui babappa_gui.py
 ```
 
 Result: `dist/babappa_gui.exe`. 🧩📦✅
